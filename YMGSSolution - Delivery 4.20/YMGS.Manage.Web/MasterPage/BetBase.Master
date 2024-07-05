@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BetBase.master.cs" Inherits="YMGS.Manage.Web.MasterPage.BetBase" %>
+
+<%@ Register Src="../Controls/TopMenu.ascx" TagName="TopMenu" TagPrefix="uc1" %>
+<%@ Register Src="../Controls/LeftMenu.ascx" TagName="LeftMenu" TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>必发必</title>
+    <script src="../Scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <link href="../Css/css.css" rel="stylesheet" type="text/css" />
+    <link href="../Css/DefaultCss.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/CommonJS.js" type="text/javascript"></script>
+</head>
+<body class="frame_class ">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" EnablePartialRendering="true"
+        AllowCustomErrorsRedirect="false" AsyncPostBackErrorMessage="" OnAsyncPostBackError="ScriptManager_AsyncPostBackError">
+        <Scripts>
+            <asp:ScriptReference Path="~/Scripts/jquery-1.8.3.min.js" />
+            <asp:ScriptReference Path="~/Scripts/CommonJS.js" />
+        </Scripts>
+    </asp:ScriptManager>
+
+    <table class=NoBorderTable style="width:100%;height:100%">
+        <tr style="height:80px;">
+            <td colspan=2>
+                 <div class="frametop">
+                        <div class="frametopf">
+                            <div class="frametopp">
+                                <div class="frameleft">
+                                    <img src="../Images/logo.jpg" width="141" height="60" alt="" />
+                                </div>
+                                <div class="frameright">
+                                    <div class="framer_one">
+                                        <ul>
+                                            <li class="liz">
+                                                <asp:LinkButton CausesValidation="false" ID="lbtExit" runat="server" OnClick="lbtExit_Click">安全退出</asp:LinkButton><a
+                                                    href="#"></a></li>
+                                            <li class="liy"></li>
+                                            <li class="liz">欢迎您，<asp:Label ID="lblUser" runat="server" ForeColor="#fcff00" Text=""></asp:Label>！</li>
+                                            <li class="liz"><asp:Label ID="lblCurTimeZone" runat="server" ForeColor="#fcff00" Text=""></asp:Label></li>
+                                            <li class="liz"><span id="lblCurSysDate"></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="frametoptwo">
+                                <uc1:TopMenu ID="TopMenu1" runat="server" />
+                            </div>
+                        </div>
+                    </div>
+            </td>
+        </tr>
+        <tr style="height:100%">
+            <td valign="top" style="background-color:#ECECEC;width:220px;">
+                <div class="contleftcssy">
+                    <uc2:LeftMenu ID="LeftMenu1" runat="server" />
+                </div>                
+            </td>
+            <td valign="top" width="100%">
+                <table class="lefttd">
+                    <tr>
+                        <td class="toptable">
+                            <asp:Label ID="lbllocation" runat="server" Text=""></asp:Label>&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">  
+                            <asp:ContentPlaceHolder ID="ListPlace" runat="server">
+                            </asp:ContentPlaceHolder><asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>           
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+    function refreshCurDate() {
+        var curDate = $('#lblCurSysDate').text();
+        $('#lblCurSysDate').text(curDate.toDate().DateAdd('s', 1).format('yyyy-MM-dd HH:mm:ss'));
+    }
+    setInterval("refreshCurDate()", 1000);
+</script>

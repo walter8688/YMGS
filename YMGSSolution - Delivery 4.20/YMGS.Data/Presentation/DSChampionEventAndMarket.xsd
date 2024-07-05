@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSChampionEventAndMarket" targetNamespace="http://tempuri.org/DSChampionEventAndMarket.xsd" xmlns:mstns="http://tempuri.org/DSChampionEventAndMarket.xsd" xmlns="http://tempuri.org/DSChampionEventAndMarket.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSChampionEventAndMarket" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSChampionEventAndMarket" msprop:Generator_UserDSName="DSChampionEventAndMarket">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ChampEventList" msprop:Generator_TableClassName="ChampEventListDataTable" msprop:Generator_TableVarName="tableChampEventList" msprop:Generator_TablePropName="ChampEventList" msprop:Generator_RowDeletingName="ChampEventListRowDeleting" msprop:Generator_UserTableName="ChampEventList" msprop:Generator_RowChangingName="ChampEventListRowChanging" msprop:Generator_RowEvHandlerName="ChampEventListRowChangeEventHandler" msprop:Generator_RowDeletedName="ChampEventListRowDeleted" msprop:Generator_RowEvArgName="ChampEventListRowChangeEvent" msprop:Generator_RowChangedName="ChampEventListRowChanged" msprop:Generator_RowClassName="ChampEventListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Champ_Event_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnChamp_Event_ID" msprop:Generator_ColumnPropNameInRow="Champ_Event_ID" msprop:Generator_ColumnPropNameInTable="Champ_Event_IDColumn" msprop:Generator_UserColumnName="Champ_Event_ID" type="xs:int" />
+              <xs:element name="Champ_Event_Type" msprop:Generator_ColumnVarNameInTable="columnChamp_Event_Type" msprop:Generator_ColumnPropNameInRow="Champ_Event_Type" msprop:Generator_ColumnPropNameInTable="Champ_Event_TypeColumn" msprop:Generator_UserColumnName="Champ_Event_Type" type="xs:int" minOccurs="0" />
+              <xs:element name="Event_ID" msprop:Generator_ColumnVarNameInTable="columnEvent_ID" msprop:Generator_ColumnPropNameInRow="Event_ID" msprop:Generator_ColumnPropNameInTable="Event_IDColumn" msprop:Generator_UserColumnName="Event_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Champ_Event_Name" msprop:Generator_ColumnVarNameInTable="columnChamp_Event_Name" msprop:Generator_ColumnPropNameInRow="Champ_Event_Name" msprop:Generator_ColumnPropNameInTable="Champ_Event_NameColumn" msprop:Generator_UserColumnName="Champ_Event_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Champ_Event_Desc" msprop:Generator_ColumnVarNameInTable="columnChamp_Event_Desc" msprop:Generator_ColumnPropNameInRow="Champ_Event_Desc" msprop:Generator_ColumnPropNameInTable="Champ_Event_DescColumn" msprop:Generator_UserColumnName="Champ_Event_Desc" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Champ_Event_StartDate" msprop:Generator_ColumnVarNameInTable="columnChamp_Event_StartDate" msprop:Generator_ColumnPropNameInRow="Champ_Event_StartDate" msprop:Generator_ColumnPropNameInTable="Champ_Event_StartDateColumn" msprop:Generator_UserColumnName="Champ_Event_StartDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Champ_Event_EndDate" msprop:Generator_ColumnVarNameInTable="columnChamp_Event_EndDate" msprop:Generator_ColumnPropNameInRow="Champ_Event_EndDate" msprop:Generator_ColumnPropNameInTable="Champ_Event_EndDateColumn" msprop:Generator_UserColumnName="Champ_Event_EndDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Champ_Event_Status" msprop:Generator_ColumnVarNameInTable="columnChamp_Event_Status" msprop:Generator_ColumnPropNameInRow="Champ_Event_Status" msprop:Generator_ColumnPropNameInTable="Champ_Event_StatusColumn" msprop:Generator_UserColumnName="Champ_Event_Status" type="xs:int" minOccurs="0" />
+              <xs:element name="Create_User" msprop:Generator_ColumnVarNameInTable="columnCreate_User" msprop:Generator_ColumnPropNameInRow="Create_User" msprop:Generator_ColumnPropNameInTable="Create_UserColumn" msprop:Generator_UserColumnName="Create_User" type="xs:int" minOccurs="0" />
+              <xs:element name="Create_Time" msprop:Generator_ColumnVarNameInTable="columnCreate_Time" msprop:Generator_ColumnPropNameInRow="Create_Time" msprop:Generator_ColumnPropNameInTable="Create_TimeColumn" msprop:Generator_UserColumnName="Create_Time" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Last_Update_User" msprop:Generator_ColumnVarNameInTable="columnLast_Update_User" msprop:Generator_ColumnPropNameInRow="Last_Update_User" msprop:Generator_ColumnPropNameInTable="Last_Update_UserColumn" msprop:Generator_UserColumnName="Last_Update_User" type="xs:int" minOccurs="0" />
+              <xs:element name="Last_Update_Time" msprop:Generator_ColumnVarNameInTable="columnLast_Update_Time" msprop:Generator_ColumnPropNameInRow="Last_Update_Time" msprop:Generator_ColumnPropNameInTable="Last_Update_TimeColumn" msprop:Generator_UserColumnName="Last_Update_Time" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EVENT_NAME" msprop:Generator_ColumnVarNameInTable="columnEVENT_NAME" msprop:Generator_ColumnPropNameInRow="EVENT_NAME" msprop:Generator_ColumnPropNameInTable="EVENT_NAMEColumn" msprop:Generator_UserColumnName="EVENT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="EVENTZONE_ID" msprop:Generator_ColumnVarNameInTable="columnEVENTZONE_ID" msprop:Generator_ColumnPropNameInRow="EVENTZONE_ID" msprop:Generator_ColumnPropNameInTable="EVENTZONE_IDColumn" msprop:Generator_UserColumnName="EVENTZONE_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CHAMP_EVENT_NAME_EN" msprop:Generator_ColumnVarNameInTable="columnCHAMP_EVENT_NAME_EN" msprop:Generator_ColumnPropNameInRow="CHAMP_EVENT_NAME_EN" msprop:Generator_ColumnPropNameInTable="CHAMP_EVENT_NAME_ENColumn" msprop:Generator_UserColumnName="CHAMP_EVENT_NAME_EN" type="xs:string" minOccurs="0" />
+              <xs:element name="EVENT_NAME_EN" msprop:Generator_ColumnVarNameInTable="columnEVENT_NAME_EN" msprop:Generator_ColumnPropNameInRow="EVENT_NAME_EN" msprop:Generator_ColumnPropNameInTable="EVENT_NAME_ENColumn" msprop:Generator_UserColumnName="EVENT_NAME_EN" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ChampEventMarket" msprop:Generator_TableClassName="ChampEventMarketDataTable" msprop:Generator_TableVarName="tableChampEventMarket" msprop:Generator_TablePropName="ChampEventMarket" msprop:Generator_RowDeletingName="ChampEventMarketRowDeleting" msprop:Generator_UserTableName="ChampEventMarket" msprop:Generator_RowChangingName="ChampEventMarketRowChanging" msprop:Generator_RowEvHandlerName="ChampEventMarketRowChangeEventHandler" msprop:Generator_RowDeletedName="ChampEventMarketRowDeleted" msprop:Generator_RowEvArgName="ChampEventMarketRowChangeEvent" msprop:Generator_RowChangedName="ChampEventMarketRowChanged" msprop:Generator_RowClassName="ChampEventMarketRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CHAMP_MARKET_ID" msprop:Generator_ColumnVarNameInTable="columnCHAMP_MARKET_ID" msprop:Generator_ColumnPropNameInRow="CHAMP_MARKET_ID" msprop:Generator_ColumnPropNameInTable="CHAMP_MARKET_IDColumn" msprop:Generator_UserColumnName="CHAMP_MARKET_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CHAMP_EVENT_ID" msprop:Generator_ColumnVarNameInTable="columnCHAMP_EVENT_ID" msprop:Generator_ColumnPropNameInRow="CHAMP_EVENT_ID" msprop:Generator_ColumnPropNameInTable="CHAMP_EVENT_IDColumn" msprop:Generator_UserColumnName="CHAMP_EVENT_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CHAMP_MEMBER_ID" msprop:Generator_ColumnVarNameInTable="columnCHAMP_MEMBER_ID" msprop:Generator_ColumnPropNameInRow="CHAMP_MEMBER_ID" msprop:Generator_ColumnPropNameInTable="CHAMP_MEMBER_IDColumn" msprop:Generator_UserColumnName="CHAMP_MEMBER_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CHAMP_EVENT_MEMBER_NAME" msprop:Generator_ColumnVarNameInTable="columnCHAMP_EVENT_MEMBER_NAME" msprop:Generator_ColumnPropNameInRow="CHAMP_EVENT_MEMBER_NAME" msprop:Generator_ColumnPropNameInTable="CHAMP_EVENT_MEMBER_NAMEColumn" msprop:Generator_UserColumnName="CHAMP_EVENT_MEMBER_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CHAMP_EVENT_MEMBER_NAME_EN" msprop:Generator_ColumnVarNameInTable="columnCHAMP_EVENT_MEMBER_NAME_EN" msprop:Generator_ColumnPropNameInRow="CHAMP_EVENT_MEMBER_NAME_EN" msprop:Generator_ColumnPropNameInTable="CHAMP_EVENT_MEMBER_NAME_ENColumn" msprop:Generator_UserColumnName="CHAMP_EVENT_MEMBER_NAME_EN" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ChampEventList" />
+      <xs:field xpath="mstns:Champ_Event_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

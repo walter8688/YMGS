@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSBetReport" targetNamespace="http://tempuri.org/DSBetReport.xsd" xmlns:mstns="http://tempuri.org/DSBetReport.xsd" xmlns="http://tempuri.org/DSBetReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSBetReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSBetReport" msprop:Generator_UserDSName="DSBetReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_Bet_Report" msprop:Generator_TableClassName="TB_Bet_ReportDataTable" msprop:Generator_TableVarName="tableTB_Bet_Report" msprop:Generator_TablePropName="TB_Bet_Report" msprop:Generator_RowDeletingName="TB_Bet_ReportRowDeleting" msprop:Generator_UserTableName="TB_Bet_Report" msprop:Generator_RowChangingName="TB_Bet_ReportRowChanging" msprop:Generator_RowEvHandlerName="TB_Bet_ReportRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_Bet_ReportRowDeleted" msprop:Generator_RowEvArgName="TB_Bet_ReportRowChangeEvent" msprop:Generator_RowChangedName="TB_Bet_ReportRowChanged" msprop:Generator_RowClassName="TB_Bet_ReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ExchangeType" msprop:Generator_ColumnVarNameInTable="columnExchangeType" msprop:Generator_ColumnPropNameInRow="ExchangeType" msprop:Generator_ColumnPropNameInTable="ExchangeTypeColumn" msprop:Generator_UserColumnName="ExchangeType" type="xs:string" minOccurs="0" />
+              <xs:element name="EventName" msprop:Generator_ColumnVarNameInTable="columnEventName" msprop:Generator_ColumnPropNameInRow="EventName" msprop:Generator_ColumnPropNameInTable="EventNameColumn" msprop:Generator_UserColumnName="EventName" type="xs:string" minOccurs="0" />
+              <xs:element name="MatchName" msprop:Generator_ColumnVarNameInTable="columnMatchName" msprop:Generator_ColumnPropNameInRow="MatchName" msprop:Generator_ColumnPropNameInTable="MatchNameColumn" msprop:Generator_UserColumnName="MatchName" type="xs:string" minOccurs="0" />
+              <xs:element name="BET_NAME" msprop:Generator_ColumnVarNameInTable="columnBET_NAME" msprop:Generator_ColumnPropNameInRow="BET_NAME" msprop:Generator_ColumnPropNameInTable="BET_NAMEColumn" msprop:Generator_UserColumnName="BET_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="Market_Tmp_Type" msprop:Generator_ColumnVarNameInTable="columnMarket_Tmp_Type" msprop:Generator_ColumnPropNameInRow="Market_Tmp_Type" msprop:Generator_ColumnPropNameInTable="Market_Tmp_TypeColumn" msprop:Generator_UserColumnName="Market_Tmp_Type" type="xs:string" minOccurs="0" />
+              <xs:element name="MARKET_NAME" msprop:Generator_ColumnVarNameInTable="columnMARKET_NAME" msprop:Generator_ColumnPropNameInRow="MARKET_NAME" msprop:Generator_ColumnPropNameInTable="MARKET_NAMEColumn" msprop:Generator_UserColumnName="MARKET_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ODDS" msprop:Generator_ColumnVarNameInTable="columnODDS" msprop:Generator_ColumnPropNameInRow="ODDS" msprop:Generator_ColumnPropNameInTable="ODDSColumn" msprop:Generator_UserColumnName="ODDS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BET_AMOUNTS" msprop:Generator_ColumnVarNameInTable="columnBET_AMOUNTS" msprop:Generator_ColumnPropNameInRow="BET_AMOUNTS" msprop:Generator_ColumnPropNameInTable="BET_AMOUNTSColumn" msprop:Generator_UserColumnName="BET_AMOUNTS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MATCH_AMOUNTS" msprop:Generator_ColumnVarNameInTable="columnMATCH_AMOUNTS" msprop:Generator_ColumnPropNameInRow="MATCH_AMOUNTS" msprop:Generator_ColumnPropNameInTable="MATCH_AMOUNTSColumn" msprop:Generator_UserColumnName="MATCH_AMOUNTS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRADE_TIME" msprop:Generator_ColumnVarNameInTable="columnTRADE_TIME" msprop:Generator_ColumnPropNameInRow="TRADE_TIME" msprop:Generator_ColumnPropNameInTable="TRADE_TIMEColumn" msprop:Generator_UserColumnName="TRADE_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MatchScore" msprop:Generator_ColumnVarNameInTable="columnMatchScore" msprop:Generator_ColumnPropNameInRow="MatchScore" msprop:Generator_ColumnPropNameInTable="MatchScoreColumn" msprop:Generator_UserColumnName="MatchScore" type="xs:string" minOccurs="0" />
+              <xs:element name="LOGIN_NAME" msprop:Generator_ColumnVarNameInTable="columnLOGIN_NAME" msprop:Generator_ColumnPropNameInRow="LOGIN_NAME" msprop:Generator_ColumnPropNameInTable="LOGIN_NAMEColumn" msprop:Generator_UserColumnName="LOGIN_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="Exchange_Status" msprop:Generator_ColumnVarNameInTable="columnExchange_Status" msprop:Generator_ColumnPropNameInRow="Exchange_Status" msprop:Generator_ColumnPropNameInTable="Exchange_StatusColumn" msprop:Generator_UserColumnName="Exchange_Status" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

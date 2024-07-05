@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AjaxResponseFrm.aspx.cs" Inherits="YMGS.Trade.Web.MemberShip.AjaxResponseFrm" %>

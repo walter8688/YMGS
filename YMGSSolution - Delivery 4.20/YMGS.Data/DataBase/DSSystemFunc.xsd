@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSSystemFunc" targetNamespace="http://tempuri.org/DSSystemFunc.xsd" xmlns:mstns="http://tempuri.org/DSSystemFunc.xsd" xmlns="http://tempuri.org/DSSystemFunc.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSSystemFunc" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSSystemFunc" msprop:Generator_UserDSName="DSSystemFunc">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_SYSTEM_FUNC" msprop:Generator_TableClassName="TB_SYSTEM_FUNCDataTable" msprop:Generator_TableVarName="tableTB_SYSTEM_FUNC" msprop:Generator_TablePropName="TB_SYSTEM_FUNC" msprop:Generator_RowDeletingName="TB_SYSTEM_FUNCRowDeleting" msprop:Generator_UserTableName="TB_SYSTEM_FUNC" msprop:Generator_RowChangingName="TB_SYSTEM_FUNCRowChanging" msprop:Generator_RowEvHandlerName="TB_SYSTEM_FUNCRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_SYSTEM_FUNCRowDeleted" msprop:Generator_RowEvArgName="TB_SYSTEM_FUNCRowChangeEvent" msprop:Generator_RowChangedName="TB_SYSTEM_FUNCRowChanged" msprop:Generator_RowClassName="TB_SYSTEM_FUNCRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FUNC_ID" msprop:Generator_ColumnVarNameInTable="columnFUNC_ID" msprop:Generator_ColumnPropNameInRow="FUNC_ID" msprop:Generator_ColumnPropNameInTable="FUNC_IDColumn" msprop:Generator_UserColumnName="FUNC_ID" type="xs:int" />
+              <xs:element name="PARENT_FUNC_ID" msprop:Generator_ColumnVarNameInTable="columnPARENT_FUNC_ID" msprop:Generator_ColumnPropNameInRow="PARENT_FUNC_ID" msprop:Generator_ColumnPropNameInTable="PARENT_FUNC_IDColumn" msprop:Generator_UserColumnName="PARENT_FUNC_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="FUNC_NAME" msprop:Generator_ColumnVarNameInTable="columnFUNC_NAME" msprop:Generator_ColumnPropNameInRow="FUNC_NAME" msprop:Generator_ColumnPropNameInTable="FUNC_NAMEColumn" msprop:Generator_UserColumnName="FUNC_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FUNC_TYPE" msprop:Generator_ColumnVarNameInTable="columnFUNC_TYPE" msprop:Generator_ColumnPropNameInRow="FUNC_TYPE" msprop:Generator_ColumnPropNameInTable="FUNC_TYPEColumn" msprop:Generator_UserColumnName="FUNC_TYPE" type="xs:int" minOccurs="0" />
+              <xs:element name="LEVELNO" msprop:Generator_ColumnVarNameInTable="columnLEVELNO" msprop:Generator_ColumnPropNameInRow="LEVELNO" msprop:Generator_ColumnPropNameInTable="LEVELNOColumn" msprop:Generator_UserColumnName="LEVELNO" type="xs:int" minOccurs="0" />
+              <xs:element name="FUNC_ORDER" msprop:Generator_ColumnVarNameInTable="columnFUNC_ORDER" msprop:Generator_ColumnPropNameInRow="FUNC_ORDER" msprop:Generator_ColumnPropNameInTable="FUNC_ORDERColumn" msprop:Generator_UserColumnName="FUNC_ORDER" type="xs:int" minOccurs="0" />
+              <xs:element name="URL" msprop:Generator_ColumnVarNameInTable="columnURL" msprop:Generator_ColumnPropNameInRow="URL" msprop:Generator_ColumnPropNameInTable="URLColumn" msprop:Generator_UserColumnName="URL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" msprop:Generator_UserColumnName="CREATE_USER" type="xs:int" minOccurs="0" />
+              <xs:element name="CREATE_TIME" msprop:Generator_ColumnVarNameInTable="columnCREATE_TIME" msprop:Generator_ColumnPropNameInRow="CREATE_TIME" msprop:Generator_ColumnPropNameInTable="CREATE_TIMEColumn" msprop:Generator_UserColumnName="CREATE_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LAST_UPDATE_USER" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATE_USER" msprop:Generator_ColumnPropNameInRow="LAST_UPDATE_USER" msprop:Generator_ColumnPropNameInTable="LAST_UPDATE_USERColumn" msprop:Generator_UserColumnName="LAST_UPDATE_USER" type="xs:int" minOccurs="0" />
+              <xs:element name="LAST_UPDATE_TIME" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATE_TIME" msprop:Generator_ColumnPropNameInRow="LAST_UPDATE_TIME" msprop:Generator_ColumnPropNameInTable="LAST_UPDATE_TIMEColumn" msprop:Generator_UserColumnName="LAST_UPDATE_TIME" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_SYSTEM_FUNC" />
+      <xs:field xpath="mstns:FUNC_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

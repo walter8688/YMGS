@@ -1,0 +1,243 @@
+<?xml version="1.0" ?>
+<project name="YNMSBuild"
+         xmlns="http://nant.sf.net/release/0.85/nant.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://nant.sf.net/release/0.85/nant.xsd tools/nant0.85.xsd" >
+
+	<!-- Logging properties -->
+	<property readonly="true" name="build.root"   value="D:\YMGS\YMGSSolution" />
+  <property readonly="true" name="build.root.configuration"   value="${build.root}/Configuration" />
+  <property readonly="true" name="build.root.buildlog"   value="${build.root.configuration}/BuildLog" />
+  <property readonly="true" name="build.root.src"   value="${build.root}" />
+  <property readonly="true" name="update.source.url" value="https://svn2-suz.exigenservices.com/ymgs"/>  
+  <property readonly="true" name="build.root.buildlog.log"  value="${path::combine(build.root.buildlog, 'build.log')}" />
+  <property readonly="true" name="build.root.buildlog.compile"  value="${path::combine(build.root.buildlog, 'compile.log')}" />
+  <property readonly="true" name="build.root.src.solution"           value="${path::combine(build.root.src, 'YMGSSolution.sln')}" />
+  <property readonly="true" name="config" value="Release" unless="${property::exists('config')}" />
+  <property readonly="true" name="build.root.src.web.manage" value="${path::combine(build.root.src,'YMGS.Manage.Web')}"/>
+  <property readonly="true" name="build.root.src.web.trade" value="${path::combine(build.root.src,'YMGS.Trade.Web')}"/>
+  <property readonly="true" name="build.root.src.service" value="${path::combine(build.root.src,'YMGS.Service\bin\release')}"/>  
+  <property readonly="true" name="build.deploy" value="D:\YMGS_BUILD"/>
+  <property readonly="true" name="build.deploy.web.manage" value="${path::combine(build.deploy,'YMGS.Manage.Web')}"/>
+  <property readonly="true" name="build.deploy.web.trade" value="${path::combine(build.deploy,'YMGS.trade.Web')}"/>
+  <property readonly="true" name="build.deploy.service" value="${path::combine(build.deploy,'YMGS.Service')}"/>
+  
+  <property readonly="true" name="framework.dir"  value="C:\Windows\Microsoft.NET\Framework\v4.0.30319" />
+  <property readonly="true" name="msbuild.exe" value="${path::get-full-path(path::combine(framework.dir, 'MSBuild.exe'))}" />
+  <echo message="msbuild.exe = '${msbuild.exe}'" />
+  <fail message="msbuild.exe not found" unless="${file::exists(msbuild.exe)}" />
+
+  <property readonly="true" name="db.server" value=""/>
+  <property readonly="true" name="db.database.dev" value="YMGS_DEV"/>
+  <property readonly="true" name="db.database.qa" value="YMGS_QA"/>
+  <property readonly="true" name="db.uid" value="sa"/>
+  <property readonly="true" name="db.pwd" value="Welcome#1"/>
+  <property readonly="true" name="db.dev.connection"  value="Provider=sqloledb;Data Source=${db.server};Initial Catalog=${db.database.dev};User Id=${db.uid};Password=${db.pwd};" />
+  <property readonly="true" name="db.qa.connection"  value="Provider=sqloledb;Data Source=${db.server};Initial Catalog=${db.database.qa};User Id=${db.uid};Password=${db.pwd};" />
+
+  <property name="file.fullcreate.cmd" value="${path::combine(build.root.src, 'YMGS.DataBase\CreateFull.bat')}" />
+  <property name="file.fullupdate.cmd" value="${path::combine(build.root.src, 'YMGS.DataBase\UpdateFull.bat')}" />
+  <property name="file.fullupdate.sql.dir" value="${path::combine(build.deploy, 'UpdateDbScript')}" />
+  <property name="file.fullcreate.sql" value="${path::combine(file.fullupdate.sql.dir, 'create_script.sql')}" />
+  <property name="file.fullupdate.sql" value="${path::combine(file.fullupdate.sql.dir, 'update_script.sql')}" />
+
+
+  <!--
+  <property readonly="true" name="mstest.exe" value="${path::get-full-path(environment::get-variable('VS90COMNTOOLS') + '..\IDE\MSTest.exe')}" />
+  <echo message="mstest.exe = '${mstest.exe}'" />
+  <fail message="mstest.exe not found" unless="${file::exists(mstest.exe)}" />
+  -->
+
+  <target name="Prepare">
+    <echo message="Create build log file"/>
+		<mkdir dir="${build.root.buildlog}" unless="${directory::exists(build.root.buildlog)}" />
+		<delete file="${build.root.buildlog.log}" if="${file::exists(build.root.buildlog.log)}" />
+
+    <delete verbose="true">
+      <fileset>
+        <include name="${build.root.buildlog}/*Results.html" />
+        <include name="${build.root.buildlog}/*Results.xml" />
+      </fileset>
+    </delete>
+ 
+		<record action="Start"  name="${build.root.buildlog.log}" level="Verbose" />
+
+    <echo message="Logging started. Log folder: ${build.root.buildlog}" />
+		<echo message="Build started. Project sources: ${build.root.src}" />
+    <echo message="Delete source folder's content" />
+    <!--
+		<delete>
+			<fileset>
+				<include name="${build.root.src}/**" />
+			</fileset>
+		</delete>
+    <call target="GetLatestSources"/>
+-->
+  </target>
+
+  <target name="GetLatestSources">
+    <if test="${directory::exists(build.root.src)}">
+      <echo message="update source code ${update.source.url}"/>
+      <svn-update uri="${update.source.url}" destination="${build.root.src}" verbose="false" username="ymgssvn" password="vv8xUcQC" />
+    </if>
+  </target>
+ 
+	<target name="Build" depends="Prepare" >
+		<echo message="Building solution: ${build.root.src}" />
+		<property name="msbuild.logger.inst" value="" />
+		<if test="${property::exists('msbuild.logger')}">
+			<property name="msbuild.logger.inst" value="/logger:${msbuild.logger};${build.root.buildlog.compile}" />
+		</if>
+
+    <echo message="${build.root.src.solution}" />
+
+		<exec program="${msbuild.exe}" failonerror="false" resultproperty="build.resultcode" >
+			<arg value="/target:Rebuild" />
+			<arg value="${build.root.src.solution}" />
+			<arg value="/verbosity:quiet" />
+			<arg value="/property:Configuration=${config};CODE_ANALYSIS=1" />
+			<arg value="/noconsolelogger" if="${property::exists('msbuild.logger')}"/>
+			<arg value="${msbuild.logger.inst}"/>
+		</exec>
+		<fail if="${build.resultcode != '0'}" message="Cannot build the solution. See log file for details"/>
+	</target>
+
+  <target name="CopyWebManage" depends="Prepare">
+    <echo message="Copy YMGS.Manage.Web: Source=${build.root.src.web.manage} Target=${build.deploy.web.manage}" />
+    <echo message="if build.deploy.web.manange doesn't exist, create it, the folder is ${build.deploy.web.manage}"/>
+    <mkdir dir="${build.deploy.web.manage}" unless="${directory::exists(build.deploy.web.manage)}"/>
+    
+    <delete verbose="true">
+      <fileset>
+        <include name="${build.deploy.web.manage}/*/**" />
+        <exclude name="${build.deploy.web.manage}/*.config" />
+      </fileset>
+    </delete>
+    <copy todir="${build.deploy.web.manage}" includeemptydirs="false">
+      <fileset basedir="${build.root.src.web.manage}">
+        <include name="**" />
+        <exclude name="**/obj/**" />
+        <exclude name="**/web.config" />
+        <exclude name="**/web.*.config" />
+        <exclude name="**/*.cs" />
+        <exclude name="**/*.xslt" />
+        <exclude name="**/*.xml" />
+        <exclude name="**/*.xsd" />
+        <exclude name="**/*.xsc" />
+        <exclude name="**/*.xss" />
+        <exclude name="**/*.cd" />
+        <exclude name="**/*.xsx" />
+        <exclude name="**/*.SCC" />
+        <exclude name="**/*.vspscc" />
+        <exclude name="**/*.??proj" />
+        <exclude name="**/*.example" />
+        <exclude name="**/*.pdb"/>
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="CopyWebTrade" depends="Prepare">
+    <echo message="Copy YMGS.Trade.Web: Source=${build.root.src.web.trade} Target=${build.deploy.web.trade}" />
+    <echo message="if build.deploy.web.trade doesn't exist, create it, the folder is ${build.deploy.web.trade}"/>
+    <mkdir dir="${build.deploy.web.trade}" unless="${directory::exists(build.deploy.web.trade)}"/>
+
+    <delete verbose="true">
+      <fileset>
+        <include name="${build.deploy.web.trade}/*/**" />
+        <exclude name="${build.deploy.web.trade}/*.config" />
+      </fileset>
+    </delete>
+    <copy todir="${build.deploy.web.trade}" includeemptydirs="false">
+      <fileset basedir="${build.root.src.web.trade}">
+        <include name="**" />
+        <exclude name="**/obj/**" />
+        <exclude name="**/web.config" />
+        <exclude name="**/web.*.config" />
+        <exclude name="**/*.cs" />
+        <exclude name="**/*.xslt" />
+        <exclude name="**/*.xml" />
+        <exclude name="**/*.xsd" />
+        <exclude name="**/*.xsc" />
+        <exclude name="**/*.xss" />
+        <exclude name="**/*.cd" />
+        <exclude name="**/*.xsx" />
+        <exclude name="**/*.SCC" />
+        <exclude name="**/*.vspscc" />
+        <exclude name="**/*.??proj" />
+        <exclude name="**/*.example" />
+        <exclude name="**/*.pdb"/>
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="CopyService" depends="Prepare">
+    <echo message="Copy YMGS.Service: Source=${build.root.src.service} Target=${build.deploy.service}" />
+    <echo message="if build.deploy.service doesn't exist, create it, the folder is ${build.deploy.service}"/>
+    <mkdir dir="${build.deploy.service}" unless="${directory::exists(build.deploy.service)}"/>
+
+    <delete verbose="true">
+      <fileset>
+        <include name="${build.deploy.service}/*/**" />
+        <exclude name="${build.deploy.service}/*.config" />
+      </fileset>
+    </delete>
+    <copy todir="${build.deploy.service}" includeemptydirs="false">
+      <fileset basedir="${build.root.src.service}">
+        <include name="**" />
+        <exclude name="**/obj/**" />
+        <exclude name="**/YMGS.Service.exe.config" />
+        <exclude name="**/*.pdb" />
+        <exclude name="**/*.installlog" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="CreateDbInitScript" depends="GetLatestSources" >
+
+    <echo message="begin generate init db script"/>
+    <mkdir dir="${file.fullupdate.sql.dir}" unless="${directory::exists(file.fullupdate.sql.dir)}" />
+
+    <delete file="${file.fullcreate.sql}" if="${file::exists(file.fullcreate.sql)}" />
+    <delete file="${file.fullupdate.sql}" if="${file::exists(file.fullupdate.sql)}" />
+    
+    <echo message="Generate init dbscript file ${file.fullcreate.sql}" />
+    <exec program="cmd" workingdir="${path::get-directory-name(file.fullcreate.cmd)}">
+      <arg value="/C" />
+      <arg value="${file.fullcreate.cmd}" />
+      <arg value="${file.fullcreate.sql}" />
+    </exec>
+
+    <echo message="Generate init dbscript file ${file.fullupdate.sql}" />
+    <exec program="cmd" workingdir="${path::get-directory-name(file.fullupdate.cmd)}">
+      <arg value="/C" />
+      <arg value="${file.fullupdate.cmd}" />
+      <arg value="${file.fullupdate.sql}" />
+    </exec>
+  </target>
+
+  <target name="SyncDevDb" depends="CreateDbInitScript">
+    <echo message="Updating YMGS DEV DB..." />
+    <echo message="Updating file is ${file.fullupdate.sql}" />
+    <sql connstring="${db.dev.connection}"
+				 source="${file.fullupdate.sql}"
+				 delimiter="GO" delimstyle="Line" batch="false" append="true" transaction="false" print="true" />
+    <echo message="YMGS Dev DB updated" />
+  </target>
+
+  <target name="SyncQADb" depends="Prepare">
+    <echo message="Updating YMGS QA DB..." />
+    <echo message="Updating file is ${file.fullupdate.sql}" />
+    <sql connstring="${db.qa.connection}"
+				 source="${file.fullupdate.sql}"
+				 delimiter="GO" delimstyle="Line" batch="false" append="true" transaction="false" print="true" />
+    <echo message="YMGS QA DB updated" />
+  </target>
+  
+  <target name="DailyBuild" depends="Prepare,GetLatestSources,Build,CreateDbInitScript,SyncDevDb">
+    <echo message="Build succesful" />
+  </target>
+
+  <target name="DeployWeb" depends="Prepare,CopyWebManage,CopyWebTrade,CopyService,SyncQADb">
+    <echo message="Deploye web site successful"/>
+  </target>
+</project>

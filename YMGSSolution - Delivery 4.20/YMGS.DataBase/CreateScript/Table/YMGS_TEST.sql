@@ -1,0 +1,8 @@
+CREATE TABLE YMGS_TEST
+(
+	[ID] int IDENTITY(1,1) NOT NULL,
+	[NAMES] nvarchar(40) null,
+	[DESCRIPTION] nvarchar(100) null,
+	PRIMARY KEY(ID)
+)
+GO

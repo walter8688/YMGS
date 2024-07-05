@@ -1,0 +1,655 @@
+﻿body {
+	color:#000;
+	font-size:11px;
+	font-family:times,tahoma,verdana,arial,sans-serif;
+}
+* {
+	margin:0px;
+	padding:0px;
+}
+a, input {
+	outline:none;
+}
+/*首页结构和背景*/
+.main-container
+{  
+    padding-left:4px; 
+    padding-right:4px; 
+    margin-bottom:0px;
+    margin-top:0px;
+    margin-left:auto;
+    margin-right:auto;
+    min-width:1100;
+    height:100%;   
+}
+.homemainfooter
+{
+    width:100%;
+    background-color:White;
+    text-align:center;
+    vertical-align:bottom;
+    clear:both;
+    position:static;
+    bottom:0px;
+    
+}
+/*网站Footer*/
+.foot-background {
+    height: 294px;
+    float: left;
+    width: 100%;
+    margin-top: -294px;
+    background-image: url('../Images/triangles-background_11269_.png');
+    background-repeat: repeat-x;
+}
+.PartnerPic
+{
+    width:100%;
+    text-align:center;
+}  
+.PartnerPic span
+{
+    color:Red;
+    text-align:center;
+    font-size:small;         
+}
+.SeperatorOne
+{
+    background-color: Gray;
+    width:80%;
+    height:1px;   
+    margin-left:10%;
+}   
+.SeperatorTwo
+{
+    background-color: Gray;
+    width:80%;
+    height:2px;   
+    margin-left:10%;
+}
+/*首页内容*/
+.homecontent {
+	clear:both;
+	padding:5px 0 5px 0 ;
+	background-color:#EFF2F2;
+	overflow:hidden;
+}
+
+/*首页帮助行*/
+.hometophelp {
+	height:25px;
+	background-color:#eef2f6;
+}
+.hometophelpleft {
+	float:left;
+	height:25px;
+	line-height:25px;
+}
+a.hometophelplink {
+	color:#919eaa;
+	text-decoration:none;
+	margin-left:10px;
+	margin-right:10px;
+	display:block;
+	float:left;
+}
+a.hometophelplink:hover {
+	color:#273a47;
+	text-decoration:underline;
+}
+.homejiange {
+	width:1px;
+	height:15px;
+	background-color:#a6a6a6;
+	margin-top:5px;
+	display:block;
+	float:left;
+}
+
+/*登录Panel上的链接*/
+a.homeloginlink {
+	color:#00558c;
+	text-decoration:none;
+	display:block;
+	float:left;
+}
+a.homeloginlink:hover {
+	color:#273a47;
+	text-decoration:underline;
+	float:left;
+}
+#userInfoLinkTd a 
+{
+    margin-left:4px;
+}
+#userInfoLinkTd a:first-child
+{
+    margin-left:0;
+}
+
+/*首页赛事类型导航*/
+.homenav {
+	background-color:#273a47;
+	height:90px;
+}
+
+/*首页登录*/
+.homelogin {
+	width:241px;
+	height:103px;
+	position:absolute;
+	right:4px;
+	background:url(../Images/homeloginbg.png) no-repeat 0px;
+}
+.logusername {
+	width:195px;
+	margin-top:8px;
+	margin-left:20px;
+	height:20px;
+	line-height:20px;
+	padding-left:2px;
+	padding-right:2px;
+	border:1px groove #ddd;
+	color:#888;
+}
+
+.icss
+{color:#333;}
+
+.logdiv {
+	height:23px;
+	margin-top:1px;
+	padding-left:20px;
+	position:relative;
+}
+
+.logdivlink
+{
+}
+
+.logdivlink td
+{
+    padding-top:1px;
+}
+
+.logdivlink a
+{
+    color:#00558c;
+	margin-left:5px;
+	margin-right:5px;
+	text-decoration:none;
+}
+
+.logdivlink a:hover
+{
+	color:#00558c;
+	margin-left:5px;
+	margin-right:5px;
+    text-decoration:underline;    
+}
+
+.logdiv div
+{
+    float:left;
+}
+
+
+.loginbtn {
+	width:54px;
+	height:20px;
+	display:block;
+	float:left;
+	cursor:pointer;
+	text-align:center;
+	line-height:20px;
+	border:0 none;
+}
+
+/*登录后显示账号信息*/
+a.loglinkfont {
+	color:#00558c;
+	text-decoration:none;
+}
+a.loglinkfont:hover {
+	color:#273a47;
+	text-decoration:underline;
+}
+.logintop {
+	height:20px; line-height:20px; padding-left:5px;
+}
+.logintop a
+{margin-left:5px; margin-right:5px;}
+
+
+/*首页导航*/
+.homenavone {
+	height:60px;
+	clear:both;
+}
+.homelogo {
+	width:125px;
+	height:31px;
+	float:left;
+	margin-left:6px;
+	margin-top:11px;
+	float:left;
+}
+.homenavtwo {
+	width:700px;
+	background:url(../Images/homenavbg.jpg) no-repeat right 0px;
+	height:30px;
+}
+.homenavtwo a {
+	display:block;
+	height:30px;
+	line-height:30px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-left:20px;
+	margin-right:20px;
+	color:#fff;
+	text-decoration:none;
+	font-size:14px;
+	font-weight:bold;
+	float:left;
+}
+.homenavtwo a:hover {
+	text-decoration:underline;
+}
+.homenavtwo span {
+	width:2px;
+	background:url(../Images/homejg.jpg) no-repeat 0px;
+	height:16px;
+	display:block;
+	float:left;
+	margin-top:7px;
+}
+
+.homefind {
+	width:320px;
+	height:25px;
+	background:url(../Images/homesosobg.jpg) no-repeat 0px 0px;
+	float:left;
+	margin-left:60px;
+	margin-top:18px;
+	display:inline;
+}
+
+.homefindtext {
+	width:286px;
+	margin-left:3px;
+	height:25px;
+	line-height:25px;
+	border:0 none;
+	background:none;
+	float:left;
+	display:block;
+	color:#888;
+}
+.homefindbtn {
+	width:31px;
+	height:25px;
+	background:none;
+	border:0 none;
+	cursor:pointer;
+	float:left;
+	display:block;
+}
+/*Default页面*/
+.default-container
+{
+    background-color:#EFF2F2;
+    width:100%;
+}
+#main-wrapper
+{
+    height: auto!important;
+    height: 655px;
+    min-height: 655px;
+    min-width:500px;
+    width:auto;
+    margin: 0 339px 0 204px;
+    z-index:10;
+    position:relative;
+}
+#nav
+{
+    margin-top: 1px;
+    width:200px;
+    float: left;
+    margin-right: -200px;
+    word-break:break-all;
+}
+
+#related
+{
+    margin-top: 1px;
+    width: 334px;
+    float: right;
+    margin-left: -334px;
+    z-index:10;
+    position:relative;
+}
+
+/*右边区域Title*/
+.relatedPanelTitle
+{
+    /*font-family:times, tahoma, verdana, arial, sans-serif;*/
+    font-size:11px;
+    text-decoration:none;
+    color:White;
+    font-weight:bold;
+    line-height:25px;
+}
+
+/* 没有边框的Table */
+table.BlankTable {
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+table.BlankTable tr
+{
+    border-collapse:collapse;
+    margin:0;
+    padding:0;
+}
+
+table.BlankTable td 
+{
+    border-collapse:collapse;
+    margin:0;
+    padding:0;
+}
+
+.rightarea
+{
+    width:380px;
+}
+
+.midarea
+{
+    min-width:600px;
+    width:100%;
+}
+
+
+
+/*实时比分*/
+.realscore
+{
+    font-weight:bold;
+    font-size:14px;
+    margin-bottom:0px;
+    padding-bottom:3px !important;
+}
+/*网站底部连接*/
+.mod-footer-general {
+	padding: 10px; text-align: center; color: rgb(102, 102, 102); clear: both; font-size: 80%; background-color: rgb(255, 255, 255);
+}
+.mod-footer-general ul {
+	padding: 0px;
+}
+.mod-footer-general a {
+	color: rgb(102, 102, 102); text-decoration: none;
+}
+.mod-footer-general a:hover {
+	text-decoration: underline;
+}
+.mod-footer-general #footer_Links {
+	list-style: none; margin: 0px auto; padding: 1em 0.5em 0.5em; width: 820px;
+}
+.mod-footer-general #footer_Links li {
+	background: url("../Images/b.png") no-repeat left -658px; padding: 0px 2px 0px 6px; display: inline; zoom: 1;
+}
+.mod-footer-general #footer_Links li.start {
+	background: 0px;
+}
+.mod-footer-general #footer_Links li.last a {
+    color:Blue;
+}
+
+/*Navigator*/
+.mod-nav{}
+.mod-nav .parent.last{border-bottom:1px solid #e0e6e6;background-color:transparent;font-weight:bold}
+.mod-nav .parents>li:first-child>a {background-color:#c9ced1;color:#273947}
+.mod-nav .parents ul li {border-color:#fff;background-color:#ffffff;color:#000;}
+/*.mod-nav .parent{border-color:#fff;background-color:#ffffff;color:#000;}*/
+.mod-nav .parent.has-children{background:transparent url("../Images/b.png") no-repeat -8px -308px; height: 15px;width: 18px;right: 0;position: absolute;z-index: 1; margin-top:5px; }
+.mod-nav ul{padding:0;margin-bottom:0;background-color:#fff}
+.mod-nav ul.children{margin-bottom:0}
+.mod-nav li{list-style-type:none;padding:0;margin:0}
+.mod-nav .has-children{background:0;padding-right:15px}
+.mod-nav a{border-bottom:1px solid #e0e6e6;color:#2789ce;display:block;font-weight:normal;text-decoration:none;padding:3px 3px 3px 8px;position:relative;}
+.mod-nav a:hover,.mod-nav .parent:hover{background-color:#dfe5e5}
+.mod-nav .selected{font-weight:bold;background-color:#c9ced1;color:#000;}
+.mod-nav .going-inplay {display: block; background: transparent url("../Images/b.png") no-repeat right -517px; margin-right:-85px;}
+.mod-nav .is-inplay{display:block;background:transparent url("../Images/b.png") no-repeat right -543px;margin-right:-85px;}
+
+
+/*Football*/
+.fbCalander{ margin-top:10px;}
+.market { padding-bottom:10px;}
+.market-tabs {border-left: solid 1px #c7d5e0;border-right: solid 1px #c7d5e0;display: table;table-layout: fixed;list-style: none;overflow: hidden;width: 96%; margin:0 2% 0 2%; }
+.marketContent{ width: 96%; margin:10px 2% 0 2%; background-color:#FFF;}
+.tab {display: table-cell;vertical-align: middle;text-align: center;background-color: #7e97a7;border-left: 1px solid #fff;}
+.tab a {display: block;padding: 4px 0 5px;font-family: "Helvetica Neue","Arial";font-size: 13px;font-weight: bold; color:White; overflow: hidden;}
+.tab a:hover{background-color: #647E90; cursor:pointer;}
+.tab-selected{border-top: 1px solid #c7d5e0;display: table-cell;vertical-align: middle;text-align: center;background: #fff;border: none;}
+.tab-selected a{display: block;padding: 4px 0 5px;font-family: "Helvetica Neue","Arial";font-size: 13px;font-weight: bold; color:Black; overflow: hidden;}
+.tab-selected  a:hover{cursor:pointer;}
+.market-header { background-color:#273A47; height:26px; line-height:26px; cursor:pointer;}
+.market-header h2{color:White; font-weight:bold;font-size: 13px; padding-left:5px; }
+.market-header h2 span{font-size:11px; font-weight:normal;}
+.market-header .close-arrow {height: 7px;width: 11px;display: block;float: left;margin-top: 11px;margin-right: 2px;color: #fff;margin-left: 0;background: transparent url("../Images/b.png") no-repeat 0 -287px;}
+.market-header .open-arrow {height: 7px;width: 11px;display: block;float: left;margin-top: 11px;margin-right: 2px;color: #fff;margin-left: 0;background: transparent url("../Images/b.png") no-repeat 0 -308px;}
+.market-title {font-size: 12px;}
+.market-header em {display: block;width: auto;font-style: normal;font-weight: bold;text-transform: none;float: left;}
+#market-container{ position:relative; zoom:1; overflow:hidden; display:block; margin:10px 2% 0px 2%;}
+.marker-selected {display:none;}
+
+/*In-Play*/
+.mod-coupon {overflow:hidden;}
+.mod-coupon .header { width:65%;}
+.hide-offscreen  {top: -999em; width: 0px; position: absolute;}
+.mod-coupon table{border-bottom:1px solid #e0e6e6;}
+.mod-coupon td,.mod-coupon th{white-space:nowrap}
+.mod-coupon tr.home-away-headings{color:#7e97a7}
+.mod-coupon .ipn-header-height{height:0!important}
+.mod-coupon tr.home-away-headings th{padding-top:1em}
+.mod-coupon tr.home-away-headings th.odds{width:37px}
+.mod-coupon tr.back-lay-headings th{padding-top:.4em}
+.mod-coupon tbody.market:hover{background-color:#eef2f3;overflow-x:visible}
+.mod-coupon tbody.market{border-bottom:1px solid #eef2f3}
+.mod-coupon td.name{border-top:1px solid #e0e6e6;padding:1px 0 3px 0}
+.mod-coupon td.cta{border-top:1px solid #e0e6e6;padding:1px 0 3px 0}
+.mod-coupon tr:first-child td:first-child {}
+.mod-coupon td.dtstart{padding-left:16px;}
+.mod-coupon .more a{color:#2789ce;font:11px "Tahoma",sans-serif;text-decoration:none;float:right;padding:10px 20px 0 0}
+.mod-coupon td.name{padding:4px 0 4px 0}
+.mod-coupon td.name{white-space:normal}
+.mod-coupon td.name a{font-weight:bold;margin-right:10px}
+.mod-coupon .starContainer {margin-right:12px;float:left; width:10px;}
+.mod-coupon .starContainer .stars{background:transparent url("../Images/b.png") no-repeat 0 -330px;width:16px;height:16px;cursor:pointer;display:inline-block;margin-bottom:-4px;margin-left:5px}
+/*.mod-coupon .starContainer .fav{background:transparent url("../Images/darker_sprite_11199_.png") no-repeat -18px -94px}*/
+.mod-coupon .starContainer a.stars:hover{background:transparent url("../Images/b.png") no-repeat -22px -330px;}
+/*.mod-coupon .starContainer a.stars.fav:hover{background:transparent url("../Images/darker_sprite_11199_.png") no-repeat -18px -94px}*/
+.starchoosed {background:transparent url("../Images/b.png") no-repeat -22px -330px;width:16px;height:16px;cursor:pointer;display:inline-block;margin-bottom:-5px;margin-left:5px}
+/*.mod-coupon .starContainer .arrows{height:13px;width:15px;background:transparent url("../Images/mantis-sprite_11199_.png") no-repeat left -1234px;cursor:pointer;display:inline-block;padding:0 4px 0 0;margin-left:-1px}*/
+.mod-coupon .matchContainer { padding-bottom:5px;}
+.mod-coupon .matchContainer .description { text-decoration:none;}
+.mod-coupon .inplaynow-competition-header{border-bottom:1px solid #c7d5e0}
+.mod-coupon .inplaynow-competition-header .ipn-competition-name{font-size:12px;font-weight:bold;padding-bottom:5px!important;padding-top:10px!important; text-decoration:none;}
+.mod-coupon .inplaynow-competition-header .ipn-competition-name.first{padding-top:0!important; color:#3f3a47;}
+.mod-coupon .name .home-team {color:#2489d5;font-weight:bold;margin-right:2px;}
+.mod-coupon .name .inplaynow-score {color:#8fb600; margin-right:4px; font:bold 11px "Tahoma", sans-serif;}
+.mod-coupon .name .away-team {color:#2489d5;font-weight:bold;margin-right:2px;}
+.mod-coupon .name .dtstart {color:#9eb600;font-weight:bold;margin-right:2px;}
+.mod-coupon td.other-markets{width:3em;padding-left:1em;padding-bottom:4px}
+.mod-coupon td.other-markets.multiples{width:4.9em}
+.mod-coupon td.other-markets a, .mod-coupon td.multiples a{margin-top:5px}
+.mod-coupon td.other-markets.multiples span{margin-top:3px}
+.mod-coupon td.other-markets a{color:#2789ce;font:11px "Tahoma",sans-serif;text-decoration:none;text-indent:-999em;overflow:hidden;text-transform:capitalize;background:transparent url("../Images/b.png") no-repeat -56px -413px;float:left;height:12px;width:12px;margin-left:2px}
+.mod-coupon td.other-markets a:active{background:transparent url("../Images/b.png") no-repeat -70px -413px;}
+.mod-coupon td.other-markets a:hover{background:transparent url("../Images/b.png") no-repeat -70px -413px;}
+.cta { background: rgb(255, 255, 255); border-width: 0px; border-style: solid; border-color: rgb(198, 213, 224) rgb(198, 213, 224) rgb(59, 81, 96); border-radius: 1px; color: rgb(39, 58, 71); overflow: visible; font-weight: bold; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#eaf0f5); cursor: pointer; zoom: 1; -moz-border-radius: 1px 1px 1px 1px; -webkit-border-radius: 1px 1px 1px 1px;}
+.cta:hover {background: rgb(255, 255, 255); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#dce3ea); zoom: 1;}
+.cta-back {padding: 0px; width: 3.6em; height: 2.3em; font-weight: normal; margin-left:2px;}
+.cta-back {background: #72bbef; border-color: rgb(132, 196, 241) rgb(132, 196, 241) rgb(83, 172, 235); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#72bbef,endColorstr=#72bbef); zoom: 1;}
+.cta-back:hover {background: #2797e6; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#1997e6,endColorstr=#1997e6); zoom: 1;}
+.active.cta-back {background: rgb(145, 204, 234); border-color: rgb(24, 93, 141) rgb(39, 151, 230) rgb(39, 151, 230); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#91ccea,endColorstr=#91ccea); zoom: 1; box-shadow: inset 0px 0px 4px 0px #2797e6; -moz-box-shadow: inset 0 0 4px 0 #2797e6; -webkit-box-shadow: inset 0 0 4px 0 #2797e6;}
+.cta-lay {padding: 0px; width: 3.6em; height: 2.3em; font-weight: normal;margin-left:2px;}
+.cta-lay {background: #faa9ba; border-color: rgb(251, 175, 191) rgb(251, 175, 191) rgb(250, 160, 178); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f994a9,endColorstr=#f994a9); zoom: 1;}
+.cta-lay:hover {background: #f994a9; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f994a9,endColorstr=#f994a9); zoom: 1;}
+.active.cta-lay {background: rgb(255, 198, 210); border-color: rgb(168, 100, 114) rgb(249, 148, 169) rgb(249, 148, 169); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffc6d2,endColorstr=#ffc6d2); zoom: 1; box-shadow: inset 0px 0px 4px 0px #b96e7e; -moz-box-shadow: inset 0 0 4px 0 #b96e7e; -webkit-box-shadow: inset 0 0 4px 0 #b96e7e;}
+.betContainermouseover { background: #eef2f3;}
+/*#tabInPlay ul li { width:15%; padding-left:5%; font-weight:bolder;}*/
+.iphp-notice{color:#3b5160;background-color:#fff9c9;border:1px solid #dadee5;font-size:12px;font-weight:bold;line-height:32px;text-align:center; width:100%;}
+.bf-icon-refresh {border:none;background: url("../Images/b.png") no-repeat 0px -354px; padding: 0px; width: 16px; height: 16px; z-index:100; position:relative; left:90%; margin-top:5px; cursor:pointer;}
+.bf-icon-refresh-selected {border:none;background: url("../Images/b.png") no-repeat -26px -354px; padding: 0px; width: 16px; height: 16px; z-index:100; position:relative; left:90%; margin-top:5px; cursor:pointer;}
+.mod-coupon .status{overflow:visible; position:relative;}
+.mod-coupon td.status{overflow:hidden;width:1px}
+.mod-coupon .status-overlay{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCffffff,endColorstr=#CCffffff);}
+.mod-coupon .status-overlay{color:#ff0000;border:solid 1px #ff0000;background:rgba(255,255,255,0.8);display:block;position:absolute;margin:-14px 0 0 -330px;text-align:center;line-height:23px;padding-top:1px; z-index:100;}
+.mod-coupon .view-all{ text-decoration:none; color:Black;}
+/*.fbCalander { width:100%;}
+#tabFbCalendar {border-bottom:none;}*/
+
+/*Top3*/
+.buttonsContainer{ width:auto; height:25px; padding-left:2px; border-left:1px solid #3b5160; float:right;}
+.mkt-refresh-btn{ width:16px; height:16px; line-height:1em; text-indent:10px; padding:0px 0px 0px 9px; margin:4px; border:0 none; float:right; cursor:pointer; background:url(../Images/b.png) no-repeat 0px -380px;}
+.mkt-refresh-btn:hover {background: url(../Images/b.png) no-repeat -26px -380px;}
+.bf-icon-rules{width:auto;color:#fff; text-indent:8px;padding:2px 0px 2px 10px;  margin:3px 4px;border:0 none; font-size:10px;float:right;cursor:pointer;background:url(../Images/b.png) no-repeat 0px -434px;display:inline-block;}
+.bf-icon-rules:hover {background: url(../Images/b.png) no-repeat 0px -460px;}
+.infoContainer{ width:auto; height:25px;border-right:1px solid #273a47; float:right; }
+.mkt-status-icon-enabled{ background:url(../Images/b.png) no-repeat 0px -543px; top:4px; height:16px; line-height:16px; padding:0px; margin:0px 3px; position:relative; overflow:hidden; text-transform:capitalize;text-indent:16px;display:block; float:right;}
+.mkt-status-icon-disabled{ background:url(../Images/b.png) no-repeat 0px -517px; top:4px; height:16px; line-height:16px; padding:0px; margin:0px 3px; position:relative; overflow:hidden;text-transform:capitalize;text-indent:16px;display:block; float:right;}
+.cashout-icon{ width:16px; height:16px; margin-top:4px; float:right; display:block; cursor:default; color:#fff; font-size:11px; line-height:25px; background:url(../Images/b.png) no-repeat 0px 0px;}
+.bf-multiples-m-icon{ background:url(../Images/b.png) no-repeat 0px -569px;width:16px; height:16px; margin:4px 1px 3px 6px; float:right;}
+.sub-heading-text{ top:-999em; width:0px; position:absolute; color:#273a47;line-height:normal;font-family:"Helvetica Neue", sans-serif;font-size:13px !important; font-variant:normal;}
+.total-matched-container{ color:#fff; line-height:25px; font-size:11px; cursor:default; overflow:hidden;white-space:nowrap;padding-top:0px; margin-top:0px;}
+.mkt-name{color:#fff;white-space:nowrap;line-height:normal; padding:7px 3px 0px 0px; font-size:10px; font-weight:bold; float:left; }
+.total-matched-lbl{color:#fff;line-height:normal;font-size:10px;  font-weight:bold; padding-top:6px;white-space:nowrap;}
+.total-matched-val{color:#fff;white-space:nowrap;}
+.cashout-result{padding-top:4px;padding-right:4px;padding-left:4px; padding-bottom:0px;position:relative; z-index:2; background-color:rgb(198, 213, 224); padding-bottom:8px; display:none;}
+.message{ padding:8px 50px 8px 8px; margin:4px 4px 0px 4px; background-color:#fff;}
+.cont-runners{ padding:2px 16px 16px 16px; min-height:65px; color:#273a47; line-height:1;}
+.cont-runners table{ border-spacing:0;border-collapse:collapse;width:100%;}
+.matched-values{ color:#7e97a7; padding:0px 0px 5px 0px; text-align:left;}
+.back{vertical-align:bottom;border-bottom:2px solid #2797e6; padding:0px 0px 4px 0px; text-align:center; }
+.book-percentage-hidden{display:none;}
+.back-label{text-align:center;padding-top:2px;padding-bottom:2px;white-space:nowrap; display:block;font-weight:normal;}
+.back-all{ background:url(../Images/b.png) no-repeat 0px -106px; font-size:0px; cursor:pointer; width:16px; height:16px; display:block; margin:0 auto;}
+.lay{vertical-align:bottom;border-bottom:2px solid #f994a9; padding:0px 0px 4px 0px; text-align:center;}
+.lay-label{ text-align:center; padding-top:2px; padding-bottom:2px;white-space:nowrap;display:block; font-weight:normal;}
+.lay-all{ background:url(../Images/b.png) no-repeat 0px -184px; font-size:0px; cursor:pointer; width:16px; height:16px; display:block; margin:0 auto;}
+.runner-row{border-top:1px solid #e0e6e6;border-bottom:0 none;}
+.runner-name{border-top:1px solid #e0e6e6;border-bottom:0 none;min-width:177px;cursor:pointer;vertical-align:middle;}
+.mkt-activity{width:16px; height:16px; margin-left:2px;vertical-align:middle;display:inline-block;cursor:pointer;background:url(../Images/b.png) no-repeat 0px -2079px;}
+.sel-name{ overflow:hidden; padding-bottom:2px;vertical-align:middle;cursor:pointer;}
+.odds{ width:37px; padding:1px 0px 0px 1px;}
+.bet-button{width:48px;height:32px; display:block; color:#273a47; border:1px solid #c4d4e1; background-color:#fff; min-height:25px; font-weight:bold; padding-bottom:2px; font-weight:bold; position:relative;}
+.price{margin-bottom:-4px; display:block; text-align:center; font-weight:bold; height:1.5em; cursor:pointer; color:#273a47;}
+.size{font-size:11px;font-weight:normal;}
+.cta-back{background-color:rgb(114, 187, 239);}
+.cta-backred{background-color:rgb(114, 187, 239);}
+.cta-lay{background-color:rgb(250, 169, 186);}
+.header-runners{height:25px; color:#fff; line-height:25px; padding:0px 4px 0px 9px; font-size:10px; cursor:default; background-color:rgb(39, 58, 71);}
+.mkt-runners-container{color:#273a47; line-height:1; border:1px solid #e0e6e6; min-width:400px; background-color:#fff; box-shadow:inset 0px -1px 0px 0px #e0e6e6;}
+.mod-marketview{height:100%; color:#273a47; line-height:1; position:relative; background-color:#fff; z-index:1;}
+.runner-name:hover{ color:#7e97a7;}
+.cta-back:hover {background-color:#2797e6;zoom: 1;}
+.cta-lay:hover{background-color:#f994a9;zoom: 1;}
+.matched-values span,.matched-values a{ font-weight:normal;}
+.matched-values a{ color:#2489d5; text-decoration:none;}
+.matched-values a:hover{color:#2489d5;text-decoration:underline;}
+.matched-values span{color:#7e97a7;}
+.matched-values a:active{color:#2489d5;}
+.matched-filter {padding-left: 4px; padding-right: 4px;}
+/**-top1-**/
+.header-runnershtwo{height:25px; color:#fff; line-height:25px; padding:0px 4px 0px 9px; font-size:10px; cursor:default; background-color:rgb(39, 58, 71);cursor:pointer;}
+.headerban{display:block; float:left; color:#fff; font-size:10px; line-height:26px; text-decoration:none;}
+.arrow-open{background: url(../images/b.png) no-repeat 0px -308px; display:block; float:left; width:11px; height:7px; color:#fff; margin-top:11px; margin-right:2px; margin-left:0px;cursor:pointer;}
+.arrow-close{background: url(../images/b.png) no-repeat 0px -287px; display:block; float:left; width:11px; height:7px; color:#fff; margin-top:11px; margin-right:2px; margin-left:0px;cursor:pointer;}
+.market-title{ display:block; float:left; cursor:pointer; font-weight:bold; font-size:10px;}
+.bf-icon-rulestw{width:16px;height:16px;margin-right:5px;font-size:13px; line-height:26px;color:#fff; text-indent:8px;margin-top:4px;border:0 none; font-size:11px;float:right;cursor:pointer;background:url(../images/b.png) no-repeat 0px -435px;display:inline-block;}
+.bf-icon-rulestw:hover{background:url(../images/b.png) no-repeat 0px -461px;}
+.going-inplay-icon-enabled{background:url(../images/b.png) no-repeat 0px -543px; width:17px; height:16px; margin-top:4px; margin-right:2px; float:right; display:block;}
+.going-inplay-icon-disabled{background:url(../images/b.png) no-repeat 0px -517px; width:17px; height:16px; margin-top:4px; margin-right:2px; float:right; display:block;}
+.bf-icon-refresh1{width:16px;height:16px;margin-right:5px;font-size:13px; line-height:26px;color:#fff; text-indent:8px;margin-top:4px;border:0 none; font-size:11px;float:right;cursor:pointer;background:url(../images/b.png) no-repeat 0px -380px;display:inline-block;}
+.bf-icon-refresh1:hover{background:url(../images/b.png) no-repeat -26px -380px;}
+.bf-icon-cashout1{background:url(../images/b.png) no-repeat 0px 0px; width:17px; height:16px; margin-top:4px; margin-right:2px; float:right; display:block;}
+.matched-viewFullTr{height:25px;}
+.matched-viewFull{text-align: right;font-size:11px;}
+.matched-viewFull a{font-weight:normal;color:#2489d5;text-decoration:none;margin-top:5px;}
+.matched-valuesTop1 {color:#7e97a7; padding:0px 0px 5px 0px;font-weight:normal;text-align:center;}
+.cont-runners .status-overlay{filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCffffff,endColorstr=#CCffffff);}
+.cont-runners .status-overlay{color:#ff0000;border:solid 1px #ff0000;background:rgba(255,255,255,0.8);display:block;position:absolute;margin:-15px 0 0 -330px;text-align:center;line-height:23px;padding-top:1px; z-index:100;}
+
+/*Bets*/
+.mod-tab-container-betslip {min-width: 334px;background: #f2f4f6;border: 1px solid #e0e4e3;-moz-box-shadow: 0 5px 5px -5px #888;-webkit-box-shadow: 0 5px 5px -5px #888;box-shadow: 0 5px 5px -5px #888;margin-bottom: 16px;}
+.right-module-header {font: bold 18px "Helvetica Neue",sans-serif;color: #273a47;background: #243a48;background: -moz-linear-gradient(top,#243a48 0,#2b3942 100%);background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#243a48),color-stop(100%,#2b3942));background: -webkit-linear-gradient(top,#243a48 0,#2b3942 100%);background: -o-linear-gradient(top,#243a48 0,#2b3942 100%);background: -ms-linear-gradient(top,#243a48 0,#2b3942 100%);background: linear-gradient(to bottom,#243a48 0,#2b3942 100%);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#243a48,endColorstr=#2b3942);zoom: 1;height: 25px;z-index: 0;}
+.right-module-header .arrow {background: transparent url("../Images/b.png") no-repeat left -287px;height: 20px;width: 18px;right: 0;position: absolute;z-index: 1; margin-top:10px;}
+/*.right-module-header.open .arrow {background: transparent url("../Images/mantis-sprite_11290_.png") no-repeat 0 -1349px;}*/
+.right-module-header em {display: block;width: 100%;height: 32px;cursor: pointer;font-style: normal;font-weight: bold;position: absolute;z-index: 0;text-transform: none; color:White; font-size:13px; margin-top:5px;}
+.mod-betslip {position: relative;overflow:hidden;}
+.mod-betslip .potential-bets-container{padding: 8px;}
+.mod-betslip .bets {overflow: hidden;padding: 1px;position: relative;}
+.mod-betslip div.back,.mod-betslip div.lay{display: inline;zoom: 1;}
+.mod-betslip table {width: 100%;margin-bottom: 8px;}
+.mod-betslip thead {background: #e0e6e6;}
+.mod-betslip table th:first-child { width:100px;}
+.mod-betslip tbody {display: table-row-group;vertical-align: middle;border-color: inherit;}
+.mod-betslip th.profit, .mod-betslip td.profit {width: 60px;text-align: right; padding-right:1px;}
+.mod-betslip div.back table thead th{border-bottom: 2px solid #2797e6;}
+.mod-betslip div.lay table thead th{border-bottom: 2px solid #f994a9;}
+.mod-betslip th.runner {text-align: left;padding-left: 5px; width:127px;}
+.mod-betslip th.odds{width: 55px;}
+.mod-tab-container-betslip table {border-collapse: separate;}
+.mod-tab-container-betslip tr.event-name th {font-weight: normal;}
+.mod-betslip table tr th:first-child {text-align: left;}
+.mod-betslip .back .bet{background: #beddf4;}
+.mod-betslip .lay .bet{background: #f3dce2;}
+.mod-betslip .delete input {text-indent: -9999px;background: transparent url("../Images/b.png") no-repeat left -241px;width: 10px;height: 10px;border: 0;cursor: pointer;}
+.mod-betslip td.delete {width:16px;}
+.mod-betslip td.runner {width: 106px;text-align: left;padding-left: 5px; height:34px;}
+.mod-betslip div td.runner span.team-name {max-width: 106px;white-space: nowrap;overflow: hidden; height:15px; display:block; text-align:left; font-weight:bold;}
+.mod-betslip div td.runner span.market-name {max-width: 106px;font-weight: normal; height:14px;text-align:left;display:block;}
+.mod-betslip .bet label {position: absolute;top: -9999em;display: block;width: 45px;}
+.mod-betslip table input.text {width: 44px;padding: 2px;border: 1px solid #e0e6e6;text-align: right;color: #273a47;}
+.mod-tab-container-betslip td.odds {text-align: left;}
+.mod-betslip .back tbody tr.bet td.odds span {vertical-align: middle;}
+.bf-spinner {display: inline-block;zoom: 1;vertical-align: middle;}
+.bf-spinner-content {position: relative;}
+.mod-betslip table .odds input.text {width: 35px;}
+.mod-betslip table input.text {width: 44px;padding: 2px;border: 1px solid #e0e6e6;text-align: right;color: #273a47;}
+.bf-spinner-increment {top: 0;bottom: 50%;background: #eee url(../Images/arrows_11290_.png) no-repeat 1px 1px;}
+.bf-spinner-decrement {bottom: 0;top: 50%;background: #eee url(../Images/arrows_11290_.png) no-repeat 1px -34px;}
+.bf-spinner-increment, .bf-spinner-decrement {position: absolute;left: 100%;width: 13px;overflow: hidden;text-indent: -10em;border: 1px solid #ccc;margin: 0;padding: 0;cursor: pointer;}
+.mod-betslip .bet td {font-weight: normal;text-align: center;}
+.mod-betslip td.stake-cell {white-space: nowrap; text-align:center;}
+.mod-tab-container-betslip td.profit {width: 65px;}
+.mod-betslip td.profit {width: 60px;text-align: right; padding-right:1px;}
+.mod-betslip .back,.mod-betslip .lay{border-bottom:0; }
+
+.betfooter {border-top: 1px solid #e0e6e6;padding: 8px 0 0;margin-top: -8px;}
+.mod-betslip .totals {font-size: 12px;margin-bottom: 8px;text-align: right;list-style: none;}
+.buttons, .buttons ul {margin: 8px 0 0;overflow: hidden;list-style: none;zoom: 1;}
+.buttons li {float: right;margin: 0 0 0 8px;}
+.mod-betslip .buttons .cta {max-width: 140px;text-align: center;white-space: normal;display: block;}
+.buttons li.minor {float: left;margin: 0 4px 0 0;}
+.cta-primary {background: #ffe659;background: -webkit-gradient(linear,left top,left bottom,from(#ffe659),to(#ffb80c));background: -moz-linear-gradient(top,#ffe659,#ffb80c);-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffe659,endColorstr=#ffb80c);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffe659,endColorstr=#ffb80c);zoom: 1;border-color: #fa2 #ffaa22 #bf7c12;font-weight: bold;}
+.cta-primary:hover {background: #ffe659;background: -webkit-gradient(linear,left top,left bottom,from(#ffe659),to(#fa2));background: -moz-linear-gradient(top,#ffe659,#fa2);-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffe659,endColorstr=#ffaa22);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffe659,endColorstr=#ffaa22);zoom: 1;cursor: pointer;}
+.cta-secondary {background: #fff;background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#efefef));background: -moz-linear-gradient(top,#fff,#efefef);-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#efefef);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#efefef);zoom: 1;border: 1px solid #c7d5e0;border-bottom-color: #7e97a7;color: #3b5160;font-weight: bold;padding: 4px 5px 5px;}
+.cta-minor {font-weight: normal;background: #fafafa;background: -webkit-gradient(linear,left top,left bottom,from(#fafafa),to(#e5e5e5));background: -moz-linear-gradient(top,#fafafa,#e5e5e5);-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fafafa,endColorstr=#e5e5e5);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fafafa,endColorstr=#e5e5e5);zoom: 1;}
+.betfooter .cta {filter: none;border: 1px solid #c7d5e0;border-bottom-color: #7e97a7;cursor: pointer;padding: 4px 5px 5px;-moz-border-radius: 0;-webkit-border-radius: 0;border-radius: 0;color: #273a47;overflow: visible;}
+
+/*Match Real Info*/
+.matchRealInfo { padding-bottom:2px;padding-left:4px}
+.matchRealInfo .description { text-decoration:none;}
+.hometeam {color:#2489d5;font-weight:bold;margin-right:2px;}
+.inplaynowscore {color:#2789ce; margin-right:4px;}
+.awayteam {color:#2489d5;font-weight:bold;margin-right:2px;}
+.dtstart {color:#9eb600;font-weight:bold;margin-right:2px;}

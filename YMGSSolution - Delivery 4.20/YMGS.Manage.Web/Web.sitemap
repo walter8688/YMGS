@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="首页" resourceKey="125"   description="首页">
+    <siteMapNode url="" title="系统管理" resourceKey="1000" description="系统管理">
+      <siteMapNode url="SystemSetting/UserManage.aspx" title="会员帐户管理" resourceKey="1001" description="会员帐户管理" />
+      <siteMapNode url="SystemSetting/RoleManageFrm.aspx" title="角色和权限管理" resourceKey="1051"   description="角色和权限管理" />
+      <siteMapNode url="SystemSetting/AgentManagePage.aspx" title="代理管理" resourceKey="1101"   description="代理管理" />
+      <siteMapNode url="SystemSetting/VCardManagePage.aspx" title="V网卡管理" resourceKey="1151"   description="V网卡管理" />
+      <siteMapNode url="SystemSetting/WithdrawalManagePage.aspx" title="会员提现管理" resourceKey="1251"   description="会员提现管理" />
+      <siteMapNode url="SystemSetting/AgentApplyManagePage.aspx" title="代理申请管理" resourceKey="1301"   description="代理申请管理" />
+    </siteMapNode>
+
+    <siteMapNode url="" title="赛事管理" resourceKey="2000" description="赛事管理">
+      <siteMapNode url="EventManage/EventManagePage.aspx" title="赛事管理" resourceKey="2051" description="赛事管理" />
+      <siteMapNode url="EventManage/EventZoneManagePage.aspx" title="赛事区域管理" resourceKey="2001" description="赛事区域管理" />
+      <siteMapNode url="EventManage/TeamManagePage.aspx" title="参赛成员管理" resourceKey="2101" description="参赛成员管理" />
+      
+    </siteMapNode>
+
+    <siteMapNode url="" title="比赛市场管理" resourceKey="3000" description="比赛市场管理">
+      <siteMapNode url="GameMarket/MatchManageFrm.aspx" title="比赛管理" resourceKey="3101" description="比赛管理" />
+      <siteMapNode url="GameMarket/ChampionGameManagePage.aspx" title="冠军交易管理" resourceKey="3151" description="冠军交易管理" />
+      <siteMapNode url="GameMarket/GameMarketManageFrm.aspx" title="市场模板管理" resourceKey="3051" description="市场模板管理" />      
+    </siteMapNode>
+
+    <siteMapNode url="" title="赛中控制" resourceKey="4000" description="赛中控制">
+      <siteMapNode url="GameControl/GameControlPage.aspx" title="比赛控制" resourceKey="4001" description="比赛控制" />
+    </siteMapNode>
+
+    <siteMapNode url="" title="赛后结算" resourceKey="5000" description="赛后结算">
+      <siteMapNode url="GameSettle/MatchSettleFrm.aspx" title="比赛结算" resourceKey="5001" description="比赛结算" />
+      <siteMapNode url="GameSettle/ChampionEventSettleFrm.aspx" title="冠军赛事结算" resourceKey="5010" description="冠军比赛结算" />
+      <siteMapNode url="GameSettle/CommissionManagePage.aspx" title="佣金管理" resourceKey="5051" description="佣金管理" />
+    </siteMapNode>
+
+    <siteMapNode url="" title="辅助管理" resourceKey="6000" description="辅助管理">
+      <siteMapNode url="AssistManage/ParamZoneManage.aspx" title="区域管理" resourceKey="6001" description="区域管理" />
+      <siteMapNode url="AssistManage/OddsCompare.aspx" title="赔率对比管理" resourceKey="6051" description="赔率对比管理" />
+      <siteMapNode url="SystemSetting/ADRegion.aspx" title="广告位信息管理" resourceKey="6101" description="广告位信息管理" />
+      <siteMapNode url="AssistManage/HotLine.aspx" title="网站公告管理" resourceKey="6151" description="网站公告管理" />
+      <siteMapNode url="AssistManage/HelperNewPage.aspx" title="文章管理" resourceKey="6251" description="文章管理" />
+      
+      <siteMapNode url="AssistManage/ParameterManagePage.aspx" title="参数管理" resourceKey="6201" description="参数管理" />
+    </siteMapNode>
+
+    <siteMapNode url="" title="报表中心" resourceKey="7000" description="报表中心">
+      <siteMapNode url="ReportCenter/BetReportFrm.aspx" title="下注报表" resourceKey="7001" description="下注报表" />
+      <siteMapNode url="ReportCenter/DealReportFrm.aspx" title="交易报表" resourceKey="7051" description="交易报表" />
+      <siteMapNode url="ReportCenter/FundReportFrm.aspx" title="资金报表" resourceKey="7101" description="资金报表" />
+      <siteMapNode url="ReportCenter/IntegralReportFrm.aspx" title="佣金报表" resourceKey="7151" description="佣金报表" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

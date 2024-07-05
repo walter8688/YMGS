@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSTimeZone" targetNamespace="http://tempuri.org/DSTimeZone.xsd" xmlns:mstns="http://tempuri.org/DSTimeZone.xsd" xmlns="http://tempuri.org/DSTimeZone.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSTimeZone" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSTimeZone" msprop:Generator_UserDSName="DSTimeZone">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_TIMEZONE" msprop:Generator_TableClassName="TB_TIMEZONEDataTable" msprop:Generator_TableVarName="tableTB_TIMEZONE" msprop:Generator_TablePropName="TB_TIMEZONE" msprop:Generator_RowDeletingName="TB_TIMEZONERowDeleting" msprop:Generator_UserTableName="TB_TIMEZONE" msprop:Generator_RowChangingName="TB_TIMEZONERowChanging" msprop:Generator_RowEvHandlerName="TB_TIMEZONERowChangeEventHandler" msprop:Generator_RowDeletedName="TB_TIMEZONERowDeleted" msprop:Generator_RowEvArgName="TB_TIMEZONERowChangeEvent" msprop:Generator_RowChangedName="TB_TIMEZONERowChanged" msprop:Generator_RowClassName="TB_TIMEZONERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TIMEZONE_ID" msprop:Generator_ColumnVarNameInTable="columnTIMEZONE_ID" msprop:Generator_ColumnPropNameInRow="TIMEZONE_ID" msprop:Generator_ColumnPropNameInTable="TIMEZONE_IDColumn" msprop:Generator_UserColumnName="TIMEZONE_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="TIMEZONE_NAME" msprop:Generator_ColumnVarNameInTable="columnTIMEZONE_NAME" msprop:Generator_ColumnPropNameInRow="TIMEZONE_NAME" msprop:Generator_ColumnPropNameInTable="TIMEZONE_NAMEColumn" msprop:Generator_UserColumnName="TIMEZONE_NAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

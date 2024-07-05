@@ -1,0 +1,70 @@
+IF EXISTS ( SELECT  *
+            FROM    sysobjects
+            WHERE   id = OBJECT_ID(N'[dbo].[pr_get_match_by_param]')
+                    AND OBJECTPROPERTY(id, N'Isprocedure') = 1 ) 
+    DROP PROCEDURE [dbo].[pr_get_match_by_param]
+GO
+CREATE PROCEDURE [dbo].[pr_get_match_by_param]
+    (
+      @Match_Name nvarchar(100),
+      @Match_Event_Zone int,
+      @Match_Event_Item int,
+      @Event_Name nvarchar(100),
+      @Start_Date datetime,
+      @End_Date datetime
+    )
+AS 
+BEGIN
+	SELECT	A.MATCH_ID,
+			A.MATCH_NAME,
+			A.MATCH_NAME_EN,
+			E.EVENTTYPE_NAME,
+			D.EVENTITEM_NAME,
+			C.EVENTZONE_NAME,
+			A.EVENT_ID,
+			B.EVENT_NAME,		
+			A.MATCH_DESC,
+			A.EVENT_HOME_TEAM_ID,
+			A.EVENT_HOME_GUEST_ID,
+			A.STARTDATE,
+			A.ENDDATE,
+			A.AUTO_FREEZE_DATE,
+			A.HOME_FIR_HALF_SCORE,
+			A.GUEST_FIR_HALF_SCORE,
+			A.HOME_SEC_HALF_SCORE,
+			A.GUEST_SEC_HALF_SCORE,
+			A.HOME_OVERTIME_SCORE,
+			A.GUEST_OVERTIME_SCORE,
+			A.HOME_POINT_SCORE,
+			A.GUEST_POINT_SCORE,
+			A.HOME_FULL_SCORE,
+			A.GUEST_FULL_SCORE,
+			A.[STATUS],
+			A.ADDITIONALSTATUS,
+			A.RECOMMENDMATCH,
+			A.CREATE_USER,
+			A.CREATE_TIME,
+			A.LAST_UPDATE_USER,
+			A.LAST_UPDATE_TIME,
+			T1.EVENT_TEAM_NAME EVENT_HOME_TEAM_NAME,
+			T2.EVENT_TEAM_NAME EVENT_GUEST_TEAM_NAME,
+			A.SETTLE_STATUS
+	FROM dbo.TB_MATCH A
+	LEFT JOIN TB_EVENT B ON A.EVENT_ID=B.EVENT_ID
+	LEFT JOIN TB_EVENT_ZONE C ON B.EVENTZONE_ID=C.EVENTZONE_ID
+	LEFT JOIN TB_EVENT_ITEM D ON C.EVENTITEM_ID=D.EVENTITEM_ID
+	LEFT JOIN TB_EVENT_TYPE E ON D.EVENTTYPE_ID=E.EVENTTYPE_ID
+	LEFT JOIN TB_EVENT_TEAM T1 ON A.EVENT_HOME_TEAM_ID=T1.EVENT_TEAM_ID
+	LEFT JOIN TB_EVENT_TEAM T2 ON A.EVENT_HOME_GUEST_ID=T2.EVENT_TEAM_ID	
+	WHERE 
+		(@Match_Name is null OR A.MATCH_NAME LIKE '%' + @Match_Name + '%')
+		AND
+		(@Match_Event_Item is null OR @Match_Event_Item=-1 OR C.EVENTITEM_ID=@Match_Event_Item)
+		AND
+		(@Event_Name is null OR B.EVENT_NAME LIKE '%' + @Event_Name + '%')
+		AND (@Match_Event_Zone IS NULL OR @Match_Event_Zone=-1 OR B.EVENTZONE_ID=@Match_Event_Zone)
+		AND (@Start_Date is null OR A.STARTDATE>=@Start_Date)
+		AND (@End_Date is null OR A.STARTDATE<=@End_Date)
+	ORDER BY STARTDATE DESC
+END
+GO

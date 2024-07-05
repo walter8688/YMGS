@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSExchangeSettle" targetNamespace="http://tempuri.org/DSExchangeSettle.xsd" xmlns:mstns="http://tempuri.org/DSExchangeSettle.xsd" xmlns="http://tempuri.org/DSExchangeSettle.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YGMSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YGMSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YGMSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSExchangeSettle" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSExchangeSettle" msprop:Generator_UserDSName="DSExchangeSettle">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_EXCHANGE_SETTLE" msprop:Generator_TableClassName="TB_EXCHANGE_SETTLEDataTable" msprop:Generator_TableVarName="tableTB_EXCHANGE_SETTLE" msprop:Generator_TablePropName="TB_EXCHANGE_SETTLE" msprop:Generator_RowDeletingName="TB_EXCHANGE_SETTLERowDeleting" msprop:Generator_UserTableName="TB_EXCHANGE_SETTLE" msprop:Generator_RowChangingName="TB_EXCHANGE_SETTLERowChanging" msprop:Generator_RowEvHandlerName="TB_EXCHANGE_SETTLERowChangeEventHandler" msprop:Generator_RowDeletedName="TB_EXCHANGE_SETTLERowDeleted" msprop:Generator_RowEvArgName="TB_EXCHANGE_SETTLERowChangeEvent" msprop:Generator_RowChangedName="TB_EXCHANGE_SETTLERowChanged" msprop:Generator_RowClassName="TB_EXCHANGE_SETTLERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EXCHANGE_SETTLE_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnEXCHANGE_SETTLE_ID" msprop:Generator_ColumnPropNameInRow="EXCHANGE_SETTLE_ID" msprop:Generator_ColumnPropNameInTable="EXCHANGE_SETTLE_IDColumn" msprop:Generator_UserColumnName="EXCHANGE_SETTLE_ID" type="xs:int" />
+              <xs:element name="EXCHANGE_DEAL_ID" msprop:Generator_ColumnVarNameInTable="columnEXCHANGE_DEAL_ID" msprop:Generator_ColumnPropNameInRow="EXCHANGE_DEAL_ID" msprop:Generator_ColumnPropNameInTable="EXCHANGE_DEAL_IDColumn" msprop:Generator_UserColumnName="EXCHANGE_DEAL_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="WIN_USER_ID" msprop:Generator_ColumnVarNameInTable="columnWIN_USER_ID" msprop:Generator_ColumnPropNameInRow="WIN_USER_ID" msprop:Generator_ColumnPropNameInTable="WIN_USER_IDColumn" msprop:Generator_UserColumnName="WIN_USER_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="LOSE_USER_ID" msprop:Generator_ColumnVarNameInTable="columnLOSE_USER_ID" msprop:Generator_ColumnPropNameInRow="LOSE_USER_ID" msprop:Generator_ColumnPropNameInTable="LOSE_USER_IDColumn" msprop:Generator_UserColumnName="LOSE_USER_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="WIN_INTEGRAL" msprop:Generator_ColumnVarNameInTable="columnWIN_INTEGRAL" msprop:Generator_ColumnPropNameInRow="WIN_INTEGRAL" msprop:Generator_ColumnPropNameInTable="WIN_INTEGRALColumn" msprop:Generator_UserColumnName="WIN_INTEGRAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LOSE_INTEGRAL" msprop:Generator_ColumnVarNameInTable="columnLOSE_INTEGRAL" msprop:Generator_ColumnPropNameInRow="LOSE_INTEGRAL" msprop:Generator_ColumnPropNameInTable="LOSE_INTEGRALColumn" msprop:Generator_UserColumnName="LOSE_INTEGRAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BROKERAGE" msprop:Generator_ColumnVarNameInTable="columnBROKERAGE" msprop:Generator_ColumnPropNameInRow="BROKERAGE" msprop:Generator_ColumnPropNameInTable="BROKERAGEColumn" msprop:Generator_UserColumnName="BROKERAGE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SETTLE_AMOUNT" msprop:Generator_ColumnVarNameInTable="columnSETTLE_AMOUNT" msprop:Generator_ColumnPropNameInRow="SETTLE_AMOUNT" msprop:Generator_ColumnPropNameInTable="SETTLE_AMOUNTColumn" msprop:Generator_UserColumnName="SETTLE_AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SETTLE_TIME" msprop:Generator_ColumnVarNameInTable="columnSETTLE_TIME" msprop:Generator_ColumnPropNameInRow="SETTLE_TIME" msprop:Generator_ColumnPropNameInTable="SETTLE_TIMEColumn" msprop:Generator_UserColumnName="SETTLE_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_UserColumnName="STATUS" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_EXCHANGE_SETTLE" />
+      <xs:field xpath="mstns:EXCHANGE_SETTLE_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

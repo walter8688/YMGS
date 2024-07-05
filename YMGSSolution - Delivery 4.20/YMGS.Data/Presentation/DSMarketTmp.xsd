@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSMarketTmp" targetNamespace="http://tempuri.org/DSMarketTmp.xsd" xmlns:mstns="http://tempuri.org/DSMarketTmp.xsd" xmlns="http://tempuri.org/DSMarketTmp.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSMarketTmp" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSMarketTmp" msprop:Generator_UserDSName="DSMarketTmp">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MarketTmp" msprop:Generator_TableClassName="MarketTmpDataTable" msprop:Generator_TableVarName="tableMarketTmp" msprop:Generator_TablePropName="MarketTmp" msprop:Generator_RowDeletingName="MarketTmpRowDeleting" msprop:Generator_UserTableName="MarketTmp" msprop:Generator_RowChangingName="MarketTmpRowChanging" msprop:Generator_RowEvHandlerName="MarketTmpRowChangeEventHandler" msprop:Generator_RowDeletedName="MarketTmpRowDeleted" msprop:Generator_RowEvArgName="MarketTmpRowChangeEvent" msprop:Generator_RowChangedName="MarketTmpRowChanged" msprop:Generator_RowClassName="MarketTmpRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MARKET_TMP_NAME" msprop:Generator_ColumnVarNameInTable="columnMARKET_TMP_NAME" msprop:Generator_ColumnPropNameInRow="MARKET_TMP_NAME" msprop:Generator_ColumnPropNameInTable="MARKET_TMP_NAMEColumn" msprop:Generator_UserColumnName="MARKET_TMP_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="MARKET_TMP_ID" msprop:Generator_ColumnVarNameInTable="columnMARKET_TMP_ID" msprop:Generator_ColumnPropNameInRow="MARKET_TMP_ID" msprop:Generator_ColumnPropNameInTable="MARKET_TMP_IDColumn" msprop:Generator_UserColumnName="MARKET_TMP_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MARKET_STATUS" msprop:Generator_ColumnVarNameInTable="columnMARKET_STATUS" msprop:Generator_ColumnPropNameInRow="MARKET_STATUS" msprop:Generator_ColumnPropNameInTable="MARKET_STATUSColumn" msprop:Generator_UserColumnName="MARKET_STATUS" type="xs:int" minOccurs="0" />
+              <xs:element name="BET_TYPE_ID" msprop:Generator_ColumnVarNameInTable="columnBET_TYPE_ID" msprop:Generator_ColumnPropNameInRow="BET_TYPE_ID" msprop:Generator_ColumnPropNameInTable="BET_TYPE_IDColumn" msprop:Generator_UserColumnName="BET_TYPE_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MARKET_TMP_TYPE" msprop:Generator_ColumnVarNameInTable="columnMARKET_TMP_TYPE" msprop:Generator_ColumnPropNameInRow="MARKET_TMP_TYPE" msprop:Generator_ColumnPropNameInTable="MARKET_TMP_TYPEColumn" msprop:Generator_UserColumnName="MARKET_TMP_TYPE" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

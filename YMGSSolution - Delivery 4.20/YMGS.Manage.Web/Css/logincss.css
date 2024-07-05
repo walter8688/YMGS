@@ -1,0 +1,21 @@
+﻿body
+{ font-size:12px; font-family:"宋体","Arial Narrow";color:#000; background-color:#679ddc;}
+*{padding:0px; margin:0px;}
+.main
+{ background:url(../images/loginbg.jpg) no-repeat center center; height:600px; width:100%;}
+.login
+{ margin:0 auto;width:520px; height:200px; padding-top:225px;}
+.login span
+{display:block; margin-top:15px;}
+.login .sp1
+{height:28px; line-height:28px; float:left; width:150px; text-align:right; padding-right:5px; font-size:14px; font-weight:bold;}
+
+.login .sp2
+{height:28px; float:left; width:270px;
+}
+.textlogin
+{ height:26px; width:270px; border:1px solid #ddd; line-height:26px; padding-left:2px; padding-right:2px;}
+.loginc
+{ height:37px; text-align:center; padding-top:28px; overflow:hidden; clear:both; padding-left:40px;}
+.btnlogin
+{ width:131px; height:37px; cursor:pointer; background:url(../images/loginbtn.png) no-repeat 0px; border:0 none; outline:none;}

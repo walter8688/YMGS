@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSEventZone" targetNamespace="http://tempuri.org/DSEventZone.xsd" xmlns:mstns="http://tempuri.org/DSEventZone.xsd" xmlns="http://tempuri.org/DSEventZone.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSEventZone" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSEventZone" msprop:Generator_UserDSName="DSEventZone">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_EVENT_ZONE" msprop:Generator_TableClassName="TB_EVENT_ZONEDataTable" msprop:Generator_TableVarName="tableTB_EVENT_ZONE" msprop:Generator_TablePropName="TB_EVENT_ZONE" msprop:Generator_RowDeletingName="TB_EVENT_ZONERowDeleting" msprop:Generator_UserTableName="TB_EVENT_ZONE" msprop:Generator_RowChangingName="TB_EVENT_ZONERowChanging" msprop:Generator_RowEvHandlerName="TB_EVENT_ZONERowChangeEventHandler" msprop:Generator_RowDeletedName="TB_EVENT_ZONERowDeleted" msprop:Generator_RowEvArgName="TB_EVENT_ZONERowChangeEvent" msprop:Generator_RowChangedName="TB_EVENT_ZONERowChanged" msprop:Generator_RowClassName="TB_EVENT_ZONERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EVENTZONE_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnEVENTZONE_ID" msprop:Generator_ColumnPropNameInRow="EVENTZONE_ID" msprop:Generator_ColumnPropNameInTable="EVENTZONE_IDColumn" msprop:Generator_UserColumnName="EVENTZONE_ID" type="xs:int" />
+              <xs:element name="EVENTITEM_ID" msprop:Generator_ColumnVarNameInTable="columnEVENTITEM_ID" msprop:Generator_ColumnPropNameInRow="EVENTITEM_ID" msprop:Generator_ColumnPropNameInTable="EVENTITEM_IDColumn" msprop:Generator_UserColumnName="EVENTITEM_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="EVENTZONE_NAME" msprop:Generator_ColumnVarNameInTable="columnEVENTZONE_NAME" msprop:Generator_ColumnPropNameInRow="EVENTZONE_NAME" msprop:Generator_ColumnPropNameInTable="EVENTZONE_NAMEColumn" msprop:Generator_UserColumnName="EVENTZONE_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EVENTZONE_DESC" msprop:Generator_ColumnVarNameInTable="columnEVENTZONE_DESC" msprop:Generator_ColumnPropNameInRow="EVENTZONE_DESC" msprop:Generator_ColumnPropNameInTable="EVENTZONE_DESCColumn" msprop:Generator_UserColumnName="EVENTZONE_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" msprop:Generator_UserColumnName="CREATE_USER" type="xs:int" minOccurs="0" />
+              <xs:element name="CREATE_TIME" msprop:Generator_ColumnVarNameInTable="columnCREATE_TIME" msprop:Generator_ColumnPropNameInRow="CREATE_TIME" msprop:Generator_ColumnPropNameInTable="CREATE_TIMEColumn" msprop:Generator_UserColumnName="CREATE_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LAST_UPDATE_USER" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATE_USER" msprop:Generator_ColumnPropNameInRow="LAST_UPDATE_USER" msprop:Generator_ColumnPropNameInTable="LAST_UPDATE_USERColumn" msprop:Generator_UserColumnName="LAST_UPDATE_USER" type="xs:int" minOccurs="0" />
+              <xs:element name="LAST_UPDATE_TIME" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATE_TIME" msprop:Generator_ColumnPropNameInRow="LAST_UPDATE_TIME" msprop:Generator_ColumnPropNameInTable="LAST_UPDATE_TIMEColumn" msprop:Generator_UserColumnName="LAST_UPDATE_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EVENTZONE_NAME_EN" msprop:Generator_ColumnVarNameInTable="columnEVENTZONE_NAME_EN" msprop:Generator_ColumnPropNameInRow="EVENTZONE_NAME_EN" msprop:Generator_ColumnPropNameInTable="EVENTZONE_NAME_ENColumn" msprop:Generator_UserColumnName="EVENTZONE_NAME_EN" type="xs:string" minOccurs="0" />
+              <xs:element name="PARAM_ZONE_ID" msprop:Generator_ColumnVarNameInTable="columnPARAM_ZONE_ID" msprop:Generator_ColumnPropNameInRow="PARAM_ZONE_ID" msprop:Generator_ColumnPropNameInTable="PARAM_ZONE_IDColumn" msprop:Generator_UserColumnName="PARAM_ZONE_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ZONE_NAME" msprop:Generator_ColumnVarNameInTable="columnZONE_NAME" msprop:Generator_ColumnPropNameInRow="ZONE_NAME" msprop:Generator_ColumnPropNameInTable="ZONE_NAMEColumn" msprop:Generator_UserColumnName="ZONE_NAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_EVENT_ZONE" />
+      <xs:field xpath="mstns:EVENTZONE_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

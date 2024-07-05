@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSExchange_Back" targetNamespace="http://tempuri.org/DSExchange_Back.xsd" xmlns:mstns="http://tempuri.org/DSExchange_Back.xsd" xmlns="http://tempuri.org/DSExchange_Back.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSExchange_Back" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSExchange_Back" msprop:Generator_UserDSName="DSExchange_Back">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_EXCHANGE_BACK" msprop:Generator_TableClassName="TB_EXCHANGE_BACKDataTable" msprop:Generator_TableVarName="tableTB_EXCHANGE_BACK" msprop:Generator_TablePropName="TB_EXCHANGE_BACK" msprop:Generator_RowDeletingName="TB_EXCHANGE_BACKRowDeleting" msprop:Generator_UserTableName="TB_EXCHANGE_BACK" msprop:Generator_RowChangingName="TB_EXCHANGE_BACKRowChanging" msprop:Generator_RowEvHandlerName="TB_EXCHANGE_BACKRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_EXCHANGE_BACKRowDeleted" msprop:Generator_RowEvArgName="TB_EXCHANGE_BACKRowChangeEvent" msprop:Generator_RowChangedName="TB_EXCHANGE_BACKRowChanged" msprop:Generator_RowClassName="TB_EXCHANGE_BACKRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EXCHANGE_BACK_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnEXCHANGE_BACK_ID" msprop:Generator_ColumnPropNameInRow="EXCHANGE_BACK_ID" msprop:Generator_ColumnPropNameInTable="EXCHANGE_BACK_IDColumn" msprop:Generator_UserColumnName="EXCHANGE_BACK_ID" type="xs:int" />
+              <xs:element name="MATCH_ID" msprop:Generator_ColumnVarNameInTable="columnMATCH_ID" msprop:Generator_ColumnPropNameInRow="MATCH_ID" msprop:Generator_ColumnPropNameInTable="MATCH_IDColumn" msprop:Generator_UserColumnName="MATCH_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MARKET_ID" msprop:Generator_ColumnVarNameInTable="columnMARKET_ID" msprop:Generator_ColumnPropNameInRow="MARKET_ID" msprop:Generator_ColumnPropNameInTable="MARKET_IDColumn" msprop:Generator_UserColumnName="MARKET_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ODDS" msprop:Generator_ColumnVarNameInTable="columnODDS" msprop:Generator_ColumnPropNameInRow="ODDS" msprop:Generator_ColumnPropNameInTable="ODDSColumn" msprop:Generator_UserColumnName="ODDS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BET_AMOUNTS" msprop:Generator_ColumnVarNameInTable="columnBET_AMOUNTS" msprop:Generator_ColumnPropNameInRow="BET_AMOUNTS" msprop:Generator_ColumnPropNameInTable="BET_AMOUNTSColumn" msprop:Generator_UserColumnName="BET_AMOUNTS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MATCH_AMOUNTS" msprop:Generator_ColumnVarNameInTable="columnMATCH_AMOUNTS" msprop:Generator_ColumnPropNameInRow="MATCH_AMOUNTS" msprop:Generator_ColumnPropNameInTable="MATCH_AMOUNTSColumn" msprop:Generator_UserColumnName="MATCH_AMOUNTS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRADE_TIME" msprop:Generator_ColumnVarNameInTable="columnTRADE_TIME" msprop:Generator_ColumnPropNameInRow="TRADE_TIME" msprop:Generator_ColumnPropNameInTable="TRADE_TIMEColumn" msprop:Generator_UserColumnName="TRADE_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TRADE_USER" msprop:Generator_ColumnVarNameInTable="columnTRADE_USER" msprop:Generator_ColumnPropNameInRow="TRADE_USER" msprop:Generator_ColumnPropNameInTable="TRADE_USERColumn" msprop:Generator_UserColumnName="TRADE_USER" type="xs:int" minOccurs="0" />
+              <xs:element name="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_UserColumnName="STATUS" type="xs:int" minOccurs="0" />
+              <xs:element name="MATCH_TYPE" msprop:Generator_ColumnVarNameInTable="columnMATCH_TYPE" msprop:Generator_ColumnPropNameInRow="MATCH_TYPE" msprop:Generator_ColumnPropNameInTable="MATCH_TYPEColumn" msprop:Generator_UserColumnName="MATCH_TYPE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_EXCHANGE_BACK" />
+      <xs:field xpath="mstns:EXCHANGE_BACK_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,43 @@
+/*!
+ * jQuery UI Autocomplete 1.10.1
+ * http://jqueryui.com
+ *
+ * Copyright 2013 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Autocomplete#theming
+ */
+.ui-autocomplete {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: default;
+}
+.searchIcon {
+	background: url(../../images/sprite_search.png) no-repeat 0px -2px; top: 48px; width: 20px; height: 20px; left:720px; position:absolute; z-index: 30; cursor: pointer;
+}
+.searchIcon:hover {
+	background-position: 0px -22px;
+}
+input[type='text'].searchTerms {
+	padding: 0px 30px 0px 5px; border-radius: 3px; border: 1px solid rgb(39, 137, 206); width: 347px; height: 22px; color: rgb(39, 58, 71); line-height: 22px; position: relative; top:20px; z-index: 20; box-shadow: inset 0px 0px 3px 0px rgba(54,75,89,0.2); -moz-border-radius: 3px; -webkit-border-radius: 3px; -moz-box-shadow: inset 0 0 3px 0 rgba(54, 75, 89, 0.2); -webkit-box-shadow: inset 0 0 3px 0 rgba(54, 75, 89, 0.2);
+}
+input[type='text'].searchTerms:hover  {
+	border: 1px solid rgb(39, 137, 206);
+}
+input[type='text'].searchTerms:focus {
+	border: 1px solid rgb(39, 137, 206);
+}
+.searchEmptyText {
+	left: 68px; top: 2px; color: rgb(39, 58, 71); font-size: 11px; font-weight: normal; display:block; position: absolute; z-index: 10;
+}
+.searchEmptyText span {
+	font-size: 11px;
+}
+.searchOverlay {
+	border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(233, 237, 240) rgb(233, 237, 240); left: 0px; top: -2px; width: 382px; color: rgb(39, 58, 71); display: none; position: relative; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; background-color: white; -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px; -moz-border-radius-bottomright: 3px; -webkit-border-bottom-right-radius: 3px;
+}
+.ui-autocomplete-loading {
+	background: white url('../../images/ui-anim_basic_16x16.gif') right center no-repeat;
+}

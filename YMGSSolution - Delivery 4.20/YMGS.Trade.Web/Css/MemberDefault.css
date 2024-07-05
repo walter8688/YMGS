@@ -1,0 +1,75 @@
+﻿body
+{
+    background:url(../Images/membg.jpg) repeat 0px 0px; font-size:12px; font-family:宋体,tahoma,verdana,arial,sans-serif;
+    margin-left:0px;
+}
+ul,li
+{list-style:none;}
+*{margin:0px; padding:0px;}
+
+/*Top Menu*/
+.hytop
+{height:60px; background-color:#273a47; border-bottom:3px solid #92a9b8;}
+.hycont
+{ width:970px; margin:0 auto; height:60px; background:url(../Images/memtopbg.jpg) no-repeat 0px 0px;}
+.hycontleft
+{width:200px; float:left; padding-top:12px;}
+.hycontright
+{float:right; text-align:right; line-height:60px; width:200px; color:#fff;}
+.hycontright a
+{margin-left:10px; margin-right:10px;}
+a.fontw
+{color:#fff; text-decoration:none;}
+a.fontw:hover
+{text-decoration:underline;}
+
+/*会员中心中间区域*/
+.hymain
+{
+	
+	margin: 0 auto;
+	
+	
+}
+.sitenavigate
+{height:35px; color:#666; line-height:35px; background:url(../Images/memhome.png) no-repeat 0px 11px; padding-left:21px;}
+.hyleft
+{width:204px; float:left;}
+.hyright
+{
+	width: 746px;
+	float: left;
+	margin-left: 20px;
+	
+}
+.hyrightfull
+{ width:970px; float:left; margin-left:20px;}
+
+/*会员中心左侧菜单*/
+.hyrighthead
+{ height:25px; line-height:25px; border-bottom:3px solid #273a47; font-size:14px; font-weight:bold;}
+.leftmain
+{border-left:1px solid #b1b1b1;border-right:1px solid #b1b1b1; background-color:#fff; padding-bottom:10px; overflow:hidden;}
+.botlefcss
+{ background:url(../Images/memtopbot.jpg) no-repeat 0px 0px; height:6px;}
+.hyheadleft
+{ background:url(../Images/memhyhead.jpg) no-repeat 0px 0px; height:32px; font-size:14px; line-height:32px; color:#fff; font-weight:bold; padding-left:40px;}
+.leftmain a
+{display:block; height:23px; width:163px; color:#fff; line-height:23px; color:#333; text-decoration:none; font-weight:bold; background:url(../Images/memnavn.jpg) no-repeat 0px 0px; padding-left:23px; margin-top:15px; margin-left:8px;}
+.leftmain a:hover
+{background:url(../Images/memnavon.jpg) no-repeat 0px 0px; color:#fff;}
+.leftmain .leftmenusel
+{display:block; height:23px; width:163px; color:#fff; line-height:23px; color:#fff; text-decoration:none; font-weight:bold; background:url(../Images/memnavon.jpg) no-repeat 0px 0px; padding-left:23px; margin-top:15px; margin-left:8px;}
+
+
+/*会员中心版权*/
+.MemBottomCss
+{ 
+    font-family:tahoma,verdana,arial,sans-serif;
+    background-color:#273a47; 
+    height:60px; 
+    line-height:60px; 
+    color:#fff; 
+    text-align:center; 
+    clear:both;    
+ }

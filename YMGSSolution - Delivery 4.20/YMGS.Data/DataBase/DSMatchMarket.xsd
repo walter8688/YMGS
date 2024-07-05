@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSMatchMarket" targetNamespace="http://tempuri.org/DSMatchMarket.xsd" xmlns:mstns="http://tempuri.org/DSMatchMarket.xsd" xmlns="http://tempuri.org/DSMatchMarket.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSMatchMarket" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSMatchMarket" msprop:Generator_UserDSName="DSMatchMarket">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_MATCH_MARKET" msprop:Generator_TableClassName="TB_MATCH_MARKETDataTable" msprop:Generator_TableVarName="tableTB_MATCH_MARKET" msprop:Generator_TablePropName="TB_MATCH_MARKET" msprop:Generator_RowDeletingName="TB_MATCH_MARKETRowDeleting" msprop:Generator_UserTableName="TB_MATCH_MARKET" msprop:Generator_RowChangingName="TB_MATCH_MARKETRowChanging" msprop:Generator_RowEvHandlerName="TB_MATCH_MARKETRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_MATCH_MARKETRowDeleted" msprop:Generator_RowEvArgName="TB_MATCH_MARKETRowChangeEvent" msprop:Generator_RowChangedName="TB_MATCH_MARKETRowChanged" msprop:Generator_RowClassName="TB_MATCH_MARKETRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Market_Tmp_Type" msprop:Generator_ColumnVarNameInTable="columnMarket_Tmp_Type" msprop:Generator_ColumnPropNameInRow="Market_Tmp_Type" msprop:Generator_ColumnPropNameInTable="Market_Tmp_TypeColumn" msprop:Generator_UserColumnName="Market_Tmp_Type" type="xs:int" minOccurs="0" />
+              <xs:element name="BET_TYPE_ID" msprop:Generator_ColumnVarNameInTable="columnBET_TYPE_ID" msprop:Generator_ColumnPropNameInRow="BET_TYPE_ID" msprop:Generator_ColumnPropNameInTable="BET_TYPE_IDColumn" msprop:Generator_UserColumnName="BET_TYPE_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MARKET_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnMARKET_ID" msprop:Generator_ColumnPropNameInRow="MARKET_ID" msprop:Generator_ColumnPropNameInTable="MARKET_IDColumn" msprop:Generator_UserColumnName="MARKET_ID" type="xs:int" />
+              <xs:element name="MARKET_NAME" msprop:Generator_ColumnVarNameInTable="columnMARKET_NAME" msprop:Generator_ColumnPropNameInRow="MARKET_NAME" msprop:Generator_ColumnPropNameInTable="MARKET_NAMEColumn" msprop:Generator_UserColumnName="MARKET_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MATCH_ID" msprop:Generator_ColumnVarNameInTable="columnMATCH_ID" msprop:Generator_ColumnPropNameInRow="MATCH_ID" msprop:Generator_ColumnPropNameInTable="MATCH_IDColumn" msprop:Generator_UserColumnName="MATCH_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MARKET_TMP_ID" msprop:Generator_ColumnVarNameInTable="columnMARKET_TMP_ID" msprop:Generator_ColumnPropNameInRow="MARKET_TMP_ID" msprop:Generator_ColumnPropNameInTable="MARKET_TMP_IDColumn" msprop:Generator_UserColumnName="MARKET_TMP_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MARKET_FLAG" msprop:Generator_ColumnVarNameInTable="columnMARKET_FLAG" msprop:Generator_ColumnPropNameInRow="MARKET_FLAG" msprop:Generator_ColumnPropNameInTable="MARKET_FLAGColumn" msprop:Generator_UserColumnName="MARKET_FLAG" type="xs:int" minOccurs="0" />
+              <xs:element name="SCOREA" msprop:Generator_ColumnVarNameInTable="columnSCOREA" msprop:Generator_ColumnPropNameInRow="SCOREA" msprop:Generator_ColumnPropNameInTable="SCOREAColumn" msprop:Generator_UserColumnName="SCOREA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SCOREB" msprop:Generator_ColumnVarNameInTable="columnSCOREB" msprop:Generator_ColumnPropNameInRow="SCOREB" msprop:Generator_ColumnPropNameInTable="SCOREBColumn" msprop:Generator_UserColumnName="SCOREB" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MARKET_TMP_NAME" msprop:Generator_ColumnVarNameInTable="columnMARKET_TMP_NAME" msprop:Generator_ColumnPropNameInRow="MARKET_TMP_NAME" msprop:Generator_ColumnPropNameInTable="MARKET_TMP_NAMEColumn" msprop:Generator_UserColumnName="MARKET_TMP_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MATCH_NAME" msprop:Generator_ColumnVarNameInTable="columnMATCH_NAME" msprop:Generator_ColumnPropNameInRow="MATCH_NAME" msprop:Generator_ColumnPropNameInTable="MATCH_NAMEColumn" msprop:Generator_UserColumnName="MATCH_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STARTDATE" msprop:Generator_ColumnVarNameInTable="columnSTARTDATE" msprop:Generator_ColumnPropNameInRow="STARTDATE" msprop:Generator_ColumnPropNameInTable="STARTDATEColumn" msprop:Generator_UserColumnName="STARTDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="backMATCH_AMOUNTS" msprop:Generator_ColumnVarNameInTable="columnbackMATCH_AMOUNTS" msprop:Generator_ColumnPropNameInRow="backMATCH_AMOUNTS" msprop:Generator_ColumnPropNameInTable="backMATCH_AMOUNTSColumn" msprop:Generator_UserColumnName="backMATCH_AMOUNTS" type="xs:string" minOccurs="0" />
+              <xs:element name="backodds" msprop:Generator_ColumnVarNameInTable="columnbackodds" msprop:Generator_ColumnPropNameInRow="backodds" msprop:Generator_ColumnPropNameInTable="backoddsColumn" msprop:Generator_UserColumnName="backodds" type="xs:string" minOccurs="0" />
+              <xs:element name="layMATCH_AMOUNTS" msprop:Generator_ColumnVarNameInTable="columnlayMATCH_AMOUNTS" msprop:Generator_ColumnPropNameInRow="layMATCH_AMOUNTS" msprop:Generator_ColumnPropNameInTable="layMATCH_AMOUNTSColumn" msprop:Generator_UserColumnName="layMATCH_AMOUNTS" type="xs:string" minOccurs="0" />
+              <xs:element name="layodds" msprop:Generator_ColumnVarNameInTable="columnlayodds" msprop:Generator_ColumnPropNameInRow="layodds" msprop:Generator_ColumnPropNameInTable="layoddsColumn" msprop:Generator_UserColumnName="layodds" type="xs:string" minOccurs="0" />
+              <xs:element name="MARKET_NAME_EN" msprop:Generator_ColumnVarNameInTable="columnMARKET_NAME_EN" msprop:Generator_ColumnPropNameInRow="MARKET_NAME_EN" msprop:Generator_ColumnPropNameInTable="MARKET_NAME_ENColumn" msprop:Generator_UserColumnName="MARKET_NAME_EN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MARKET_TMP_NAME_EN" msprop:Generator_ColumnVarNameInTable="columnMARKET_TMP_NAME_EN" msprop:Generator_ColumnPropNameInRow="MARKET_TMP_NAME_EN" msprop:Generator_ColumnPropNameInTable="MARKET_TMP_NAME_ENColumn" msprop:Generator_UserColumnName="MARKET_TMP_NAME_EN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MATCH_NAME_EN" msprop:Generator_ColumnVarNameInTable="columnMATCH_NAME_EN" msprop:Generator_ColumnPropNameInRow="MATCH_NAME_EN" msprop:Generator_ColumnPropNameInTable="MATCH_NAME_ENColumn" msprop:Generator_UserColumnName="MATCH_NAME_EN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_MATCH_MARKET" />
+      <xs:field xpath="mstns:MARKET_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

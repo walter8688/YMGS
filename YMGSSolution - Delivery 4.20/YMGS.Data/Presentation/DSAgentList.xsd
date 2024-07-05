@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSAgentList" targetNamespace="http://tempuri.org/DSAgentList.xsd" xmlns:mstns="http://tempuri.org/DSAgentList.xsd" xmlns="http://tempuri.org/DSAgentList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSAgentList" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSAgentList" msprop:Generator_UserDSName="DSAgentList">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DSAgentList" msprop:Generator_TableClassName="DSAgentListDataTable" msprop:Generator_TableVarName="tableDSAgentList" msprop:Generator_TablePropName="_DSAgentList" msprop:Generator_RowDeletingName="DSAgentListRowDeleting" msprop:Generator_UserTableName="DSAgentList" msprop:Generator_RowChangingName="DSAgentListRowChanging" msprop:Generator_RowEvHandlerName="DSAgentListRowChangeEventHandler" msprop:Generator_RowDeletedName="DSAgentListRowDeleted" msprop:Generator_RowEvArgName="DSAgentListRowChangeEvent" msprop:Generator_RowChangedName="DSAgentListRowChanged" msprop:Generator_RowClassName="DSAgentListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="USER_ID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnUSER_ID" msprop:Generator_ColumnPropNameInRow="USER_ID" msprop:Generator_ColumnPropNameInTable="USER_IDColumn" msprop:Generator_UserColumnName="USER_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="USER_NAME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnUSER_NAME" msprop:Generator_ColumnPropNameInRow="USER_NAME" msprop:Generator_ColumnPropNameInTable="USER_NAMEColumn" msprop:Generator_UserColumnName="USER_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ROLE_ID" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnROLE_ID" msprop:Generator_ColumnPropNameInRow="ROLE_ID" msprop:Generator_ColumnPropNameInTable="ROLE_IDColumn" msprop:Generator_UserColumnName="ROLE_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="ROLE_NAME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnROLE_NAME" msprop:Generator_ColumnPropNameInRow="ROLE_NAME" msprop:Generator_ColumnPropNameInTable="ROLE_NAMEColumn" msprop:Generator_UserColumnName="ROLE_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="agentId" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnagentId" msprop:Generator_ColumnPropNameInRow="agentId" msprop:Generator_ColumnPropNameInTable="agentIdColumn" msprop:Generator_UserColumnName="agentId" type="xs:int" minOccurs="0" />
+              <xs:element name="agentName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnagentName" msprop:Generator_ColumnPropNameInRow="agentName" msprop:Generator_ColumnPropNameInTable="agentNameColumn" msprop:Generator_UserColumnName="agentName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Brokerage" msprop:Generator_ColumnVarNameInTable="columnBrokerage" msprop:Generator_ColumnPropNameInRow="Brokerage" msprop:Generator_ColumnPropNameInTable="BrokerageColumn" msprop:Generator_UserColumnName="Brokerage" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Member_Count" msprop:Generator_ColumnVarNameInTable="columnMember_Count" msprop:Generator_ColumnPropNameInRow="Member_Count" msprop:Generator_ColumnPropNameInTable="Member_CountColumn" msprop:Generator_UserColumnName="Member_Count" type="xs:int" minOccurs="0" />
+              <xs:element name="LOGIN_NAME" msprop:Generator_ColumnVarNameInTable="columnLOGIN_NAME" msprop:Generator_ColumnPropNameInRow="LOGIN_NAME" msprop:Generator_ColumnPropNameInTable="LOGIN_NAMEColumn" msprop:Generator_UserColumnName="LOGIN_NAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

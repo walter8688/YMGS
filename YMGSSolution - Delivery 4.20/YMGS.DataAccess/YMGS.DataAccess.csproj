@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88379681-0184-43D2-90FD-337FB79CB791}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YMGS.DataAccess</RootNamespace>
+    <AssemblyName>YMGS.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>YMGSKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\YMGS.AssemblyInfo.cs">
+      <Link>Properties\YMGS.AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AssistManage\HelperDA.cs" />
+    <Compile Include="AssistManage\OddsCompareDA.cs" />
+    <Compile Include="AssistManage\ParamParamDA.cs" />
+    <Compile Include="AssistManage\ParamZoneDA.cs" />
+    <Compile Include="EventManage\EventDA.cs" />
+    <Compile Include="EventManage\EventTeamDA.cs" />
+    <Compile Include="EventManage\EventZoneDA.cs" />
+    <Compile Include="GameControlService\GameControlServiceDA.cs" />
+    <Compile Include="GameControl\GameControlDA.cs" />
+    <Compile Include="GameMarket\BetTypeDA.cs" />
+    <Compile Include="GameMarket\ChampEventDA.cs" />
+    <Compile Include="GameMarket\MarketTemplateDA.cs" />
+    <Compile Include="GameMarket\MatchDA.cs" />
+    <Compile Include="GameSettle\CommissionDA.cs" />
+    <Compile Include="GameSettle\GameSettlementLogDA.cs" />
+    <Compile Include="GameSettle\MatchExchangeDealDA.cs" />
+    <Compile Include="GameSettle\MatchSettleDA.cs" />
+    <Compile Include="GameSettle\MatchSettleRollbackDA.cs" />
+    <Compile Include="MemberShip\AccountApplyProxyDA.cs" />
+    <Compile Include="MemberShip\AgentAccountDA.cs" />
+    <Compile Include="MemberShip\IntegralDA.cs" />
+    <Compile Include="MemberShip\SysAutoMegDA.cs" />
+    <Compile Include="MemberShip\UserFundDA.cs" />
+    <Compile Include="MemberShip\UserWithDrawDA.cs" />
+    <Compile Include="Pay\PayDA.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportCenter\BetReportDA.cs" />
+    <Compile Include="ReportCenter\DealReportDA.cs" />
+    <Compile Include="ReportCenter\FundReportDA.cs" />
+    <Compile Include="ReportCenter\IntegralReportDA.cs" />
+    <Compile Include="SystemConfig\TestDA.cs" />
+    <Compile Include="SystemSetting\ADDA.cs" />
+    <Compile Include="SystemSetting\AgentDA.cs" />
+    <Compile Include="SystemSetting\CountryDA.cs" />
+    <Compile Include="SystemSetting\CurrencyDA.cs" />
+    <Compile Include="SystemSetting\GlobalDA.cs" />
+    <Compile Include="SystemSetting\RoleFuncMapDA.cs" />
+    <Compile Include="SystemSetting\SqlCacheDA.cs" />
+    <Compile Include="SystemSetting\SqlCmd.cs" />
+    <Compile Include="SystemSetting\SystemAccountDA.cs" />
+    <Compile Include="SystemSetting\TimeZoneDA.cs" />
+    <Compile Include="SystemSetting\VCardDA.cs" />
+    <Compile Include="SystemSetting\YourInPlayDA.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YMGS.Data\YMGS.Data.csproj">
+      <Project>{B62A1D35-30D8-41FE-B156-8CFA6D548BEC}</Project>
+      <Name>YMGS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YMGS.Framework\YMGS.Framework.csproj">
+      <Project>{6ABF05CC-C342-4498-B4A0-80C6E0628F43}</Project>
+      <Name>YMGS.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="YMGSKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataManage\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

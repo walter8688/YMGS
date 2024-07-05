@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSODDSCOMPARE" targetNamespace="http://tempuri.org/DSODDSCOMPARE.xsd" xmlns:mstns="http://tempuri.org/DSODDSCOMPARE.xsd" xmlns="http://tempuri.org/DSODDSCOMPARE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSODDSCOMPARE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSODDSCOMPARE" msprop:Generator_UserDSName="DSODDSCOMPARE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_ODDS_COMPARE" msprop:Generator_TableClassName="TB_ODDS_COMPAREDataTable" msprop:Generator_TableVarName="tableTB_ODDS_COMPARE" msprop:Generator_TablePropName="TB_ODDS_COMPARE" msprop:Generator_RowDeletingName="TB_ODDS_COMPARERowDeleting" msprop:Generator_UserTableName="TB_ODDS_COMPARE" msprop:Generator_RowChangingName="TB_ODDS_COMPARERowChanging" msprop:Generator_RowEvHandlerName="TB_ODDS_COMPARERowChangeEventHandler" msprop:Generator_RowDeletedName="TB_ODDS_COMPARERowDeleted" msprop:Generator_RowEvArgName="TB_ODDS_COMPARERowChangeEvent" msprop:Generator_RowChangedName="TB_ODDS_COMPARERowChanged" msprop:Generator_RowClassName="TB_ODDS_COMPARERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MATCHID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnMATCHID" msprop:Generator_ColumnPropNameInRow="MATCHID" msprop:Generator_ColumnPropNameInTable="MATCHIDColumn" msprop:Generator_UserColumnName="MATCHID" type="xs:int" />
+              <xs:element name="CN_CORP" msprop:Generator_ColumnVarNameInTable="columnCN_CORP" msprop:Generator_ColumnPropNameInRow="CN_CORP" msprop:Generator_ColumnPropNameInTable="CN_CORPColumn" msprop:Generator_UserColumnName="CN_CORP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EN_CORP" msprop:Generator_ColumnVarNameInTable="columnEN_CORP" msprop:Generator_ColumnPropNameInRow="EN_CORP" msprop:Generator_ColumnPropNameInTable="EN_CORPColumn" msprop:Generator_UserColumnName="EN_CORP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROFIT" msprop:Generator_ColumnVarNameInTable="columnPROFIT" msprop:Generator_ColumnPropNameInRow="PROFIT" msprop:Generator_ColumnPropNameInTable="PROFITColumn" msprop:Generator_UserColumnName="PROFIT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MATCHNAME" msprop:Generator_ColumnVarNameInTable="columnMATCHNAME" msprop:Generator_ColumnPropNameInRow="MATCHNAME" msprop:Generator_ColumnPropNameInTable="MATCHNAMEColumn" msprop:Generator_UserColumnName="MATCHNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="TB_ODDS_COMPAREKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_ODDS_COMPARE" />
+      <xs:field xpath="mstns:MATCHID" />
+      <xs:field xpath="mstns:CN_CORP" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSParamParam" targetNamespace="http://tempuri.org/DSParamParam.xsd" xmlns:mstns="http://tempuri.org/DSParamParam.xsd" xmlns="http://tempuri.org/DSParamParam.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSParamParam" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSParamParam" msprop:Generator_UserDSName="DSParamParam">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_PARAM_PARAM" msprop:Generator_TableClassName="TB_PARAM_PARAMDataTable" msprop:Generator_TableVarName="tableTB_PARAM_PARAM" msprop:Generator_TablePropName="TB_PARAM_PARAM" msprop:Generator_RowDeletingName="TB_PARAM_PARAMRowDeleting" msprop:Generator_UserTableName="TB_PARAM_PARAM" msprop:Generator_RowChangingName="TB_PARAM_PARAMRowChanging" msprop:Generator_RowEvHandlerName="TB_PARAM_PARAMRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_PARAM_PARAMRowDeleted" msprop:Generator_RowEvArgName="TB_PARAM_PARAMRowChangeEvent" msprop:Generator_RowChangedName="TB_PARAM_PARAMRowChanged" msprop:Generator_RowClassName="TB_PARAM_PARAMRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PARAM_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnPARAM_ID" msprop:Generator_ColumnPropNameInRow="PARAM_ID" msprop:Generator_ColumnPropNameInTable="PARAM_IDColumn" msprop:Generator_UserColumnName="PARAM_ID" type="xs:int" />
+              <xs:element name="PARAM_TYPE" msprop:Generator_ColumnVarNameInTable="columnPARAM_TYPE" msprop:Generator_ColumnPropNameInRow="PARAM_TYPE" msprop:Generator_ColumnPropNameInTable="PARAM_TYPEColumn" msprop:Generator_UserColumnName="PARAM_TYPE" type="xs:int" minOccurs="0" />
+              <xs:element name="PARAM_NAME" msprop:Generator_ColumnVarNameInTable="columnPARAM_NAME" msprop:Generator_ColumnPropNameInRow="PARAM_NAME" msprop:Generator_ColumnPropNameInTable="PARAM_NAMEColumn" msprop:Generator_UserColumnName="PARAM_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PARAM_ORDER" msprop:Generator_ColumnVarNameInTable="columnPARAM_ORDER" msprop:Generator_ColumnPropNameInRow="PARAM_ORDER" msprop:Generator_ColumnPropNameInTable="PARAM_ORDERColumn" msprop:Generator_UserColumnName="PARAM_ORDER" type="xs:int" minOccurs="0" />
+              <xs:element name="IS_USE" msprop:Generator_ColumnVarNameInTable="columnIS_USE" msprop:Generator_ColumnPropNameInRow="IS_USE" msprop:Generator_ColumnPropNameInTable="IS_USEColumn" msprop:Generator_UserColumnName="IS_USE" type="xs:int" minOccurs="0" />
+              <xs:element name="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" msprop:Generator_UserColumnName="CREATE_USER" type="xs:int" minOccurs="0" />
+              <xs:element name="CREATE_TIME" msprop:Generator_ColumnVarNameInTable="columnCREATE_TIME" msprop:Generator_ColumnPropNameInRow="CREATE_TIME" msprop:Generator_ColumnPropNameInTable="CREATE_TIMEColumn" msprop:Generator_UserColumnName="CREATE_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LAST_UPDATE_USER" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATE_USER" msprop:Generator_ColumnPropNameInRow="LAST_UPDATE_USER" msprop:Generator_ColumnPropNameInTable="LAST_UPDATE_USERColumn" msprop:Generator_UserColumnName="LAST_UPDATE_USER" type="xs:int" minOccurs="0" />
+              <xs:element name="LAST_UPDATE_TIME" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATE_TIME" msprop:Generator_ColumnPropNameInRow="LAST_UPDATE_TIME" msprop:Generator_ColumnPropNameInTable="LAST_UPDATE_TIMEColumn" msprop:Generator_UserColumnName="LAST_UPDATE_TIME" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_PARAM_PARAM" />
+      <xs:field xpath="mstns:PARAM_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

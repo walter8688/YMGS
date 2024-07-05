@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSFundReport" targetNamespace="http://tempuri.org/DSFundReport.xsd" xmlns:mstns="http://tempuri.org/DSFundReport.xsd" xmlns="http://tempuri.org/DSFundReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSFundReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSFundReport" msprop:Generator_UserDSName="DSFundReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TBFundReport" msprop:Generator_TableClassName="TBFundReportDataTable" msprop:Generator_TableVarName="tableTBFundReport" msprop:Generator_TablePropName="TBFundReport" msprop:Generator_RowDeletingName="TBFundReportRowDeleting" msprop:Generator_UserTableName="TBFundReport" msprop:Generator_RowChangingName="TBFundReportRowChanging" msprop:Generator_RowEvHandlerName="TBFundReportRowChangeEventHandler" msprop:Generator_RowDeletedName="TBFundReportRowDeleted" msprop:Generator_RowEvArgName="TBFundReportRowChangeEvent" msprop:Generator_RowChangedName="TBFundReportRowChanged" msprop:Generator_RowClassName="TBFundReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TRAN_TYPE" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTRAN_TYPE" msprop:Generator_ColumnPropNameInRow="TRAN_TYPE" msprop:Generator_ColumnPropNameInTable="TRAN_TYPEColumn" msprop:Generator_UserColumnName="TRAN_TYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRAN_DATE" msprop:Generator_ColumnVarNameInTable="columnTRAN_DATE" msprop:Generator_ColumnPropNameInRow="TRAN_DATE" msprop:Generator_ColumnPropNameInTable="TRAN_DATEColumn" msprop:Generator_UserColumnName="TRAN_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TRAN_AMOUNT" msprop:Generator_ColumnVarNameInTable="columnTRAN_AMOUNT" msprop:Generator_ColumnPropNameInRow="TRAN_AMOUNT" msprop:Generator_ColumnPropNameInTable="TRAN_AMOUNTColumn" msprop:Generator_UserColumnName="TRAN_AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LOGIN_NAME" msprop:Generator_ColumnVarNameInTable="columnLOGIN_NAME" msprop:Generator_ColumnPropNameInRow="LOGIN_NAME" msprop:Generator_ColumnPropNameInTable="LOGIN_NAMEColumn" msprop:Generator_UserColumnName="LOGIN_NAME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRAN_STATUS" msdata:ReadOnly="true" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="TRAN_STATUS" msprop:Generator_ColumnVarNameInTable="columnTRAN_STATUS" msprop:Generator_ColumnPropNameInTable="TRAN_STATUSColumn" msprop:Generator_UserColumnName="TRAN_STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

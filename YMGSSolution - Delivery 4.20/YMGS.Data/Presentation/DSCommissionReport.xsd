@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSCommissionReport" targetNamespace="http://tempuri.org/DSCommissionReport.xsd" xmlns:mstns="http://tempuri.org/DSCommissionReport.xsd" xmlns="http://tempuri.org/DSCommissionReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSCommissionReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSCommissionReport" msprop:Generator_UserDSName="DSCommissionReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_Commission_Report" msprop:Generator_TableClassName="TB_Commission_ReportDataTable" msprop:Generator_TableVarName="tableTB_Commission_Report" msprop:Generator_TablePropName="TB_Commission_Report" msprop:Generator_RowDeletingName="TB_Commission_ReportRowDeleting" msprop:Generator_UserTableName="TB_Commission_Report" msprop:Generator_RowChangingName="TB_Commission_ReportRowChanging" msprop:Generator_RowEvHandlerName="TB_Commission_ReportRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_Commission_ReportRowDeleted" msprop:Generator_RowEvArgName="TB_Commission_ReportRowChangeEvent" msprop:Generator_RowChangedName="TB_Commission_ReportRowChanged" msprop:Generator_RowClassName="TB_Commission_ReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="REPORTTYPE" msprop:Generator_ColumnVarNameInTable="columnREPORTTYPE" msprop:Generator_ColumnPropNameInRow="REPORTTYPE" msprop:Generator_ColumnPropNameInTable="REPORTTYPEColumn" msprop:Generator_UserColumnName="REPORTTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="SETTLE_TIME" msprop:Generator_ColumnVarNameInTable="columnSETTLE_TIME" msprop:Generator_ColumnPropNameInRow="SETTLE_TIME" msprop:Generator_ColumnPropNameInTable="SETTLE_TIMEColumn" msprop:Generator_UserColumnName="SETTLE_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EVENT_NAME" msprop:Generator_ColumnVarNameInTable="columnEVENT_NAME" msprop:Generator_ColumnPropNameInRow="EVENT_NAME" msprop:Generator_ColumnPropNameInTable="EVENT_NAMEColumn" msprop:Generator_UserColumnName="EVENT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="MATCH_NAME" msprop:Generator_ColumnVarNameInTable="columnMATCH_NAME" msprop:Generator_ColumnPropNameInRow="MATCH_NAME" msprop:Generator_ColumnPropNameInTable="MATCH_NAMEColumn" msprop:Generator_UserColumnName="MATCH_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="BET_TYPE_NAME" msprop:Generator_ColumnVarNameInTable="columnBET_TYPE_NAME" msprop:Generator_ColumnPropNameInRow="BET_TYPE_NAME" msprop:Generator_ColumnPropNameInTable="BET_TYPE_NAMEColumn" msprop:Generator_UserColumnName="BET_TYPE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="MARKET_NAME" msprop:Generator_ColumnVarNameInTable="columnMARKET_NAME" msprop:Generator_ColumnPropNameInRow="MARKET_NAME" msprop:Generator_ColumnPropNameInTable="MARKET_NAMEColumn" msprop:Generator_UserColumnName="MARKET_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ODDS" msprop:Generator_ColumnVarNameInTable="columnODDS" msprop:Generator_ColumnPropNameInRow="ODDS" msprop:Generator_ColumnPropNameInTable="ODDSColumn" msprop:Generator_UserColumnName="ODDS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DEAL_AMOUNT" msprop:Generator_ColumnVarNameInTable="columnDEAL_AMOUNT" msprop:Generator_ColumnPropNameInRow="DEAL_AMOUNT" msprop:Generator_ColumnPropNameInTable="DEAL_AMOUNTColumn" msprop:Generator_UserColumnName="DEAL_AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DEAL_TIME" msprop:Generator_ColumnVarNameInTable="columnDEAL_TIME" msprop:Generator_ColumnPropNameInRow="DEAL_TIME" msprop:Generator_ColumnPropNameInTable="DEAL_TIMEColumn" msprop:Generator_UserColumnName="DEAL_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="winuser" msprop:Generator_ColumnVarNameInTable="columnwinuser" msprop:Generator_ColumnPropNameInRow="winuser" msprop:Generator_ColumnPropNameInTable="winuserColumn" msprop:Generator_UserColumnName="winuser" type="xs:string" minOccurs="0" />
+              <xs:element name="loseuser" msprop:Generator_ColumnVarNameInTable="columnloseuser" msprop:Generator_ColumnPropNameInRow="loseuser" msprop:Generator_ColumnPropNameInTable="loseuserColumn" msprop:Generator_UserColumnName="loseuser" type="xs:string" minOccurs="0" />
+              <xs:element name="AGENT_COMMISSION_RATE" msprop:Generator_ColumnVarNameInTable="columnAGENT_COMMISSION_RATE" msprop:Generator_ColumnPropNameInRow="AGENT_COMMISSION_RATE" msprop:Generator_ColumnPropNameInTable="AGENT_COMMISSION_RATEColumn" msprop:Generator_UserColumnName="AGENT_COMMISSION_RATE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AGENT_COMMISSION_TRADE_FUND" msprop:Generator_ColumnVarNameInTable="columnAGENT_COMMISSION_TRADE_FUND" msprop:Generator_ColumnPropNameInRow="AGENT_COMMISSION_TRADE_FUND" msprop:Generator_ColumnPropNameInTable="AGENT_COMMISSION_TRADE_FUNDColumn" msprop:Generator_UserColumnName="AGENT_COMMISSION_TRADE_FUND" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MAIN_AGENT_COMMISSION_RATE" msprop:Generator_ColumnVarNameInTable="columnMAIN_AGENT_COMMISSION_RATE" msprop:Generator_ColumnPropNameInRow="MAIN_AGENT_COMMISSION_RATE" msprop:Generator_ColumnPropNameInTable="MAIN_AGENT_COMMISSION_RATEColumn" msprop:Generator_UserColumnName="MAIN_AGENT_COMMISSION_RATE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MAIN_AGENT_COMMISSION_TRADE_FUND" msprop:Generator_ColumnVarNameInTable="columnMAIN_AGENT_COMMISSION_TRADE_FUND" msprop:Generator_ColumnPropNameInRow="MAIN_AGENT_COMMISSION_TRADE_FUND" msprop:Generator_ColumnPropNameInTable="MAIN_AGENT_COMMISSION_TRADE_FUNDColumn" msprop:Generator_UserColumnName="MAIN_AGENT_COMMISSION_TRADE_FUND" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSEventTeamList" targetNamespace="http://tempuri.org/DSEventTeamList.xsd" xmlns:mstns="http://tempuri.org/DSEventTeamList.xsd" xmlns="http://tempuri.org/DSEventTeamList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSEventTeamList" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSEventTeamList" msprop:Generator_UserDSName="DSEventTeamList">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DSEventTeamList" msprop:Generator_TableClassName="DSEventTeamListDataTable" msprop:Generator_TableVarName="tableDSEventTeamList" msprop:Generator_TablePropName="_DSEventTeamList" msprop:Generator_RowDeletingName="DSEventTeamListRowDeleting" msprop:Generator_UserTableName="DSEventTeamList" msprop:Generator_RowChangingName="DSEventTeamListRowChanging" msprop:Generator_RowEvHandlerName="DSEventTeamListRowChangeEventHandler" msprop:Generator_RowDeletedName="DSEventTeamListRowDeleted" msprop:Generator_RowEvArgName="DSEventTeamListRowChangeEvent" msprop:Generator_RowChangedName="DSEventTeamListRowChanged" msprop:Generator_RowClassName="DSEventTeamListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EVENT_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnEVENT_ID" msprop:Generator_ColumnPropNameInRow="EVENT_ID" msprop:Generator_ColumnPropNameInTable="EVENT_IDColumn" msprop:Generator_UserColumnName="EVENT_ID" type="xs:int" />
+              <xs:element name="EVENTZONE_ID" msprop:Generator_ColumnVarNameInTable="columnEVENTZONE_ID" msprop:Generator_ColumnPropNameInRow="EVENTZONE_ID" msprop:Generator_ColumnPropNameInTable="EVENTZONE_IDColumn" msprop:Generator_UserColumnName="EVENTZONE_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="EVENTZONE_NAME" msprop:Generator_ColumnVarNameInTable="columnEVENTZONE_NAME" msprop:Generator_ColumnPropNameInRow="EVENTZONE_NAME" msprop:Generator_ColumnPropNameInTable="EVENTZONE_NAMEColumn" msprop:Generator_UserColumnName="EVENTZONE_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EVENT_NAME" msprop:Generator_ColumnVarNameInTable="columnEVENT_NAME" msprop:Generator_ColumnPropNameInRow="EVENT_NAME" msprop:Generator_ColumnPropNameInTable="EVENT_NAMEColumn" msprop:Generator_UserColumnName="EVENT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EVENT_NAME_EN" msprop:Generator_ColumnVarNameInTable="columnEVENT_NAME_EN" msprop:Generator_ColumnPropNameInRow="EVENT_NAME_EN" msprop:Generator_ColumnPropNameInTable="EVENT_NAME_ENColumn" msprop:Generator_UserColumnName="EVENT_NAME_EN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EVENT_DESC" msprop:Generator_ColumnVarNameInTable="columnEVENT_DESC" msprop:Generator_ColumnPropNameInRow="EVENT_DESC" msprop:Generator_ColumnPropNameInTable="EVENT_DESCColumn" msprop:Generator_UserColumnName="EVENT_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="START_DATE" msprop:Generator_ColumnVarNameInTable="columnSTART_DATE" msprop:Generator_ColumnPropNameInRow="START_DATE" msprop:Generator_ColumnPropNameInTable="START_DATEColumn" msprop:Generator_UserColumnName="START_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="END_DATE" msprop:Generator_ColumnVarNameInTable="columnEND_DATE" msprop:Generator_ColumnPropNameInRow="END_DATE" msprop:Generator_ColumnPropNameInTable="END_DATEColumn" msprop:Generator_UserColumnName="END_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="STATUSNAME" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSTATUSNAME" msprop:Generator_ColumnPropNameInRow="STATUSNAME" msprop:Generator_ColumnPropNameInTable="STATUSNAMEColumn" msprop:Generator_UserColumnName="STATUSNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_UserColumnName="STATUS" type="xs:int" minOccurs="0" />
+              <xs:element name="EventItem_ID" msprop:Generator_ColumnVarNameInTable="columnEventItem_ID" msprop:Generator_ColumnPropNameInRow="EventItem_ID" msprop:Generator_ColumnPropNameInTable="EventItem_IDColumn" msprop:Generator_UserColumnName="EventItem_ID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

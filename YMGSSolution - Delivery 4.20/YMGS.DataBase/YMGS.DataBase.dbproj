@@ -1,0 +1,938 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>YMGS.DataBase</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.0</ProjectVersion>
+    <ProjectGuid>{67cbc824-a49e-4e9b-a947-360f3dfe65c3}</ProjectGuid>
+    <DSP>Microsoft.Data.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ShowWizard>False</ShowWizard>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchema</DefaultFileStructure>
+    <DeployToDatabaseAddToServerExplorer>True</DeployToDatabaseAddToServerExplorer>
+    <DeployToScript>True</DeployToScript>
+    <CatalogPropertiesFile>Properties\Database.sqlsettings</CatalogPropertiesFile>
+    <LoadSqlClrTypes>True</LoadSqlClrTypes>
+    <RootNamespace>YMGS.DataBase</RootNamespace>
+    <DefaultSchema>dbo</DefaultSchema>
+    <PreviousProjectVersion>4.0</PreviousProjectVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>.\sql\release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetConnectionString>
+    </TargetConnectionString>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <SuppressWarnings>
+    </SuppressWarnings>
+    <DeploymentConfigFile>Properties\Database.sqldeployment</DeploymentConfigFile>
+    <SqlCommandVariablesFile>Properties\Database.sqlcmdvars</SqlCommandVariablesFile>
+    <DeployToDatabase>False</DeployToDatabase>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>.\sql\debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetConnectionString>
+    </TargetConnectionString>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <SuppressWarnings>
+    </SuppressWarnings>
+    <DeploymentConfigFile>Properties\Database.sqldeployment</DeploymentConfigFile>
+    <SqlCommandVariablesFile>Properties\Database.sqlcmdvars</SqlCommandVariablesFile>
+    <DeployToDatabase>False</DeployToDatabase>
+  </PropertyGroup>
+  <!--Import the settings-->
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\TeamData\Microsoft.Data.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="CreateScript" />
+    <Folder Include="ChangeScript" />
+    <Folder Include="CreateScript\Table" />
+    <Folder Include="CreateScript\StoredProcedure" />
+    <Folder Include="CreateScript\Function" />
+  </ItemGroup>
+  <ItemGroup>
+    <PropertiesFile Include="Properties\Database.sqlsettings">
+    </PropertiesFile>
+    <PropertiesFile Include="Properties\Database.sqldeployment">
+    </PropertiesFile>
+    <PropertiesFile Include="Properties\Database.sqlcmdvars">
+    </PropertiesFile>
+    <Build Include="Properties\Database.sqlpermissions">
+      <ModelBuilderType>Permissions</ModelBuilderType>
+    </Build>
+  </ItemGroup>
+  <ItemGroup>
+    <BuildContributorArgument Include="OutDir=$(OutDir)" />
+  </ItemGroup>
+  <ItemGroup>
+    <NotInBuild Include="CreateScript\Index.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\View.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="Readme.txt">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\InitDefaultData.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\YMGS_TEST.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_test_ins.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_test_enum.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_SYSTEM_ROLE.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_ROLE_FUNC_MAP.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_SYSTEM_ACCESS.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_SYSTEM_ACCOUNT.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_SYSTEM_FUNC.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="ChangeScript\20130109.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_param.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_handler_param_type.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_param_zone.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_del_param.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_del_param_withType.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_del_param_zone.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_param.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_param_zone.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_up_param.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_up_param_zone.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_system_account.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_system_account.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_up_system_account.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_PARAM_ZONE.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_INTEGRAL_RATE.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_PARAM_ADS.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_PARAM_BILLBOARD.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_PARAM_ODDS.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_PARAM_PARAM.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_PARAM_TYPE.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_PARAM_ZONE.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_INTEGRAL_RATE.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_PARAM_ADS.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_PARAM_BILLBOARD.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_PARAM_ODDS.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_PARAM_PARAM.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_PARAM_TYPE.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_BET_TYPE.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_bet_type.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_up_bet_type.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_current_datetime.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_order_param.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_role_func_map.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_MARKET_TEMPLATE.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_market_template.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_up_market_template.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_market_template_by_id.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_market_template_by_param.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_Event_Item.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_Event_Zone.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_del_market_template_by_id.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_event_item.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_event_zone.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_up_event_zone.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_del_event_zone.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_event_zone.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_Event.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_Event_Team.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_Event_Team_Map.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_MATCH.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_MATCH_MARKET.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_match_by_param.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_match_by_id.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_match_market_by_matchid.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_Event_Type.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_event.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_system_role.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_match.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_up_match.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_del_match.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_up_event_team.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_event_team.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_del_event.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_del_event_team.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_event_team.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Function\dbo.udf_get_params_from_delim_string.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Function\dbo.SplitString.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_match_market.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_del_match_market_by_match_id.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_suspend_match.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_abort_match.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_modify_match_datetime.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_activate_match.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_eventTeam_by_EventID.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_param_bytype.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_system_func.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_edit_role_func.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_up_event.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_up_event_team_status.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_event.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_system_account.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_recommend_match.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_pause_event.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_active_event.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_abort_event.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_match_by_eventid.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_normal_match_additonalstatus.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_USER_FUND.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_FUND_HISTORY.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_EXCHANGE_BACK.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_EXCHANGE_SETTLE.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_EXCHANGE_DEAL.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_EXCHANGE_LAY.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_up_userfund.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_userfund_by_userid.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_inti_userfund.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_Champ_Market.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_CHAMP_EVENT.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_Champ_Event_Member.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_champ_event.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_event_by_eventid.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_del_champ_event.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_champ_event.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_champ_member_by_id.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_update_champ_event.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_Champ_Win_Member.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_pause_champ_event.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_active_champ_event.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_abort_champ_event.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_edit_Exchange_Back.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_edit_Exchange_Lay.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_champ_event_members.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_champ_event_winmembers.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_left_menuitem.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_mytrade.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_brokerage_integral_map.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_del_brokerage_integral_map.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_brokerage_integral_map.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_up_brokerage_integral_map.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_BROKERAGE_INTEGRAL_MAP.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_AGENT_DETAIL.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_set_agent_detail.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_belong_member.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_all_agent.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_check_account_name.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_agent_by_generalAgentId.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_CACHE_OBJECT.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_cache_object.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_up_cache_object.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_set_members_as_agent.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_members.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_agent_By_id.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_set_userfund_bankinfo.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_match_market_for_betting.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_champion_market_for_betting.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="UpdateFull.bat">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateFull.bat">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_members_by_agentId.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_calc_query_deal.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_INTEGRAL_HISTORY.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_register_growmember_account.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_calc_sport_match_settle.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_calc_cancel_freeze_fund.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Function\dbo.udf_get_user_commission_rate.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Function\dbo.udf_get_user_integral.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_record_match_score.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_calc_query_champion_deal.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_calc_cancel_champ_match_freeze_fund.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_half_end_match.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_full_end_match.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_freezing_match.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_clear_market.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_champ_event_by_key.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_SYSTEM_MAIN_FUND.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_MAIN_FUND_HISTORY.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_champion_match_market_by_eventid.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_calc_agent_commission.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_champ_win_members.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_USER_PAY.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_start_match.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_finish_champ_event.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_user_pay.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_members_by_general_agentId.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_user_pay.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_userpay_orderid.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_USER_WITHDRAW.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_user_withdraw.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_user_withdraw.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_cancle_user_withdraw.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_transfer_user_withdraw.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_confirm_user_withdraw.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_query_user_withdraw.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_reject_user_withdraw.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_activate_vcard.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_vcard.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_query_vcard.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_VCARD_DETAIL.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_brokerage_by_integral.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_integral_history.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_AD_Words.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_AD_PIC.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_ADDAPic.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_DSADWords.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_deal.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.query_vcard_detail.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_user_pay_successed.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_check_grow_member_count.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_fund_report.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_commission_report.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_brokerage_report.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_bet_report.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_deal_report.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_notice.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_edit_toprace.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_AD_NOTICE.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_AD_TOPRACE.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_ODDS_COMPARE.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_edit_odds_compare.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_atuo_freeze_start_match.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_HELPER.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_edit_helper.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_check_reset_email.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_cancle_agent.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_atuo_freeze_start_match.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_user_fund_detail.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_match_rpt.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_userpay_succeed_detail.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_set_user_fund.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_COUNTRY.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_all_country.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_event_team_name_en.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Function\dbo.udf_get_canuse_market_for_betting.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_my_match.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="ChangeScript\20130513.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_update_market_status.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_market.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_update_match_settle_status.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="ChangeScript\20130515.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="ChangeScript\20130517.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="ChangeScript\20130527.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="ChangeScript\20130603.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_TIMEZONE.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_CURRENCY.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_timezone.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_currency.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_match_market_by_markettmpid.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_YOUR_INPLAY.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="ChangeScript\20130702.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_manage_your_inplay.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_your_inplay.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="ChangeScript\20130718.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_SYSTEM_AUTOMESSAGE.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="ChangeScript\20130708.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_sysAutoMsg.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_del_sysAutoMsg.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_sysAutoMsg.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_sysAutoMsgDetails.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_all_agenttype.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="ChangeScript\20130719.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_reject_apply_proxy.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_approveprocess_apply_proxy.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_confirm_apply_proxy.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_apply_agent.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_proxyApplyByUserID.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_cancel_userProxyApply.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_SingleApplyProxyByAPID.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_proxyApply.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="ChangeScript\20130724.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="ChangeScript\20130730.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_sechalfstart_match.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="ChangeScript\20130808.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_MATCH_HEDGE_FUND.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="脚本更新说明.txt">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Function\dbo.udf_calc_realtime_football_result.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_calc_real_fund_hedge.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_calc_real_fund_hedge_main.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Table\TB_APPLY_PROXY.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_exchange_back_cache.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_exchange_lay_cache.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_calc_real_hedge_rollback.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_get_all_your_inplay.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_calc_log.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_add_settlement_log.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_calc_add_fundhistory_withlog.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_calc_add_integralhistory_withlog.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_calc_add_exchangesettle_withlog.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_calc_add_agentfundhistory_withlog.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_calc_settlement_rollback.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_calc_settlement_rollback_getusers.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_calc_settlement_matchstatus_rollback.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\StoredProcedure\dbo.pr_clear_market_by_matkettmpids.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="ChangeScript\20130924.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="CreateScript\Function\dbo.udf_get_footbal_halfcalc_status.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+  </ItemGroup>
+</Project>

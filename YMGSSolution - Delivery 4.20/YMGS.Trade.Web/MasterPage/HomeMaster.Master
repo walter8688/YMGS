@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeMaster.master.cs"
+    Inherits="YMGS.Trade.Web.MasterPage.HomeMaster" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<%@ Register TagPrefix="YMGS" TagName="HomeTopCtrl" Src="~/MasterPage/HomeTopCtrl.ascx" %>
+<%@ Register TagPrefix="YMGS" TagName="HomeFooterCtrl" Src="~/MasterPage/HomeFooterCtrl.ascx" %>
+<%@ Register TagPrefix="YMGS" TagName="HomeTopHelpCtrl" Src="~/Home/HomeTopHelpCtrl.ascx" %>
+<%@ Register TagPrefix="YMGS" TagName="HomeTopNaviCtrl" Src="~/Home/HomeTopNaviCtrl.ascx" %>
+<%@ Register TagPrefix="YMGS" TagName="HomeLoginCtrl" Src="~/Home/HomeLoginClientCtrl.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="x-ua-compatible" content="IE=8">
+    <title>YMGS</title>
+    <link href="~/Css/DefaultCss.css"  rel=Stylesheet />
+    <link href="~/Css/HomeDefault.css"  rel=Stylesheet />
+    <link href="~/Css/JQueryUI/jquery.ui.all.css"  rel=Stylesheet />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <ajaxToolkit:ToolkitScriptManager runat="Server" EnableScriptGlobalization="true"
+        EnablePageMethods="true" EnablePartialRendering="true" AsyncPostBackErrorMessage=""
+        AllowCustomErrorsRedirect="false" OnAsyncPostBackError="ScriptManager_AsyncPostBackError"
+        EnableScriptLocalization="true" ID="ScriptManager1">
+        <Scripts>
+            <asp:ScriptReference Path="~/Scripts/jquery-1.8.3.min.js" />
+            <asp:ScriptReference Path="~/Scripts/CommonJS.js" />
+            <asp:ScriptReference Path="~/Scripts/FootballJS.js" />
+        </Scripts>
+    </ajaxToolkit:ToolkitScriptManager>
+    <asp:ScriptManagerProxy ID="smProxy" runat="server">
+        <Scripts>
+            <asp:ScriptReference Path="~/Home/HomeLoginClientCtrl.js" />
+        </Scripts>
+        <Services>
+            <asp:ServiceReference Path="~/Services/HomeLoginService.asmx" />
+        </Services>
+    </asp:ScriptManagerProxy>  
+<div class="main-container">
+    <div class="homelogin">
+        <YMGS:HomeLoginCtrl ID="homeLogin" runat="server" />
+    </div>
+    <div class="hometophelp">
+        <YMGS:HomeTopHelpCtrl ID="homeTopHelp" runat="server" />
+    </div>
+    <div class="homenav">
+        <YMGS:HomeTopNaviCtrl ID="homeTopNavi" runat="server" />
+    </div>
+    <div class="homecontent">
+        <asp:ContentPlaceHolder ID="mph" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="homemainfooter">
+        <YMGS:HomeFooterCtrl ID="footer" runat="server"  />
+    </div>
+</div>
+<%--        <table class="homemain" cellpadding=0 cellspacing=0>
+                <tr>
+                    <td valign=top style="background-color:White">
+                        <div class="homemaincontent">
+                            <div class="homelogin">
+                                <YMGS:HomeLoginCtrl ID="homeLogin" runat="server" />
+                            </div>
+                            <div class="hometophelp">
+                                <YMGS:HomeTopHelpCtrl ID="homeTopHelp" runat="server" />
+                            </div>
+                            <div class="homenav">
+                                <YMGS:HomeTopNaviCtrl ID="homeTopNavi" runat="server" />
+                            </div>
+                            <div class="homecontent">
+                                <asp:ContentPlaceHolder ID="mph" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="bottom" align="center" style="background-color:White">                       
+                        <div class="homemainfooter">
+                            <YMGS:HomeFooterCtrl ID="footer" runat="server" />
+                        </div>
+                    </td>
+                </tr>
+            </table>--%>
+    </form>
+</body>
+</html>

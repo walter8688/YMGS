@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSMarketTemplate" targetNamespace="http://tempuri.org/DSMarketTemplate.xsd" xmlns:mstns="http://tempuri.org/DSMarketTemplate.xsd" xmlns="http://tempuri.org/DSMarketTemplate.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSMarketTemplate" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSMarketTemplate" msprop:Generator_UserDSName="DSMarketTemplate">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_MARKET_TEMPLATE" msprop:Generator_TableClassName="TB_MARKET_TEMPLATEDataTable" msprop:Generator_TableVarName="tableTB_MARKET_TEMPLATE" msprop:Generator_TablePropName="TB_MARKET_TEMPLATE" msprop:Generator_RowDeletingName="TB_MARKET_TEMPLATERowDeleting" msprop:Generator_UserTableName="TB_MARKET_TEMPLATE" msprop:Generator_RowChangingName="TB_MARKET_TEMPLATERowChanging" msprop:Generator_RowEvHandlerName="TB_MARKET_TEMPLATERowChangeEventHandler" msprop:Generator_RowDeletedName="TB_MARKET_TEMPLATERowDeleted" msprop:Generator_RowEvArgName="TB_MARKET_TEMPLATERowChangeEvent" msprop:Generator_RowChangedName="TB_MARKET_TEMPLATERowChanged" msprop:Generator_RowClassName="TB_MARKET_TEMPLATERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MARKET_TMP_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnMARKET_TMP_ID" msprop:Generator_ColumnPropNameInRow="MARKET_TMP_ID" msprop:Generator_ColumnPropNameInTable="MARKET_TMP_IDColumn" msprop:Generator_UserColumnName="MARKET_TMP_ID" type="xs:int" />
+              <xs:element name="MARKET_TMP_NAME" msprop:Generator_ColumnVarNameInTable="columnMARKET_TMP_NAME" msprop:Generator_ColumnPropNameInRow="MARKET_TMP_NAME" msprop:Generator_ColumnPropNameInTable="MARKET_TMP_NAMEColumn" msprop:Generator_UserColumnName="MARKET_TMP_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BET_TYPE_ID" msprop:Generator_ColumnVarNameInTable="columnBET_TYPE_ID" msprop:Generator_ColumnPropNameInRow="BET_TYPE_ID" msprop:Generator_ColumnPropNameInTable="BET_TYPE_IDColumn" msprop:Generator_UserColumnName="BET_TYPE_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Market_Tmp_Type" msprop:Generator_ColumnVarNameInTable="columnMarket_Tmp_Type" msprop:Generator_ColumnPropNameInRow="Market_Tmp_Type" msprop:Generator_ColumnPropNameInTable="Market_Tmp_TypeColumn" msprop:Generator_UserColumnName="Market_Tmp_Type" type="xs:int" minOccurs="0" />
+              <xs:element name="HOMESCORE" msprop:Generator_ColumnVarNameInTable="columnHOMESCORE" msprop:Generator_ColumnPropNameInRow="HOMESCORE" msprop:Generator_ColumnPropNameInTable="HOMESCOREColumn" msprop:Generator_UserColumnName="HOMESCORE" type="xs:int" minOccurs="0" />
+              <xs:element name="AWAYSCORE" msprop:Generator_ColumnVarNameInTable="columnAWAYSCORE" msprop:Generator_ColumnPropNameInRow="AWAYSCORE" msprop:Generator_ColumnPropNameInTable="AWAYSCOREColumn" msprop:Generator_UserColumnName="AWAYSCORE" type="xs:int" minOccurs="0" />
+              <xs:element name="GOALS" msprop:Generator_ColumnVarNameInTable="columnGOALS" msprop:Generator_ColumnPropNameInRow="GOALS" msprop:Generator_ColumnPropNameInTable="GOALSColumn" msprop:Generator_UserColumnName="GOALS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SCOREA" msprop:Generator_ColumnVarNameInTable="columnSCOREA" msprop:Generator_ColumnPropNameInRow="SCOREA" msprop:Generator_ColumnPropNameInTable="SCOREAColumn" msprop:Generator_UserColumnName="SCOREA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SCOREB" msprop:Generator_ColumnVarNameInTable="columnSCOREB" msprop:Generator_ColumnPropNameInRow="SCOREB" msprop:Generator_ColumnPropNameInTable="SCOREBColumn" msprop:Generator_UserColumnName="SCOREB" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" msprop:Generator_UserColumnName="CREATE_USER" type="xs:int" minOccurs="0" />
+              <xs:element name="CREATE_TIME" msprop:Generator_ColumnVarNameInTable="columnCREATE_TIME" msprop:Generator_ColumnPropNameInRow="CREATE_TIME" msprop:Generator_ColumnPropNameInTable="CREATE_TIMEColumn" msprop:Generator_UserColumnName="CREATE_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LAST_UPDATE_USER" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATE_USER" msprop:Generator_ColumnPropNameInRow="LAST_UPDATE_USER" msprop:Generator_ColumnPropNameInTable="LAST_UPDATE_USERColumn" msprop:Generator_UserColumnName="LAST_UPDATE_USER" type="xs:int" minOccurs="0" />
+              <xs:element name="LAST_UPDATE_TIME" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATE_TIME" msprop:Generator_ColumnPropNameInRow="LAST_UPDATE_TIME" msprop:Generator_ColumnPropNameInTable="LAST_UPDATE_TIMEColumn" msprop:Generator_UserColumnName="LAST_UPDATE_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MARKET_TMP_NAME_EN" msprop:Generator_ColumnVarNameInTable="columnMARKET_TMP_NAME_EN" msprop:Generator_ColumnPropNameInRow="MARKET_TMP_NAME_EN" msprop:Generator_ColumnPropNameInTable="MARKET_TMP_NAME_ENColumn" msprop:Generator_UserColumnName="MARKET_TMP_NAME_EN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_MARKET_TEMPLATE" />
+      <xs:field xpath="mstns:MARKET_TMP_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

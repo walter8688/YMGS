@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSADWords" targetNamespace="http://tempuri.org/DSADWords.xsd" xmlns:mstns="http://tempuri.org/DSADWords.xsd" xmlns="http://tempuri.org/DSADWords.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSADWords" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSADWords" msprop:Generator_UserDSName="DSADWords">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_AD_WORDS" msprop:Generator_TableClassName="TB_AD_WORDSDataTable" msprop:Generator_TableVarName="tableTB_AD_WORDS" msprop:Generator_TablePropName="TB_AD_WORDS" msprop:Generator_RowDeletingName="TB_AD_WORDSRowDeleting" msprop:Generator_UserTableName="TB_AD_WORDS" msprop:Generator_RowChangingName="TB_AD_WORDSRowChanging" msprop:Generator_RowEvHandlerName="TB_AD_WORDSRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_AD_WORDSRowDeleted" msprop:Generator_RowEvArgName="TB_AD_WORDSRowChangeEvent" msprop:Generator_RowChangedName="TB_AD_WORDSRowChanged" msprop:Generator_RowClassName="TB_AD_WORDSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AD_WORDS_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnAD_WORDS_ID" msprop:Generator_ColumnPropNameInRow="AD_WORDS_ID" msprop:Generator_ColumnPropNameInTable="AD_WORDS_IDColumn" msprop:Generator_UserColumnName="AD_WORDS_ID" type="xs:int" />
+              <xs:element name="TITLE" msprop:Generator_ColumnVarNameInTable="columnTITLE" msprop:Generator_ColumnPropNameInRow="TITLE" msprop:Generator_ColumnPropNameInTable="TITLEColumn" msprop:Generator_UserColumnName="TITLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TITLE_EN" msprop:Generator_ColumnVarNameInTable="columnTITLE_EN" msprop:Generator_ColumnPropNameInRow="TITLE_EN" msprop:Generator_ColumnPropNameInTable="TITLE_ENColumn" msprop:Generator_UserColumnName="TITLE_EN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESC" msprop:Generator_ColumnVarNameInTable="columnDESC" msprop:Generator_ColumnPropNameInRow="DESC" msprop:Generator_ColumnPropNameInTable="DESCColumn" msprop:Generator_UserColumnName="DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESC_EN" msprop:Generator_ColumnVarNameInTable="columnDESC_EN" msprop:Generator_ColumnPropNameInRow="DESC_EN" msprop:Generator_ColumnPropNameInTable="DESC_ENColumn" msprop:Generator_UserColumnName="DESC_EN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WEBLINK" msprop:Generator_ColumnVarNameInTable="columnWEBLINK" msprop:Generator_ColumnPropNameInRow="WEBLINK" msprop:Generator_ColumnPropNameInTable="WEBLINKColumn" msprop:Generator_UserColumnName="WEBLINK" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_AD_WORDS" />
+      <xs:field xpath="mstns:AD_WORDS_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

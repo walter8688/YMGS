@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSApplyAgent" targetNamespace="http://tempuri.org/DSApplyAgent.xsd" xmlns:mstns="http://tempuri.org/DSApplyAgent.xsd" xmlns="http://tempuri.org/DSApplyAgent.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YGMSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YGMSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YGMSConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString3" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString3 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString3" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSApplyAgent" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSApplyAgent" msprop:Generator_UserDSName="DSApplyAgent">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_APPLY_AGENT" msprop:Generator_TableClassName="TB_APPLY_AGENTDataTable" msprop:Generator_TableVarName="tableTB_APPLY_AGENT" msprop:Generator_TablePropName="TB_APPLY_AGENT" msprop:Generator_RowDeletingName="TB_APPLY_AGENTRowDeleting" msprop:Generator_RowChangingName="TB_APPLY_AGENTRowChanging" msprop:Generator_RowEvHandlerName="TB_APPLY_AGENTRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_APPLY_AGENTRowDeleted" msprop:Generator_UserTableName="TB_APPLY_AGENT" msprop:Generator_RowChangedName="TB_APPLY_AGENTRowChanged" msprop:Generator_RowEvArgName="TB_APPLY_AGENTRowChangeEvent" msprop:Generator_RowClassName="TB_APPLY_AGENTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Apply_Proxy_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnApply_Proxy_ID" msprop:Generator_ColumnPropNameInRow="Apply_Proxy_ID" msprop:Generator_ColumnPropNameInTable="Apply_Proxy_IDColumn" msprop:Generator_UserColumnName="Apply_Proxy_ID" type="xs:int" />
+              <xs:element name="User_ID" msprop:Generator_ColumnVarNameInTable="columnUser_ID" msprop:Generator_ColumnPropNameInRow="User_ID" msprop:Generator_ColumnPropNameInTable="User_IDColumn" msprop:Generator_UserColumnName="User_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="User_Birth" msprop:Generator_ColumnVarNameInTable="columnUser_Birth" msprop:Generator_ColumnPropNameInRow="User_Birth" msprop:Generator_ColumnPropNameInTable="User_BirthColumn" msprop:Generator_UserColumnName="User_Birth" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Role_ID" msprop:Generator_ColumnVarNameInTable="columnRole_ID" msprop:Generator_ColumnPropNameInRow="Role_ID" msprop:Generator_ColumnPropNameInTable="Role_IDColumn" msprop:Generator_UserColumnName="Role_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Apply_Status" msprop:Generator_ColumnVarNameInTable="columnApply_Status" msprop:Generator_ColumnPropNameInRow="Apply_Status" msprop:Generator_ColumnPropNameInTable="Apply_StatusColumn" msprop:Generator_UserColumnName="Apply_Status" type="xs:int" minOccurs="0" />
+              <xs:element name="Apply_Date" msprop:Generator_ColumnVarNameInTable="columnApply_Date" msprop:Generator_ColumnPropNameInRow="Apply_Date" msprop:Generator_ColumnPropNameInTable="Apply_DateColumn" msprop:Generator_UserColumnName="Apply_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Role_Name" msprop:Generator_ColumnVarNameInTable="columnRole_Name" msprop:Generator_ColumnPropNameInRow="Role_Name" msprop:Generator_ColumnPropNameInTable="Role_NameColumn" msprop:Generator_UserColumnName="Role_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Login_Name" msprop:Generator_ColumnVarNameInTable="columnLogin_Name" msprop:Generator_ColumnPropNameInRow="Login_Name" msprop:Generator_ColumnPropNameInTable="Login_NameColumn" msprop:Generator_UserColumnName="Login_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="User_Telephone" msprop:Generator_ColumnVarNameInTable="columnUser_Telephone" msprop:Generator_ColumnPropNameInRow="User_Telephone" msprop:Generator_ColumnPropNameInTable="User_TelephoneColumn" msprop:Generator_UserColumnName="User_Telephone" type="xs:string" minOccurs="0" />
+              <xs:element name="User_Country" msprop:Generator_ColumnVarNameInTable="columnUser_Country" msprop:Generator_ColumnPropNameInRow="User_Country" msprop:Generator_ColumnPropNameInTable="User_CountryColumn" msprop:Generator_UserColumnName="User_Country" type="xs:string" minOccurs="0" />
+              <xs:element name="User_Province" msprop:Generator_ColumnVarNameInTable="columnUser_Province" msprop:Generator_ColumnPropNameInRow="User_Province" msprop:Generator_ColumnPropNameInTable="User_ProvinceColumn" msprop:Generator_UserColumnName="User_Province" type="xs:string" minOccurs="0" />
+              <xs:element name="User_City" msprop:Generator_ColumnVarNameInTable="columnUser_City" msprop:Generator_ColumnPropNameInRow="User_City" msprop:Generator_ColumnPropNameInTable="User_CityColumn" msprop:Generator_UserColumnName="User_City" type="xs:string" minOccurs="0" />
+              <xs:element name="User_BankAddress" msprop:Generator_ColumnVarNameInTable="columnUser_BankAddress" msprop:Generator_ColumnPropNameInRow="User_BankAddress" msprop:Generator_ColumnPropNameInTable="User_BankAddressColumn" msprop:Generator_UserColumnName="User_BankAddress" type="xs:string" minOccurs="0" />
+              <xs:element name="User_BankNO" msprop:Generator_ColumnVarNameInTable="columnUser_BankNO" msprop:Generator_ColumnPropNameInRow="User_BankNO" msprop:Generator_ColumnPropNameInTable="User_BankNOColumn" msprop:Generator_UserColumnName="User_BankNO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_APPLY_AGENT" />
+      <xs:field xpath="mstns:Apply_Proxy_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

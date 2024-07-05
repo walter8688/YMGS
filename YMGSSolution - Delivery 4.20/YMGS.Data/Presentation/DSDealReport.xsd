@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSDealReport" targetNamespace="http://tempuri.org/DSDealReport.xsd" xmlns:mstns="http://tempuri.org/DSDealReport.xsd" xmlns="http://tempuri.org/DSDealReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSDealReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSDealReport" msprop:Generator_UserDSName="DSDealReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_Deal_Report" msprop:Generator_TableClassName="TB_Deal_ReportDataTable" msprop:Generator_TableVarName="tableTB_Deal_Report" msprop:Generator_TablePropName="TB_Deal_Report" msprop:Generator_RowDeletingName="TB_Deal_ReportRowDeleting" msprop:Generator_UserTableName="TB_Deal_Report" msprop:Generator_RowChangingName="TB_Deal_ReportRowChanging" msprop:Generator_RowEvHandlerName="TB_Deal_ReportRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_Deal_ReportRowDeleted" msprop:Generator_RowEvArgName="TB_Deal_ReportRowChangeEvent" msprop:Generator_RowChangedName="TB_Deal_ReportRowChanged" msprop:Generator_RowClassName="TB_Deal_ReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EventName" msprop:Generator_ColumnVarNameInTable="columnEventName" msprop:Generator_ColumnPropNameInRow="EventName" msprop:Generator_ColumnPropNameInTable="EventNameColumn" msprop:Generator_UserColumnName="EventName" type="xs:string" minOccurs="0" />
+              <xs:element name="MatchName" msprop:Generator_ColumnVarNameInTable="columnMatchName" msprop:Generator_ColumnPropNameInRow="MatchName" msprop:Generator_ColumnPropNameInTable="MatchNameColumn" msprop:Generator_UserColumnName="MatchName" type="xs:string" minOccurs="0" />
+              <xs:element name="BET_NAME" msprop:Generator_ColumnVarNameInTable="columnBET_NAME" msprop:Generator_ColumnPropNameInRow="BET_NAME" msprop:Generator_ColumnPropNameInTable="BET_NAMEColumn" msprop:Generator_UserColumnName="BET_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="Market_Tmp_Type" msprop:Generator_ColumnVarNameInTable="columnMarket_Tmp_Type" msprop:Generator_ColumnPropNameInRow="Market_Tmp_Type" msprop:Generator_ColumnPropNameInTable="Market_Tmp_TypeColumn" msprop:Generator_UserColumnName="Market_Tmp_Type" type="xs:string" minOccurs="0" />
+              <xs:element name="MARKET_NAME" msprop:Generator_ColumnVarNameInTable="columnMARKET_NAME" msprop:Generator_ColumnPropNameInRow="MARKET_NAME" msprop:Generator_ColumnPropNameInTable="MARKET_NAMEColumn" msprop:Generator_UserColumnName="MARKET_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ODDS" msprop:Generator_ColumnVarNameInTable="columnODDS" msprop:Generator_ColumnPropNameInRow="ODDS" msprop:Generator_ColumnPropNameInTable="ODDSColumn" msprop:Generator_UserColumnName="ODDS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DEAL_AMOUNT" msprop:Generator_ColumnVarNameInTable="columnDEAL_AMOUNT" msprop:Generator_ColumnPropNameInRow="DEAL_AMOUNT" msprop:Generator_ColumnPropNameInTable="DEAL_AMOUNTColumn" msprop:Generator_UserColumnName="DEAL_AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DEAL_TIME" msprop:Generator_ColumnVarNameInTable="columnDEAL_TIME" msprop:Generator_ColumnPropNameInRow="DEAL_TIME" msprop:Generator_ColumnPropNameInTable="DEAL_TIMEColumn" msprop:Generator_UserColumnName="DEAL_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BackUser" msprop:Generator_ColumnVarNameInTable="columnBackUser" msprop:Generator_ColumnPropNameInRow="BackUser" msprop:Generator_ColumnPropNameInTable="BackUserColumn" msprop:Generator_UserColumnName="BackUser" type="xs:string" minOccurs="0" />
+              <xs:element name="LayUser" msprop:Generator_ColumnVarNameInTable="columnLayUser" msprop:Generator_ColumnPropNameInRow="LayUser" msprop:Generator_ColumnPropNameInTable="LayUserColumn" msprop:Generator_UserColumnName="LayUser" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

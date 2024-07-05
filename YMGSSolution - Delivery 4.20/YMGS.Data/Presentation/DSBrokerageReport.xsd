@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSBrokerageReport" targetNamespace="http://tempuri.org/DSBrokerageReport.xsd" xmlns:mstns="http://tempuri.org/DSBrokerageReport.xsd" xmlns="http://tempuri.org/DSBrokerageReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YGMSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YGMSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YGMSConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSBrokerageReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSBrokerageReport" msprop:Generator_UserDSName="DSBrokerageReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_Brokerage_Report" msprop:Generator_TableClassName="TB_Brokerage_ReportDataTable" msprop:Generator_TableVarName="tableTB_Brokerage_Report" msprop:Generator_TablePropName="TB_Brokerage_Report" msprop:Generator_RowDeletingName="TB_Brokerage_ReportRowDeleting" msprop:Generator_UserTableName="TB_Brokerage_Report" msprop:Generator_RowChangingName="TB_Brokerage_ReportRowChanging" msprop:Generator_RowEvHandlerName="TB_Brokerage_ReportRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_Brokerage_ReportRowDeleted" msprop:Generator_RowEvArgName="TB_Brokerage_ReportRowChangeEvent" msprop:Generator_RowChangedName="TB_Brokerage_ReportRowChanged" msprop:Generator_RowClassName="TB_Brokerage_ReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="REPORTTYPE" msprop:Generator_ColumnVarNameInTable="columnREPORTTYPE" msprop:Generator_ColumnPropNameInRow="REPORTTYPE" msprop:Generator_ColumnPropNameInTable="REPORTTYPEColumn" msprop:Generator_UserColumnName="REPORTTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="SETTLE_TIME" msprop:Generator_ColumnVarNameInTable="columnSETTLE_TIME" msprop:Generator_ColumnPropNameInRow="SETTLE_TIME" msprop:Generator_ColumnPropNameInTable="SETTLE_TIMEColumn" msprop:Generator_UserColumnName="SETTLE_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EVENT_NAME" msprop:Generator_ColumnVarNameInTable="columnEVENT_NAME" msprop:Generator_ColumnPropNameInRow="EVENT_NAME" msprop:Generator_ColumnPropNameInTable="EVENT_NAMEColumn" msprop:Generator_UserColumnName="EVENT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="MATCH_NAME" msprop:Generator_ColumnVarNameInTable="columnMATCH_NAME" msprop:Generator_ColumnPropNameInRow="MATCH_NAME" msprop:Generator_ColumnPropNameInTable="MATCH_NAMEColumn" msprop:Generator_UserColumnName="MATCH_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="BET_TYPE_NAME" msprop:Generator_ColumnVarNameInTable="columnBET_TYPE_NAME" msprop:Generator_ColumnPropNameInRow="BET_TYPE_NAME" msprop:Generator_ColumnPropNameInTable="BET_TYPE_NAMEColumn" msprop:Generator_UserColumnName="BET_TYPE_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="MARKET_NAME" msprop:Generator_ColumnVarNameInTable="columnMARKET_NAME" msprop:Generator_ColumnPropNameInRow="MARKET_NAME" msprop:Generator_ColumnPropNameInTable="MARKET_NAMEColumn" msprop:Generator_UserColumnName="MARKET_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="ODDS" msprop:Generator_ColumnVarNameInTable="columnODDS" msprop:Generator_ColumnPropNameInRow="ODDS" msprop:Generator_ColumnPropNameInTable="ODDSColumn" msprop:Generator_UserColumnName="ODDS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DEAL_AMOUNT" msprop:Generator_ColumnVarNameInTable="columnDEAL_AMOUNT" msprop:Generator_ColumnPropNameInRow="DEAL_AMOUNT" msprop:Generator_ColumnPropNameInTable="DEAL_AMOUNTColumn" msprop:Generator_UserColumnName="DEAL_AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DEAL_TIME" msprop:Generator_ColumnVarNameInTable="columnDEAL_TIME" msprop:Generator_ColumnPropNameInRow="DEAL_TIME" msprop:Generator_ColumnPropNameInTable="DEAL_TIMEColumn" msprop:Generator_UserColumnName="DEAL_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="winuser" msprop:Generator_ColumnVarNameInTable="columnwinuser" msprop:Generator_ColumnPropNameInRow="winuser" msprop:Generator_ColumnPropNameInTable="winuserColumn" msprop:Generator_UserColumnName="winuser" type="xs:string" minOccurs="0" />
+              <xs:element name="loseuser" msprop:Generator_ColumnVarNameInTable="columnloseuser" msprop:Generator_ColumnPropNameInRow="loseuser" msprop:Generator_ColumnPropNameInTable="loseuserColumn" msprop:Generator_UserColumnName="loseuser" type="xs:string" minOccurs="0" />
+              <xs:element name="BROKERAGE_RATE" msprop:Generator_ColumnVarNameInTable="columnBROKERAGE_RATE" msprop:Generator_ColumnPropNameInRow="BROKERAGE_RATE" msprop:Generator_ColumnPropNameInTable="BROKERAGE_RATEColumn" msprop:Generator_UserColumnName="BROKERAGE_RATE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BROKERAGE" msprop:Generator_ColumnVarNameInTable="columnBROKERAGE" msprop:Generator_ColumnPropNameInRow="BROKERAGE" msprop:Generator_ColumnPropNameInTable="BROKERAGEColumn" msprop:Generator_UserColumnName="BROKERAGE" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

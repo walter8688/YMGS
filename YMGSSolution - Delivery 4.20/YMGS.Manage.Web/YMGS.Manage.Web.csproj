@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44F568D2-4F19-46EE-9815-A2CBDCF0622B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YMGS.Manage.Web</RootNamespace>
+    <AssemblyName>YMGS.Manage.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>YMGSKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\Component\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\MicrosoftEnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\Component\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AssistManage\Helper.aspx" />
+    <Content Include="AssistManage\HelperNewPage.aspx" />
+    <Content Include="AssistManage\HotLine.aspx" />
+    <Content Include="AssistManage\OddsCompare.aspx" />
+    <Content Include="AssistManage\ParameterManagePage.aspx" />
+    <Content Include="AssistManage\ParamZoneManage.aspx" />
+    <Content Include="Controls\AjaxCalendar.ascx" />
+    <Content Include="Controls\AjaxCalendar.js" />
+    <Content Include="Controls\LeftMenu.ascx" />
+    <Content Include="Controls\PageNavigator.ascx" />
+    <Content Include="Controls\TopMenu.ascx" />
+    <Content Include="Css\css.css" />
+    <Content Include="Css\DefaultCss.css" />
+    <Content Include="Css\logincss.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="EventManage\EventManagePage.aspx" />
+    <Content Include="EventManage\EventZoneManagePage.aspx" />
+    <Content Include="EventManage\TeamManagePage.aspx" />
+    <Content Include="GameControl\GameControlPage.aspx" />
+    <Content Include="GameMarket\ChampionGameManagePage.aspx" />
+    <Content Include="GameMarket\GameDetailFrm.aspx" />
+    <Content Include="GameMarket\GameMarketManageFrm.aspx" />
+    <Content Include="GameMarket\MatchManageFrm.aspx" />
+    <Content Include="GameSettle\ChampionEventSettleFrm.aspx" />
+    <Content Include="GameSettle\CommissionManagePage.aspx" />
+    <Content Include="GameSettle\MatchSettleFrm.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\AjaxCalendar.png" />
+    <Content Include="Images\an.png" />
+    <Content Include="Images\bbg.jpg" />
+    <Content Include="Images\d1.jpg" />
+    <Content Include="Images\d3.gif" />
+    <Content Include="Images\dr1.jpg" />
+    <Content Include="Images\fleft.jpg" />
+    <Content Include="Images\fleft01.jpg" />
+    <Content Include="Images\fv1.jpg" />
+    <Content Include="Images\jg.png" />
+    <Content Include="Images\loginbg.jpg" />
+    <Content Include="Images\loginbtn.png" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\midc.jpg" />
+    <Content Include="Images\p.jpg" />
+    <Content Include="Images\pba.jpg" />
+    <Content Include="Images\sanjiao.jpg" />
+    <Content Include="Images\searchbtn.jpg" />
+    <Content Include="Images\tanc1.png" />
+    <Content Include="Images\top1.jpg" />
+    <Content Include="Images\top2.jpg" />
+    <Content Include="ReportCenter\BetReportFrm.aspx" />
+    <Content Include="ReportCenter\DealReportFrm.aspx" />
+    <Content Include="ReportCenter\FundReportFrm.aspx" />
+    <Content Include="ReportCenter\IntegralReportFrm.aspx" />
+    <Content Include="Scripts\ASPProgressBar.js" />
+    <Content Include="Scripts\CommonJS.js" />
+    <Content Include="Scripts\jquery-1.8.3.min.js" />
+    <Content Include="SystemSetting\ADRegion.aspx" />
+    <Content Include="SystemSetting\AgentApplyManagePage.aspx" />
+    <Content Include="SystemSetting\AgentManagePage.aspx" />
+    <Content Include="SystemSetting\RoleManageFrm.aspx" />
+    <Content Include="SystemSetting\UserManage.aspx" />
+    <Content Include="SystemSetting\VCardManagePage.aspx" />
+    <Content Include="SystemSetting\WithdrawalManagePage.aspx" />
+    <Content Include="TestFrm.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="TradeManage\trade.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\YMGS.AssemblyInfo.cs">
+      <Link>Properties\YMGS.AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AssistManage\Helper.aspx.cs">
+      <DependentUpon>Helper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssistManage\Helper.aspx.designer.cs">
+      <DependentUpon>Helper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssistManage\HelperNewPage.aspx.cs">
+      <DependentUpon>HelperNewPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssistManage\HelperNewPage.aspx.designer.cs">
+      <DependentUpon>HelperNewPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssistManage\HotLine.aspx.cs">
+      <DependentUpon>HotLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssistManage\HotLine.aspx.designer.cs">
+      <DependentUpon>HotLine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssistManage\OddsCompare.aspx.cs">
+      <DependentUpon>OddsCompare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssistManage\OddsCompare.aspx.designer.cs">
+      <DependentUpon>OddsCompare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssistManage\ParameterManagePage.aspx.cs">
+      <DependentUpon>ParameterManagePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssistManage\ParameterManagePage.aspx.designer.cs">
+      <DependentUpon>ParameterManagePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssistManage\ParamZoneManage.aspx.cs">
+      <DependentUpon>ParamZoneManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssistManage\ParamZoneManage.aspx.designer.cs">
+      <DependentUpon>ParamZoneManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\CommonConstant.cs" />
+    <Compile Include="Common\ExcelHelper.cs" />
+    <Compile Include="Common\MySession.cs" />
+    <Compile Include="Common\PageHelper.cs" />
+    <Compile Include="Common\QueryBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\SystemConfigManager.cs" />
+    <Compile Include="Common\TopMenuIdAttribute.cs" />
+    <Compile Include="Common\UrlHelper.cs" />
+    <Compile Include="Controls\AjaxCalendar.ascx.cs">
+      <DependentUpon>AjaxCalendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AjaxCalendar.ascx.designer.cs">
+      <DependentUpon>AjaxCalendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ASPProgressBar.cs" />
+    <Compile Include="Controls\LeftMenu.ascx.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\LeftMenu.ascx.designer.cs">
+      <DependentUpon>LeftMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PageNavigator.ascx.cs">
+      <DependentUpon>PageNavigator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PageNavigator.ascx.designer.cs">
+      <DependentUpon>PageNavigator.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TopMenu.ascx.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TopMenu.ascx.designer.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventManage\EventManagePage.aspx.cs">
+      <DependentUpon>EventManagePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventManage\EventManagePage.aspx.designer.cs">
+      <DependentUpon>EventManagePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventManage\EventZoneManagePage.aspx.cs">
+      <DependentUpon>EventZoneManagePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventManage\EventZoneManagePage.aspx.designer.cs">
+      <DependentUpon>EventZoneManagePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventManage\TeamManagePage.aspx.cs">
+      <DependentUpon>TeamManagePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventManage\TeamManagePage.aspx.designer.cs">
+      <DependentUpon>TeamManagePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameControl\GameControlPage.aspx.cs">
+      <DependentUpon>GameControlPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameControl\GameControlPage.aspx.designer.cs">
+      <DependentUpon>GameControlPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameControl\GetServerDateHandler.ashx.cs">
+      <DependentUpon>GetServerDateHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="GameMarket\ChampionGameManagePage.aspx.cs">
+      <DependentUpon>ChampionGameManagePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameMarket\ChampionGameManagePage.aspx.designer.cs">
+      <DependentUpon>ChampionGameManagePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameMarket\GameDetailFrm.aspx.cs">
+      <DependentUpon>GameDetailFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameMarket\GameDetailFrm.aspx.designer.cs">
+      <DependentUpon>GameDetailFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameMarket\GameMarketManageFrm.aspx.cs">
+      <DependentUpon>GameMarketManageFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameMarket\GameMarketManageFrm.aspx.designer.cs">
+      <DependentUpon>GameMarketManageFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameMarket\GetTeamDetail.ashx.cs">
+      <DependentUpon>GetTeamDetail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="GameMarket\MatchManageFrm.aspx.cs">
+      <DependentUpon>MatchManageFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameMarket\MatchManageFrm.aspx.designer.cs">
+      <DependentUpon>MatchManageFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameSettle\ChampionEventSettleFrm.aspx.cs">
+      <DependentUpon>ChampionEventSettleFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameSettle\ChampionEventSettleFrm.aspx.designer.cs">
+      <DependentUpon>ChampionEventSettleFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameSettle\CommissionManagePage.aspx.cs">
+      <DependentUpon>CommissionManagePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameSettle\CommissionManagePage.aspx.designer.cs">
+      <DependentUpon>CommissionManagePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GameSettle\MatchSettleFrm.aspx.cs">
+      <DependentUpon>MatchSettleFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GameSettle\MatchSettleFrm.aspx.designer.cs">
+      <DependentUpon>MatchSettleFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\BetBase.Master.cs">
+      <DependentUpon>BetBase.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\BetBase.Master.designer.cs">
+      <DependentUpon>BetBase.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportCenter\BetReportFrm.aspx.cs">
+      <DependentUpon>BetReportFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\BetReportFrm.aspx.designer.cs">
+      <DependentUpon>BetReportFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCenter\DealReportFrm.aspx.cs">
+      <DependentUpon>DealReportFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\DealReportFrm.aspx.designer.cs">
+      <DependentUpon>DealReportFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCenter\FundReportFrm.aspx.cs">
+      <DependentUpon>FundReportFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\FundReportFrm.aspx.designer.cs">
+      <DependentUpon>FundReportFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCenter\IntegralReportFrm.aspx.cs">
+      <DependentUpon>IntegralReportFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportCenter\IntegralReportFrm.aspx.designer.cs">
+      <DependentUpon>IntegralReportFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetting\ADRegion.aspx.cs">
+      <DependentUpon>ADRegion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemSetting\ADRegion.aspx.designer.cs">
+      <DependentUpon>ADRegion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetting\AgentApplyManagePage.aspx.cs">
+      <DependentUpon>AgentApplyManagePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemSetting\AgentApplyManagePage.aspx.designer.cs">
+      <DependentUpon>AgentApplyManagePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetting\AgentManagePage.aspx.cs">
+      <DependentUpon>AgentManagePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemSetting\AgentManagePage.aspx.designer.cs">
+      <DependentUpon>AgentManagePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetting\RoleManageFrm.aspx.cs">
+      <DependentUpon>RoleManageFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemSetting\RoleManageFrm.aspx.designer.cs">
+      <DependentUpon>RoleManageFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetting\UserManage.aspx.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemSetting\UserManage.aspx.designer.cs">
+      <DependentUpon>UserManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetting\VCardManagePage.aspx.cs">
+      <DependentUpon>VCardManagePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemSetting\VCardManagePage.aspx.designer.cs">
+      <DependentUpon>VCardManagePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetting\WithdrawalManagePage.aspx.cs">
+      <DependentUpon>WithdrawalManagePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SystemSetting\WithdrawalManagePage.aspx.designer.cs">
+      <DependentUpon>WithdrawalManagePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestFrm.aspx.cs">
+      <DependentUpon>TestFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestFrm.aspx.designer.cs">
+      <DependentUpon>TestFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TradeManage\trade.aspx.cs">
+      <DependentUpon>trade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TradeManage\trade.aspx.designer.cs">
+      <DependentUpon>trade.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Themes\" />
+    <Folder Include="DataManage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YMGS.Business\YMGS.Business.csproj">
+      <Project>{E2C90921-0364-4C7E-8D75-FB79A1039E1A}</Project>
+      <Name>YMGS.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YMGS.Data\YMGS.Data.csproj">
+      <Project>{B62A1D35-30D8-41FE-B156-8CFA6D548BEC}</Project>
+      <Name>YMGS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YMGS.Framework\YMGS.Framework.csproj">
+      <Project>{6ABF05CC-C342-4498-B4A0-80C6E0628F43}</Project>
+      <Name>YMGS.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage\BetBase.Master" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="GameMarket\GetTeamDetail.ashx" />
+    <Content Include="GameControl\GetServerDateHandler.ashx" />
+    <None Include="YMGSKey.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60411</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

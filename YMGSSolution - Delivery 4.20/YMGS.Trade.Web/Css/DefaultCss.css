@@ -1,0 +1,342 @@
+﻿html,body,form
+{
+    margin:0;
+    height:100%;
+}
+
+label, input, textarea, select, button
+{
+    vertical-align: middle;
+}
+
+/*文本输入框*/
+.TextBox
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #7F9DB9;
+    padding: 2px 1px 1px 1px;
+    vertical-align: middle;
+}
+
+.TextBox:focus
+{
+    outline: 1px solid #43AEE9;
+}
+
+.Button
+{
+	/*background-color: #A4001D;*/
+	background-color: blue;
+    color: White;
+    font-family: 宋体,Arial,Helvetica,sans-serif;
+    font-size: 8pt;
+    font-weight: bold;
+	height: 22px;
+    text-align: center;
+}
+
+/*标签*/
+.Label
+{
+	padding:0px;
+	margin:0px;
+	vertical-align: middle;
+}
+
+/*下拉列表*/
+.DropdownList
+{
+    font: 12px Verdana,Arial,Helvetica,sans-serif;
+}
+.DropdownList:focus
+{
+    outline: 1px solid #43AEE9;
+}
+
+/*LinkButton*/
+.LinkButton
+{
+	white-space:nowrap;
+}
+
+.CheckBox
+{
+}
+
+/*模态Panel样式 begin*/
+.ModalPopupBackground
+{
+	background-color: Gray;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+.ModalPoup
+{
+	background-color:White;
+	border-width: 3px;
+	border-style: solid;
+	border-color: Gray;
+	padding: 3px;
+	min-width: 350px;
+}
+.ModalPoupHeader
+{
+	padding: 10px 20px;
+	font-weight: bold;
+	background-color: #003366;
+	color: white;
+}
+/*模态Panel样式 end*/
+
+/*GridView begin*/
+.GridView {
+	background-color:#e3e3e3;
+	border-collapse: collapse;
+	border: solid 1px #C0C0C0;
+}
+
+.GridView tr {
+	background-color:#fff;
+}
+.GridView th {
+	background:url(../Images/fv1.jpg) #fff repeat-x 0px bottom;
+	line-height:16px;
+	color:#042448;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-weight:bold;
+	border: solid 1px #D0D0D0;
+	text-align:center;
+}
+.GridView td {
+	line-height:16px;
+	color:#666;
+	padding:5px;
+	border: solid 1px #D0D0D0;
+}
+
+/*超链接*/
+a.HyperLink,a.HyperLink:visited
+{color:#055aa8; text-decoration:none;}
+a.HyperLink:hover
+{color:#055aa8; text-decoration:underline;}
+
+
+/* 没有边框的Table */
+table.NoBorderTable {
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+table.NoBorderTable td 
+{
+    padding-left:2px;
+    padding-right:2px;    
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+/*Grid分页控件*/
+.GridViePageNavigator {
+    background-color: #D0D0D0;
+    text-align: left;
+    vertical-align: middle;
+}
+/*TreeView*/
+.treeView{
+    color:#666;
+}
+/*选中的TreeView*/
+.treeViewSelectd
+{
+    color:#055aa8;
+}
+
+/*MaskEdit Begin*/
+.MaskedEditFocus
+{
+    background-color: #ffffcc;
+    color: #000000;
+}
+
+.MaskedEditError
+{
+    background-color: #ffcccc;
+}
+/*MaskEdit End*/
+
+
+/*注册表单样式 begin*/
+.Registerstyle
+{
+	white-space: nowrap;
+}
+/*注册表单样式 end*/
+
+/*资金账户样式 beigen*/
+.UserFundStyle
+{
+   text-align:center;
+   vertical-align:middle;
+   white-space:nowrap;
+   padding-left:30%;
+   padding-top:30px;
+   line-height:20px;
+   width:40%;
+}
+/*资金账户样式 end*/
+
+/*代理账户管理样式 beigen*/
+.ValidateTd
+{
+    text-align:left;
+    color:Red;
+}
+/*代理账户管理样式 end*/
+
+.calendarContainer table
+{
+   	padding: 0px; 	
+}
+
+.calendarContainer table td
+{
+    background-color: #ffffff;
+    border: 0px;
+	padding-left: 0px;
+	padding-right: 0px;    
+}
+.GrayLine
+{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #CCCCCC;
+}
+.leftmenueslinkbutton
+{
+	height:20px;
+	display:block;
+	line-height:20px;
+	}
+.buttomLine td
+{
+	height:20px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #C4CFE4;
+}
+.topline
+{
+	height:60px;
+	border-bottom-style: solid;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #C4CFE4;
+}
+
+/*显示投注信息按钮样式*/
+.backBtnCss
+{
+    width:100%;
+    height:100%;
+    background-color:#72BBEF;
+    border-color:#72BBEF;
+    border-style : solid;
+    border-width:1px;    
+}
+
+.backBtnDisableCss
+{
+    width:100%;
+    height:100%;
+    background-color:#ccc;
+    border-color:#ccc;
+    border-style : solid;
+    border-width:1px;    
+}
+
+.layBtnCss
+{
+    width:100%;
+    height:100%;
+    background-color:#FAA9BA;
+    border-color:#FAA9BA;
+    border-style : solid;
+    border-width:1px;    
+}
+
+.layBtnDisableCss
+{
+    width:100%;
+    height:100%;
+    background-color:#ccc;
+    border-color:#ccc;
+    border-style : solid;
+    border-width:1px;       
+}
+
+/*显示投注信息单元格样式 */
+.backTdCss
+{
+    border-right-style: solid; 
+    border-bottom-style: solid; 
+    border-right-width: 1px;
+    border-bottom-width: 1px; 
+    border-right-color: #FFFFFF; 
+    border-bottom-color: #FFFFFF;
+    background-color: #72BBEF; 
+    width: 80px;
+}
+
+.layTdCss
+{
+    border-right-style: solid; 
+    border-bottom-style: solid; 
+    border-right-width: 1px;
+    border-bottom-width: 1px; 
+    border-right-color: #FFFFFF; 
+    border-bottom-color: #FFFFFF;
+    background-color: #FAA9BA; 
+    width: 80px;
+}
+
+.backlayTdCss
+{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #669999;
+    text-align:left;
+} 
+
+.bTdCss
+{
+    border-bottom-style: solid; 
+    border-bottom-width: 1px; 
+    border-bottom-color: #669999;
+}
+
+.backlaytitlecss
+{
+    width:80px;
+    color: Gray;
+    text-align:center;
+}
+
+.btr
+{
+    background-color: #273A45; 
+    color: White;
+    height:20px;
+}
+. btr_td1
+{
+    width:80px;
+    text-align:right;
+}
+. btr_td2
+{
+    width:80px;
+    text-align:right;
+}

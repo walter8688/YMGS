@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSCachedExchangeLay" targetNamespace="http://tempuri.org/DSCachedExchangeLay.xsd" xmlns:mstns="http://tempuri.org/DSCachedExchangeLay.xsd" xmlns="http://tempuri.org/DSCachedExchangeLay.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSCachedExchangeLay" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSCachedExchangeLay" msprop:Generator_UserDSName="DSCachedExchangeLay">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TBCachedExchangeLay" msprop:Generator_TableClassName="TBCachedExchangeLayDataTable" msprop:Generator_TableVarName="tableTBCachedExchangeLay" msprop:Generator_TablePropName="TBCachedExchangeLay" msprop:Generator_RowDeletingName="TBCachedExchangeLayRowDeleting" msprop:Generator_UserTableName="TBCachedExchangeLay" msprop:Generator_RowChangingName="TBCachedExchangeLayRowChanging" msprop:Generator_RowEvHandlerName="TBCachedExchangeLayRowChangeEventHandler" msprop:Generator_RowDeletedName="TBCachedExchangeLayRowDeleted" msprop:Generator_RowEvArgName="TBCachedExchangeLayRowChangeEvent" msprop:Generator_RowChangedName="TBCachedExchangeLayRowChanged" msprop:Generator_RowClassName="TBCachedExchangeLayRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TopNO" msprop:Generator_ColumnVarNameInTable="columnTopNO" msprop:Generator_ColumnPropNameInRow="TopNO" msprop:Generator_ColumnPropNameInTable="TopNOColumn" msprop:Generator_UserColumnName="TopNO" type="xs:int" minOccurs="0" />
+              <xs:element name="MATCH_ID" msprop:Generator_ColumnVarNameInTable="columnMATCH_ID" msprop:Generator_ColumnPropNameInRow="MATCH_ID" msprop:Generator_ColumnPropNameInTable="MATCH_IDColumn" msprop:Generator_UserColumnName="MATCH_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MARKET_ID" msprop:Generator_ColumnVarNameInTable="columnMARKET_ID" msprop:Generator_ColumnPropNameInRow="MARKET_ID" msprop:Generator_ColumnPropNameInTable="MARKET_IDColumn" msprop:Generator_UserColumnName="MARKET_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MATCH_TYPE" msprop:Generator_ColumnVarNameInTable="columnMATCH_TYPE" msprop:Generator_ColumnPropNameInRow="MATCH_TYPE" msprop:Generator_ColumnPropNameInTable="MATCH_TYPEColumn" msprop:Generator_UserColumnName="MATCH_TYPE" type="xs:int" minOccurs="0" />
+              <xs:element name="LayODDS" msprop:Generator_ColumnVarNameInTable="columnLayODDS" msprop:Generator_ColumnPropNameInRow="LayODDS" msprop:Generator_ColumnPropNameInTable="LayODDSColumn" msprop:Generator_UserColumnName="LayODDS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LayMATCH_AMOUNTS" msprop:Generator_ColumnVarNameInTable="columnLayMATCH_AMOUNTS" msprop:Generator_ColumnPropNameInRow="LayMATCH_AMOUNTS" msprop:Generator_ColumnPropNameInTable="LayMATCH_AMOUNTSColumn" msprop:Generator_UserColumnName="LayMATCH_AMOUNTS" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TBCacheDealAmountLay" msprop:Generator_TableClassName="TBCacheDealAmountLayDataTable" msprop:Generator_TableVarName="tableTBCacheDealAmountLay" msprop:Generator_TablePropName="TBCacheDealAmountLay" msprop:Generator_RowDeletingName="TBCacheDealAmountLayRowDeleting" msprop:Generator_UserTableName="TBCacheDealAmountLay" msprop:Generator_RowChangingName="TBCacheDealAmountLayRowChanging" msprop:Generator_RowEvHandlerName="TBCacheDealAmountLayRowChangeEventHandler" msprop:Generator_RowDeletedName="TBCacheDealAmountLayRowDeleted" msprop:Generator_RowEvArgName="TBCacheDealAmountLayRowChangeEvent" msprop:Generator_RowChangedName="TBCacheDealAmountLayRowChanged" msprop:Generator_RowClassName="TBCacheDealAmountLayRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MARKET_ID" msprop:Generator_ColumnVarNameInTable="columnMARKET_ID" msprop:Generator_ColumnPropNameInRow="MARKET_ID" msprop:Generator_ColumnPropNameInTable="MARKET_IDColumn" msprop:Generator_UserColumnName="MARKET_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="LayDealAmount" msprop:Generator_ColumnVarNameInTable="columnLayDealAmount" msprop:Generator_ColumnPropNameInRow="LayDealAmount" msprop:Generator_ColumnPropNameInTable="LayDealAmountColumn" msprop:Generator_UserColumnName="LayDealAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LayMatchAmount" msprop:Generator_ColumnVarNameInTable="columnLayMatchAmount" msprop:Generator_ColumnPropNameInRow="LayMatchAmount" msprop:Generator_ColumnPropNameInTable="LayMatchAmountColumn" msprop:Generator_UserColumnName="LayMatchAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MATCH_TYPE" msprop:Generator_ColumnVarNameInTable="columnMATCH_TYPE" msprop:Generator_ColumnPropNameInRow="MATCH_TYPE" msprop:Generator_ColumnPropNameInTable="MATCH_TYPEColumn" msprop:Generator_UserColumnName="MATCH_TYPE" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

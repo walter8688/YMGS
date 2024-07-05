@@ -1,0 +1,919 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46357FBE-122E-482D-B47C-13D716CE0FE1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YMGS.Trade.Web</RootNamespace>
+    <AssemblyName>YMGS.Trade.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>YMGSKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\Component\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\MicrosoftEnterpriseLibrary\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="NetPay, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\NetPay.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\Component\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.0-Beta1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\HelpCenterCss.css" />
+    <Content Include="Football\Controls\AsianMatchMarketTop1.ascx" />
+    <Content Include="Football\Controls\AsianMatchMarketTop1.js" />
+    <Content Include="Football\Controls\BetPanel.ascx" />
+    <Content Include="Football\Controls\BetPanel.js" />
+    <Content Include="Football\Controls\CenterMatchMarketTop1.ascx" />
+    <Content Include="Football\Controls\CenterMatchMarketTop1.js" />
+    <Content Include="Football\Controls\CenterMatchMarketTop3.ascx" />
+    <Content Include="Football\Controls\CenterMatchMarketTop3.js" />
+    <Content Include="Football\Controls\ChampMatchMarketTop3.ascx" />
+    <Content Include="Football\Controls\ChampMatchMarketTop3.js" />
+    <Content Include="Football\Controls\DefaultInplayList.ascx" />
+    <Content Include="Football\Controls\DefaultInplayList.js" />
+    <Content Include="Football\Controls\EntNavigator.ascx" />
+    <Content Include="Football\Controls\EntNavigator.js" />
+    <Content Include="Football\Controls\FootballInplayMatchList.ascx" />
+    <Content Include="Football\Controls\FootballInplayMatchList.js" />
+    <Content Include="Football\Controls\FootballMatchList.ascx" />
+    <Content Include="Football\Controls\FootballMatchList.js" />
+    <Content Include="Football\Controls\LeftNavigator.ascx" />
+    <Content Include="Football\Controls\LeftNavigator.js" />
+    <Content Include="Football\Controls\MatchRealInfo.ascx" />
+    <Content Include="Football\Controls\MatchRealInfo.js" />
+    <Content Include="Home\HomeLoginClientCtrl.ascx" />
+    <Content Include="Home\HomeLoginClientCtrl.js" />
+    <Content Include="Images\Android.png" />
+    <Content Include="Images\App Store.png" />
+    <Content Include="Images\arrows_11065_.png" />
+    <Content Include="Images\arrows_11290_.png" />
+    <Content Include="Images\Australian Football League.png" />
+    <Content Include="Images\Australian Rugby.png" />
+    <Content Include="Images\b.png" />
+    <Content Include="Images\ballarat turf club.png" />
+    <Content Include="Images\botpic1.jpg" />
+    <Content Include="Images\botpic2.jpg" />
+    <Content Include="Images\BPay.png" />
+    <Content Include="Images\c1.png" />
+    <Content Include="Images\c2.png" />
+    <Content Include="Images\collingwood magpies.png" />
+    <Content Include="Images\Cricket Australian.png" />
+    <Content Include="Images\darker_sprite_11199_.png" />
+    <Content Include="Images\darker_sprite_11277_.png" />
+    <Content Include="Images\darker_sprite_11280_.png" />
+    <Content Include="Images\darker_sprite_11290_.png" />
+    <Content Include="Images\digicert.png" />
+    <Content Include="Images\h.jpg" />
+    <Content Include="Images\loader_darker-16-white_11219_.gif" />
+    <Content Include="Images\mail.png" />
+    <Content Include="Images\mantis-sprite_11199_.png" />
+    <Content Include="Images\mantis-sprite_11251_.png" />
+    <Content Include="Images\mantis-sprite_11290_.png" />
+    <Content Include="Images\MasterCard.png" />
+    <Content Include="Images\MoneyBookers.png" />
+    <Content Include="Images\mustbe18.png" />
+    <Content Include="Images\National Rugby League.png" />
+    <Content Include="Images\newcastle knights.png" />
+    <Content Include="Images\Paypal.png" />
+    <Content Include="Images\POLI.png" />
+    <Content Include="Images\Skill Moneybookers.png" />
+    <Content Include="Images\Skill.png" />
+    <Content Include="Images\sportsmate.png" />
+    <Content Include="Images\sydney roosters.png" />
+    <Content Include="Images\Tennis Australian.png" />
+    <Content Include="Images\triangles-background_11269_.png" />
+    <Content Include="Images\Union Pay.png" />
+    <Content Include="Images\VISA.png" />
+    <Content Include="MemberShip\AgentAccountFrm.aspx" />
+    <Content Include="MemberShip\AjaxResponseFrm.aspx" />
+    <Content Include="MemberShip\EditEmailFrm.aspx" />
+    <Content Include="MemberShip\EditPasswordFrm.aspx" />
+    <Content Include="MemberShip\EditSecuretyQuestionFrm.aspx" />
+    <Content Include="MemberShip\FinancialAccountFrm.aspx" />
+    <Content Include="MemberShip\GameMarketManageFrm.aspx" />
+    <Content Include="MemberShip\HandleAgentFrm.aspx" />
+    <Content Include="MemberShip\IntegralBrokerageRuleFrm.aspx" />
+    <Content Include="MemberShip\MemberShipHomeFrm.aspx" />
+    <Content Include="MemberShip\MyIntegralFrm.aspx" />
+    <Content Include="MemberShip\MyProxyFrm.aspx" />
+    <Content Include="MemberShip\MyTradeFrm.aspx" />
+    <Content Include="MemberShip\OnlineChargeFrm.aspx" />
+    <Content Include="MemberShip\Register.aspx" />
+    <Content Include="MemberShip\SetAgentDeatailFrm.aspx" />
+    <Content Include="MemberShip\SupplyWithdrawFrm.aspx" />
+    <Content Include="MemberShip\SystemAutoMessageFrm.aspx" />
+    <Content Include="MemberShip\UserFundDetailFrm.aspx" />
+    <Content Include="MemberShip\ValidateEmailFrm.aspx" />
+    <Content Include="MemberShip\ValidateResultFrm.aspx" />
+    <Content Include="Public\ADpic.aspx" />
+    <Content Include="Controls\AjaxCalendar.ascx" />
+    <Content Include="Controls\AjaxCalendar.js" />
+    <Content Include="Controls\HomeLeftMenuItem.ascx" />
+    <Content Include="Controls\PageNavigator.ascx" />
+    <Content Include="Css\DefaultCss.css" />
+    <Content Include="Css\HomeDefault.css" />
+    <Content Include="Css\JqueryUI\jquery.ui.menu.css" />
+    <Content Include="Css\JqueryUI\jquery.ui.theme.css" />
+    <Content Include="Home\ADPic.ascx" />
+    <Content Include="Home\HomeADWords.ascx" />
+    <Content Include="Home\HomeRecommandRace.ascx" />
+    <Content Include="Home\OddsCompare.ascx" />
+    <Content Include="Home\TopRaceCtrl.ascx" />
+    <Content Include="Images\bfbcn.jpg" />
+    <Content Include="Images\bfben.jpg" />
+    <Content Include="Images\dotleft.jpg" />
+    <Content Include="Images\dotright.jpg" />
+    <Content Include="Images\sprite_search.png" />
+    <Content Include="Images\teamA.jpg" />
+    <Content Include="Images\teamB.jpg" />
+    <Content Include="Images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Images\ui-icons_222222_256x240.png" />
+    <Content Include="Images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Images\ui-icons_454545_256x240.png" />
+    <Content Include="Images\ui-icons_888888_256x240.png" />
+    <Content Include="Images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Css\JqueryUI\jquery-ui.css" />
+    <Content Include="Css\JqueryUI\jquery.ui.all.css" />
+    <Content Include="Css\JqueryUI\jquery.ui.autocomplete.css" />
+    <Content Include="Css\JqueryUI\jquery.ui.base.css" />
+    <Content Include="Css\JqueryUI\jquery.ui.core.css" />
+    <Content Include="Css\MemberDefault.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Home\HomeLoginCtrl.ascx" />
+    <Content Include="Home\HomeTopHelpCtrl.ascx" />
+    <Content Include="Home\HomeTopNaviCtrl.ascx" />
+    <Content Include="Images\AjaxCalendar.png" />
+    <Content Include="Images\close.png" />
+    <Content Include="Images\grdbg.jpg" />
+    <Content Include="Images\homebotbg.jpg" />
+    <Content Include="Images\homebg.jpg" />
+    <Content Include="Images\homebgmain.png" />
+    <Content Include="Images\homejg.jpg" />
+    <Content Include="Images\homeloginbg.png" />
+    <Content Include="Images\homelogo.jpg" />
+    <Content Include="Images\homenavbg.jpg" />
+    <Content Include="Images\homesosobg.jpg" />
+    <Content Include="Images\membg.jpg" />
+    <Content Include="Images\memhome.png" />
+    <Content Include="Images\memhyhead.jpg" />
+    <Content Include="Images\memlog.png" />
+    <Content Include="Images\memnavn.jpg" />
+    <Content Include="Images\memtopbg.jpg" />
+    <Content Include="Images\memtopbot.jpg" />
+    <Content Include="Images\memnavon.jpg" />
+    <Content Include="Images\ui-anim_basic_16x16.gif" />
+    <Content Include="MasterPage\HomeFooterCtrl.ascx" />
+    <Content Include="MasterPage\HomeTopCtrl.ascx" />
+    <Content Include="MasterPage\MemberFooterCtrl.ascx" />
+    <Content Include="MasterPage\MemberLeftCtrl.ascx" />
+    <Content Include="MasterPage\MemberTopCtrl.ascx" />
+    <Content Include="Pay\ChinaPay.aspx" />
+    <Content Include="Public\AboutFrm.aspx" />
+    <Content Include="Public\ForgotPassword.aspx" />
+    <Content Include="Public\HelperCenter.aspx" />
+    <Content Include="Public\RegisterResult.aspx" />
+    <Content Include="Public\ResendEmail.aspx" />
+    <Content Include="Public\ResetPasswordResult.aspx" />
+    <Content Include="Public\UserRegisterFrm.aspx" />
+    <Content Include="Public\ValidateCode.aspx" />
+    <Content Include="Public\YourInPlay.aspx" />
+    <Content Include="Scripts\CommonJS.js" />
+    <Content Include="Scripts\FootballJS.js" />
+    <Content Include="Scripts\jquery-1.8.3.min.js" />
+    <Content Include="Scripts\jquery.ui.autocomplete.js" />
+    <Content Include="Scripts\jquery.ui.core.js" />
+    <Content Include="Scripts\jquery.ui.menu.js" />
+    <Content Include="Scripts\jquery.ui.position.js" />
+    <Content Include="Scripts\jquery.ui.widget.js" />
+    <Content Include="Public\TopRacePic.aspx" />
+    <Content Include="Services\BetService.asmx" />
+    <Content Include="Services\DefaultInplayService.asmx" />
+    <Content Include="Services\FootballMatchListService.asmx" />
+    <Content Include="Services\HomeLoginService.asmx" />
+    <Content Include="Services\InPlayMatchListService.asmx" />
+    <Content Include="Services\LeftNavigatorService.asmx" />
+    <Content Include="Services\MatchMarketService.asmx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\YMGS.AssemblyInfo.cs">
+      <Link>Properties\YMGS.AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Common\DefaultPageHelper.cs" />
+    <Compile Include="Common\ServiceBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\ServiceOperationResult.cs" />
+    <Compile Include="Common\ViewStateHelper.cs" />
+    <Compile Include="Football\BusinessLogic\CenterMatchMarketBase.cs" />
+    <Compile Include="Football\BusinessLogic\ChampMatchBL.cs" />
+    <Compile Include="Football\BusinessLogic\FootballBLBase.cs" />
+    <Compile Include="Football\BusinessLogic\FootballGameListBL.cs" />
+    <Compile Include="Football\BusinessLogic\FTCenterTopBL.cs" />
+    <Compile Include="Football\BusinessLogic\InPlayFootballGameListBL.cs" />
+    <Compile Include="Football\Common\FootballCommonFunction.cs" />
+    <Compile Include="Football\Controls\AsianMatchMarketTop1.ascx.cs">
+      <DependentUpon>AsianMatchMarketTop1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Football\Controls\AsianMatchMarketTop1.ascx.designer.cs">
+      <DependentUpon>AsianMatchMarketTop1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Football\Controls\BetPanel.ascx.cs">
+      <DependentUpon>BetPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Football\Controls\BetPanel.ascx.designer.cs">
+      <DependentUpon>BetPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Football\Controls\CenterMatchMarketTop1.ascx.cs">
+      <DependentUpon>CenterMatchMarketTop1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Football\Controls\CenterMatchMarketTop1.ascx.designer.cs">
+      <DependentUpon>CenterMatchMarketTop1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Football\Controls\CenterMatchMarketTop3.ascx.cs">
+      <DependentUpon>CenterMatchMarketTop3.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Football\Controls\CenterMatchMarketTop3.ascx.designer.cs">
+      <DependentUpon>CenterMatchMarketTop3.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Football\Controls\ChampMatchMarketTop3.ascx.cs">
+      <DependentUpon>ChampMatchMarketTop3.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Football\Controls\ChampMatchMarketTop3.ascx.designer.cs">
+      <DependentUpon>ChampMatchMarketTop3.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Football\Controls\DefaultInplayList.ascx.cs">
+      <DependentUpon>DefaultInplayList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Football\Controls\DefaultInplayList.ascx.designer.cs">
+      <DependentUpon>DefaultInplayList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Football\Controls\EntNavigator.ascx.cs">
+      <DependentUpon>EntNavigator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Football\Controls\EntNavigator.ascx.designer.cs">
+      <DependentUpon>EntNavigator.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Football\Controls\FootballInplayMatchList.ascx.cs">
+      <DependentUpon>FootballInplayMatchList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Football\Controls\FootballInplayMatchList.ascx.designer.cs">
+      <DependentUpon>FootballInplayMatchList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Football\Controls\FootballMatchList.ascx.cs">
+      <DependentUpon>FootballMatchList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Football\Controls\FootballMatchList.ascx.designer.cs">
+      <DependentUpon>FootballMatchList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Football\Controls\LeftNavigator.ascx.cs">
+      <DependentUpon>LeftNavigator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Football\Controls\LeftNavigator.ascx.designer.cs">
+      <DependentUpon>LeftNavigator.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Football\Controls\MatchRealInfo.ascx.cs">
+      <DependentUpon>MatchRealInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Football\Controls\MatchRealInfo.ascx.designer.cs">
+      <DependentUpon>MatchRealInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Football\Model\BetInfoObject.cs" />
+    <Compile Include="Football\Model\BetPanelUIText.cs" />
+    <Compile Include="Football\Model\ButtonTitle.cs" />
+    <Compile Include="Football\Model\CenterTop3MarketObject.cs" />
+    <Compile Include="Football\Model\FootballCalendar.cs" />
+    <Compile Include="Football\Model\FootballObject.cs" />
+    <Compile Include="Football\Model\FootballMatch.cs" />
+    <Compile Include="Football\Model\FootballMatchMarket.cs" />
+    <Compile Include="Football\Model\FTMarketsObj.cs" />
+    <Compile Include="Football\Model\MarketBetTypeOrderInfo.cs" />
+    <Compile Include="Football\Model\MarketFlagObject.cs" />
+    <Compile Include="Football\Model\MatchTop3Parameter.cs" />
+    <Compile Include="Home\HomeLoginClientCtrl.ascx.cs">
+      <DependentUpon>HomeLoginClientCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\HomeLoginClientCtrl.ascx.designer.cs">
+      <DependentUpon>HomeLoginClientCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\HomeLoginClientCtrlUIText.cs" />
+    <Compile Include="MemberShip\AgentAccountFrm.aspx.cs">
+      <DependentUpon>AgentAccountFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\AgentAccountFrm.aspx.designer.cs">
+      <DependentUpon>AgentAccountFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\AjaxResponseFrm.aspx.cs">
+      <DependentUpon>AjaxResponseFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\AjaxResponseFrm.aspx.designer.cs">
+      <DependentUpon>AjaxResponseFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\EditEmailFrm.aspx.cs">
+      <DependentUpon>EditEmailFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\EditEmailFrm.aspx.designer.cs">
+      <DependentUpon>EditEmailFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\EditPasswordFrm.aspx.cs">
+      <DependentUpon>EditPasswordFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\EditPasswordFrm.aspx.designer.cs">
+      <DependentUpon>EditPasswordFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\EditSecuretyQuestionFrm.aspx.cs">
+      <DependentUpon>EditSecuretyQuestionFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\EditSecuretyQuestionFrm.aspx.designer.cs">
+      <DependentUpon>EditSecuretyQuestionFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\FinancialAccountFrm.aspx.cs">
+      <DependentUpon>FinancialAccountFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\FinancialAccountFrm.aspx.designer.cs">
+      <DependentUpon>FinancialAccountFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\GameMarketManageFrm.aspx.cs">
+      <DependentUpon>GameMarketManageFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\GameMarketManageFrm.aspx.designer.cs">
+      <DependentUpon>GameMarketManageFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\HandleAgentFrm.aspx.cs">
+      <DependentUpon>HandleAgentFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\HandleAgentFrm.aspx.designer.cs">
+      <DependentUpon>HandleAgentFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\IntegralBrokerageRuleFrm.aspx.cs">
+      <DependentUpon>IntegralBrokerageRuleFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\IntegralBrokerageRuleFrm.aspx.designer.cs">
+      <DependentUpon>IntegralBrokerageRuleFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\MemberShipHomeFrm.aspx.cs">
+      <DependentUpon>MemberShipHomeFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\MemberShipHomeFrm.aspx.designer.cs">
+      <DependentUpon>MemberShipHomeFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\MyIntegralFrm.aspx.cs">
+      <DependentUpon>MyIntegralFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\MyIntegralFrm.aspx.designer.cs">
+      <DependentUpon>MyIntegralFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\MyProxyFrm.aspx.cs">
+      <DependentUpon>MyProxyFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\MyProxyFrm.aspx.designer.cs">
+      <DependentUpon>MyProxyFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\MyTradeFrm.aspx.cs">
+      <DependentUpon>MyTradeFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\MyTradeFrm.aspx.designer.cs">
+      <DependentUpon>MyTradeFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\OnlineChargeFrm.aspx.cs">
+      <DependentUpon>OnlineChargeFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\OnlineChargeFrm.aspx.designer.cs">
+      <DependentUpon>OnlineChargeFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\SetAgentDeatailFrm.aspx.cs">
+      <DependentUpon>SetAgentDeatailFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\SetAgentDeatailFrm.aspx.designer.cs">
+      <DependentUpon>SetAgentDeatailFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\SupplyWithdrawFrm.aspx.cs">
+      <DependentUpon>SupplyWithdrawFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\SupplyWithdrawFrm.aspx.designer.cs">
+      <DependentUpon>SupplyWithdrawFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\SystemAutoMessageFrm.aspx.cs">
+      <DependentUpon>SystemAutoMessageFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\SystemAutoMessageFrm.aspx.designer.cs">
+      <DependentUpon>SystemAutoMessageFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\UserFundDetailFrm.aspx.cs">
+      <DependentUpon>UserFundDetailFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\UserFundDetailFrm.aspx.designer.cs">
+      <DependentUpon>UserFundDetailFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\ValidateEmailFrm.aspx.cs">
+      <DependentUpon>ValidateEmailFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\ValidateEmailFrm.aspx.designer.cs">
+      <DependentUpon>ValidateEmailFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberShip\ValidateResultFrm.aspx.cs">
+      <DependentUpon>ValidateResultFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberShip\ValidateResultFrm.aspx.designer.cs">
+      <DependentUpon>ValidateResultFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ADpic.aspx.cs">
+      <DependentUpon>ADpic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\ADpic.aspx.designer.cs">
+      <DependentUpon>ADpic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GlobalLanguage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalLanguage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GlobalLanguage.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalLanguage.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\CommonConstant.cs" />
+    <Compile Include="Common\ExcelHelper.cs" />
+    <Compile Include="Common\HomeBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\JsonHelper.cs" />
+    <Compile Include="Common\LangManager.cs" />
+    <Compile Include="Common\MemberShipBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\MenuLink.cs" />
+    <Compile Include="Common\PageAccessProvider.cs" />
+    <Compile Include="Common\PageHelper.cs" />
+    <Compile Include="Common\SimplePageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\SiteMapHelper.cs" />
+    <Compile Include="Common\SystemConfigManager.cs" />
+    <Compile Include="Common\TopMenuIdAttribute.cs" />
+    <Compile Include="Common\UrlHelper.cs" />
+    <Compile Include="Common\UserAccess.cs" />
+    <Compile Include="Controls\AjaxCalendar.ascx.cs">
+      <DependentUpon>AjaxCalendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AjaxCalendar.ascx.designer.cs">
+      <DependentUpon>AjaxCalendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HomeLeftMenuItem.ascx.cs">
+      <DependentUpon>HomeLeftMenuItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\HomeLeftMenuItem.ascx.designer.cs">
+      <DependentUpon>HomeLeftMenuItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PageNavigator.ascx.cs">
+      <DependentUpon>PageNavigator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PageNavigator.ascx.designer.cs">
+      <DependentUpon>PageNavigator.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home\ADPic.ascx.cs">
+      <DependentUpon>ADPic.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\ADPic.ascx.designer.cs">
+      <DependentUpon>ADPic.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\HomeADWords.ascx.cs">
+      <DependentUpon>HomeADWords.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\HomeADWords.ascx.designer.cs">
+      <DependentUpon>HomeADWords.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\HomeLoginCtrl.ascx.cs">
+      <DependentUpon>HomeLoginCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\HomeLoginCtrl.ascx.designer.cs">
+      <DependentUpon>HomeLoginCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\HomeRecommandRace.ascx.cs">
+      <DependentUpon>HomeRecommandRace.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\HomeRecommandRace.ascx.designer.cs">
+      <DependentUpon>HomeRecommandRace.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\HomeTopHelpCtrl.ascx.cs">
+      <DependentUpon>HomeTopHelpCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\HomeTopHelpCtrl.ascx.designer.cs">
+      <DependentUpon>HomeTopHelpCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\HomeTopNaviCtrl.ascx.cs">
+      <DependentUpon>HomeTopNaviCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\HomeTopNaviCtrl.ascx.designer.cs">
+      <DependentUpon>HomeTopNaviCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\OddsCompare.ascx.cs">
+      <DependentUpon>OddsCompare.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\OddsCompare.ascx.designer.cs">
+      <DependentUpon>OddsCompare.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\TopRaceCtrl.ascx.cs">
+      <DependentUpon>TopRaceCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\TopRaceCtrl.ascx.designer.cs">
+      <DependentUpon>TopRaceCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\HomeFooterCtrl.ascx.cs">
+      <DependentUpon>HomeFooterCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\HomeFooterCtrl.ascx.designer.cs">
+      <DependentUpon>HomeFooterCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\HomeMaster.Master.cs">
+      <DependentUpon>HomeMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\HomeMaster.Master.designer.cs">
+      <DependentUpon>HomeMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\HomeTopCtrl.ascx.cs">
+      <DependentUpon>HomeTopCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\HomeTopCtrl.ascx.designer.cs">
+      <DependentUpon>HomeTopCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\MemberFooterCtrl.ascx.cs">
+      <DependentUpon>MemberFooterCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\MemberFooterCtrl.ascx.designer.cs">
+      <DependentUpon>MemberFooterCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\MemberLeftCtrl.ascx.cs">
+      <DependentUpon>MemberLeftCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\MemberLeftCtrl.ascx.designer.cs">
+      <DependentUpon>MemberLeftCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\MemberShipMaster.Master.cs">
+      <DependentUpon>MemberShipMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\MemberShipMaster.Master.designer.cs">
+      <DependentUpon>MemberShipMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\MemberTopCtrl.ascx.cs">
+      <DependentUpon>MemberTopCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\MemberTopCtrl.ascx.designer.cs">
+      <DependentUpon>MemberTopCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\SimpleMaster.Master.cs">
+      <DependentUpon>SimpleMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\SimpleMaster.Master.designer.cs">
+      <DependentUpon>SimpleMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="OnlinePay\ChinaPayStrategy.cs" />
+    <Compile Include="OnlinePay\IPayStrategy.cs" />
+    <Compile Include="Pay\ChinaPay.aspx.cs">
+      <DependentUpon>ChinaPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\ChinaPay.aspx.designer.cs">
+      <DependentUpon>ChinaPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\ChinaPayNotify.ashx.cs">
+      <DependentUpon>ChinaPayNotify.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Public\AboutFrm.aspx.cs">
+      <DependentUpon>AboutFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\AboutFrm.aspx.designer.cs">
+      <DependentUpon>AboutFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\HelperCenter.aspx.cs">
+      <DependentUpon>HelperCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\HelperCenter.aspx.designer.cs">
+      <DependentUpon>HelperCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\RegisterResult.aspx.cs">
+      <DependentUpon>RegisterResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\RegisterResult.aspx.designer.cs">
+      <DependentUpon>RegisterResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ResendEmail.aspx.cs">
+      <DependentUpon>ResendEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\ResendEmail.aspx.designer.cs">
+      <DependentUpon>ResendEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ResetPasswordResult.aspx.cs">
+      <DependentUpon>ResetPasswordResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\ResetPasswordResult.aspx.designer.cs">
+      <DependentUpon>ResetPasswordResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\SearchHandler.ashx.cs">
+      <DependentUpon>SearchHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\UserRegisterFrm.aspx.cs">
+      <DependentUpon>UserRegisterFrm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\UserRegisterFrm.aspx.designer.cs">
+      <DependentUpon>UserRegisterFrm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\ValidateCode.aspx.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\ValidateCode.aspx.designer.cs">
+      <DependentUpon>ValidateCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\YourInPlay.aspx.cs">
+      <DependentUpon>YourInPlay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\YourInPlay.aspx.designer.cs">
+      <DependentUpon>YourInPlay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Public\TopRacePic.aspx.cs">
+      <DependentUpon>TopRacePic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Public\TopRacePic.aspx.designer.cs">
+      <DependentUpon>TopRacePic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\BetService.asmx.cs">
+      <DependentUpon>BetService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\DefaultInplayService.asmx.cs">
+      <DependentUpon>DefaultInplayService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\FootballMatchListService.asmx.cs">
+      <DependentUpon>FootballMatchListService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\HomeLoginService.asmx.cs">
+      <DependentUpon>HomeLoginService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\InPlayMatchListService.asmx.cs">
+      <DependentUpon>InPlayMatchListService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\LeftNavigatorService.asmx.cs">
+      <DependentUpon>LeftNavigatorService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\MatchMarketService.asmx.cs">
+      <DependentUpon>MatchMarketService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Help\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YMGS.Business\YMGS.Business.csproj">
+      <Project>{E2C90921-0364-4C7E-8D75-FB79A1039E1A}</Project>
+      <Name>YMGS.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YMGS.Data\YMGS.Data.csproj">
+      <Project>{B62A1D35-30D8-41FE-B156-8CFA6D548BEC}</Project>
+      <Name>YMGS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YMGS.Framework\YMGS.Framework.csproj">
+      <Project>{6ABF05CC-C342-4498-B4A0-80C6E0628F43}</Project>
+      <Name>YMGS.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPage\MemberShipMaster.Master" />
+    <Content Include="MasterPage\HomeMaster.Master" />
+    <Content Include="Web.sitemap" />
+    <Content Include="MasterPage\SimpleMaster.Master" />
+    <Content Include="Pay\ChinaPayNotify.ashx" />
+    <Content Include="Public\SearchHandler.ashx" />
+    <Content Include="packages.config" />
+    <None Include="YMGSKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GlobalLanguage.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GlobalLanguage.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\GlobalLanguage.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GlobalLanguage.en-US.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56859</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

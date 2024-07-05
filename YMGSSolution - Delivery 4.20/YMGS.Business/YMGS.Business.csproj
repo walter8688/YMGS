@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E2C90921-0364-4C7E-8D75-FB79A1039E1A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YMGS.Business</RootNamespace>
+    <AssemblyName>YMGS.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>YMGSKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\YMGS.AssemblyInfo.cs">
+      <Link>Properties\YMGS.AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="AssistManage\HelperManager.cs" />
+    <Compile Include="AssistManage\OddsCompareManager.cs" />
+    <Compile Include="AssistManage\ParamParamManager.cs" />
+    <Compile Include="AssistManage\ParamZoneManager.cs" />
+    <Compile Include="Cache\AbstractCachedObject.cs" />
+    <Compile Include="Cache\CachedAD.cs" />
+    <Compile Include="Cache\CachedChampionMatch.cs" />
+    <Compile Include="Cache\CachedEvent.cs" />
+    <Compile Include="Cache\CachedEventItem.cs" />
+    <Compile Include="Cache\CachedEventZone.cs" />
+    <Compile Include="Cache\CachedExchangeBack.cs" />
+    <Compile Include="Cache\CachedExchangeLay.cs" />
+    <Compile Include="Cache\CachedHelp.cs" />
+    <Compile Include="Cache\CachedMatch.cs" />
+    <Compile Include="Cache\CachedNotice.cs" />
+    <Compile Include="Cache\CachedOddsCompare.cs" />
+    <Compile Include="Cache\CachedTopRace.cs" />
+    <Compile Include="Cache\CachedYourInPlay.cs" />
+    <Compile Include="Cache\SqlCacheManager.cs" />
+    <Compile Include="GameControlService\GameControlServiceManager.cs" />
+    <Compile Include="GameSettle\RollbackSettlementManager.cs" />
+    <Compile Include="Game\EntertainmentMatch.cs" />
+    <Compile Include="Game\FootballMarket.cs" />
+    <Compile Include="Game\GameHelper\FootballCalendarManager.cs" />
+    <Compile Include="Game\IMarketObject.cs" />
+    <Compile Include="Game\MarketFactory.cs" />
+    <Compile Include="Game\MatchFactory.cs" />
+    <Compile Include="Game\FootballMatch.cs" />
+    <Compile Include="Game\IMatchObject.cs" />
+    <Compile Include="Game\MatchManagerBase.cs" />
+    <Compile Include="MemberShip\AccountApplyProxyManager.cs" />
+    <Compile Include="MemberShip\IntegralManager.cs" />
+    <Compile Include="MemberShip\SysAutoMegManager.cs" />
+    <Compile Include="MemberShip\UserWithDrawManager.cs" />
+    <Compile Include="Navigator\AbstractNavigator.cs" />
+    <Compile Include="Navigator\EntNavigator.cs" />
+    <Compile Include="Navigator\EntNavigatorManager.cs" />
+    <Compile Include="Navigator\LeftNavigator.cs" />
+    <Compile Include="Navigator\NavigatorManager.cs" />
+    <Compile Include="Navigator\NavigatorObject.cs" />
+    <Compile Include="Navigator\NavigatorSearchObject.cs" />
+    <Compile Include="Pay\ChinaPayManager.cs" />
+    <Compile Include="EventManage\EventManager.cs" />
+    <Compile Include="EventManage\EventTeamManager.cs" />
+    <Compile Include="EventManage\EventZoneManager.cs" />
+    <Compile Include="GameControl\GameControlManager.cs" />
+    <Compile Include="GameMarket\BetTypeManager.cs" />
+    <Compile Include="GameMarket\ChampEventManager.cs" />
+    <Compile Include="GameMarket\MarketTemplateManager.cs" />
+    <Compile Include="GameMarket\MatchManager.cs" />
+    <Compile Include="GameSettle\ChampionGameSettleManager.cs" />
+    <Compile Include="GameSettle\CommissionManager.cs" />
+    <Compile Include="GameSettle\GameSettleManager.cs" />
+    <Compile Include="GameSettle\MatchExchangeDealManager.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\AsianHandicapForOverStrategy.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\AsianHandicapForUnderStrategy.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\DefaultStrategy.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\HomeWinHomeWinStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameSettle\SportMatchCalcRule\HomeWinTheDrawStrategy.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\HomeWinVisitingWinStrategy.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\OverUnderBetForOverStrategy.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\OverUnderBetForUnderStrategy.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\PreciseScoreStrategy.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\TheDrawHomeWinStrategy.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\TheDrawTheDrawStrategy.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\TheDrawVisitingWinStrategy.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\VisitingTeamWinStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameSettle\SportMatchCalcRule\IMatchSettelStrategy.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\HomeTeamWinStrategy.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\MatchSettleResultInfo.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\TheDrawStrategy.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\VisitingWinHomeWinStrategy.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\VisitingWinTheDrawStrategy.cs" />
+    <Compile Include="GameSettle\SportMatchCalcRule\VisitingWinVisitingWinStrategy.cs" />
+    <Compile Include="MemberShip\AgentAccountManager.cs" />
+    <Compile Include="MemberShip\UserFundManager.cs" />
+    <Compile Include="Pay\PayManagerAbstract.cs" />
+    <Compile Include="ReportCenter\BetReportManager.cs" />
+    <Compile Include="ReportCenter\DealReportManager.cs" />
+    <Compile Include="ReportCenter\FundReportManager.cs" />
+    <Compile Include="ReportCenter\IntegralReportManager.cs" />
+    <Compile Include="Search\AbstractSearchObject.cs" />
+    <Compile Include="Search\DefaultSearcher.cs" />
+    <Compile Include="Search\SearchEvent.cs" />
+    <Compile Include="Search\SearchEventZone.cs" />
+    <Compile Include="Search\SearchManager.cs" />
+    <Compile Include="Search\SearchMatch.cs" />
+    <Compile Include="SystemConfig\TestManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemSetting\ADManager.cs" />
+    <Compile Include="SystemSetting\AgentManager.cs" />
+    <Compile Include="SystemSetting\CountryManager.cs" />
+    <Compile Include="SystemSetting\CurrencyManager.cs" />
+    <Compile Include="SystemSetting\GlobalBrManager.cs" />
+    <Compile Include="SystemSetting\RoleFuncMapManager.cs" />
+    <Compile Include="SystemSetting\SystemAccountManager.cs" />
+    <Compile Include="SystemSetting\TimeZoneManager.cs" />
+    <Compile Include="SystemSetting\VCardManager.cs" />
+    <Compile Include="SystemSetting\YourInPlayManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YMGS.DataAccess\YMGS.DataAccess.csproj">
+      <Project>{88379681-0184-43D2-90FD-337FB79CB791}</Project>
+      <Name>YMGS.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YMGS.Data\YMGS.Data.csproj">
+      <Project>{B62A1D35-30D8-41FE-B156-8CFA6D548BEC}</Project>
+      <Name>YMGS.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YMGS.Framework\YMGS.Framework.csproj">
+      <Project>{6ABF05CC-C342-4498-B4A0-80C6E0628F43}</Project>
+      <Name>YMGS.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="YMGSKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataManage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

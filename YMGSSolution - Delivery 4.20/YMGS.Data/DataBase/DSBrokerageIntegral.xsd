@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSBrokerageIntegral" targetNamespace="http://tempuri.org/DSBrokerageIntegral.xsd" xmlns:mstns="http://tempuri.org/DSBrokerageIntegral.xsd" xmlns="http://tempuri.org/DSBrokerageIntegral.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSBrokerageIntegral" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSBrokerageIntegral" msprop:Generator_UserDSName="DSBrokerageIntegral">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_BROKERAGE_INTEGRAL_MAP" msprop:Generator_TableClassName="TB_BROKERAGE_INTEGRAL_MAPDataTable" msprop:Generator_TableVarName="tableTB_BROKERAGE_INTEGRAL_MAP" msprop:Generator_TablePropName="TB_BROKERAGE_INTEGRAL_MAP" msprop:Generator_RowDeletingName="TB_BROKERAGE_INTEGRAL_MAPRowDeleting" msprop:Generator_UserTableName="TB_BROKERAGE_INTEGRAL_MAP" msprop:Generator_RowChangingName="TB_BROKERAGE_INTEGRAL_MAPRowChanging" msprop:Generator_RowEvHandlerName="TB_BROKERAGE_INTEGRAL_MAPRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_BROKERAGE_INTEGRAL_MAPRowDeleted" msprop:Generator_RowEvArgName="TB_BROKERAGE_INTEGRAL_MAPRowChangeEvent" msprop:Generator_RowChangedName="TB_BROKERAGE_INTEGRAL_MAPRowChanged" msprop:Generator_RowClassName="TB_BROKERAGE_INTEGRAL_MAPRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Brokerage_Rate_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnBrokerage_Rate_ID" msprop:Generator_ColumnPropNameInRow="Brokerage_Rate_ID" msprop:Generator_ColumnPropNameInTable="Brokerage_Rate_IDColumn" msprop:Generator_UserColumnName="Brokerage_Rate_ID" type="xs:int" />
+              <xs:element name="Brokerage_Rate" msprop:Generator_ColumnVarNameInTable="columnBrokerage_Rate" msprop:Generator_ColumnPropNameInRow="Brokerage_Rate" msprop:Generator_ColumnPropNameInTable="Brokerage_RateColumn" msprop:Generator_UserColumnName="Brokerage_Rate" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:int" minOccurs="0" />
+              <xs:element name="Min_Integral" msprop:Generator_ColumnVarNameInTable="columnMin_Integral" msprop:Generator_ColumnPropNameInRow="Min_Integral" msprop:Generator_ColumnPropNameInTable="Min_IntegralColumn" msprop:Generator_UserColumnName="Min_Integral" type="xs:int" minOccurs="0" />
+              <xs:element name="Max_Integral" msprop:Generator_ColumnVarNameInTable="columnMax_Integral" msprop:Generator_ColumnPropNameInRow="Max_Integral" msprop:Generator_ColumnPropNameInTable="Max_IntegralColumn" msprop:Generator_UserColumnName="Max_Integral" type="xs:int" minOccurs="0" />
+              <xs:element name="Create_User" msprop:Generator_ColumnVarNameInTable="columnCreate_User" msprop:Generator_ColumnPropNameInRow="Create_User" msprop:Generator_ColumnPropNameInTable="Create_UserColumn" msprop:Generator_UserColumnName="Create_User" type="xs:int" minOccurs="0" />
+              <xs:element name="Create_Time" msprop:Generator_ColumnVarNameInTable="columnCreate_Time" msprop:Generator_ColumnPropNameInRow="Create_Time" msprop:Generator_ColumnPropNameInTable="Create_TimeColumn" msprop:Generator_UserColumnName="Create_Time" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Last_Update_User" msprop:Generator_ColumnVarNameInTable="columnLast_Update_User" msprop:Generator_ColumnPropNameInRow="Last_Update_User" msprop:Generator_ColumnPropNameInTable="Last_Update_UserColumn" msprop:Generator_UserColumnName="Last_Update_User" type="xs:int" minOccurs="0" />
+              <xs:element name="Last_Update_Time" msprop:Generator_ColumnVarNameInTable="columnLast_Update_Time" msprop:Generator_ColumnPropNameInRow="Last_Update_Time" msprop:Generator_ColumnPropNameInTable="Last_Update_TimeColumn" msprop:Generator_UserColumnName="Last_Update_Time" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_BROKERAGE_INTEGRAL_MAP" />
+      <xs:field xpath="mstns:Brokerage_Rate_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

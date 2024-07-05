@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSUserPayVCard" targetNamespace="http://tempuri.org/DSUserPayVCard.xsd" xmlns:mstns="http://tempuri.org/DSUserPayVCard.xsd" xmlns="http://tempuri.org/DSUserPayVCard.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSUserPayVCard" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSUserPayVCard" msprop:Generator_UserDSName="DSUserPayVCard">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TBUserPayVCard" msprop:Generator_TableClassName="TBUserPayVCardDataTable" msprop:Generator_TableVarName="tableTBUserPayVCard" msprop:Generator_TablePropName="TBUserPayVCard" msprop:Generator_RowDeletingName="TBUserPayVCardRowDeleting" msprop:Generator_UserTableName="TBUserPayVCard" msprop:Generator_RowChangingName="TBUserPayVCardRowChanging" msprop:Generator_RowEvHandlerName="TBUserPayVCardRowChangeEventHandler" msprop:Generator_RowDeletedName="TBUserPayVCardRowDeleted" msprop:Generator_RowEvArgName="TBUserPayVCardRowChangeEvent" msprop:Generator_RowChangedName="TBUserPayVCardRowChanged" msprop:Generator_RowClassName="TBUserPayVCardRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ORDER_ID" msprop:Generator_ColumnVarNameInTable="columnORDER_ID" msprop:Generator_ColumnPropNameInRow="ORDER_ID" msprop:Generator_ColumnPropNameInTable="ORDER_IDColumn" msprop:Generator_UserColumnName="ORDER_ID" type="xs:string" minOccurs="0" />
+              <xs:element name="TRAN_AMOUNT" msprop:Generator_ColumnVarNameInTable="columnTRAN_AMOUNT" msprop:Generator_ColumnPropNameInRow="TRAN_AMOUNT" msprop:Generator_ColumnPropNameInTable="TRAN_AMOUNTColumn" msprop:Generator_UserColumnName="TRAN_AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VCARD_NO" msprop:Generator_ColumnVarNameInTable="columnVCARD_NO" msprop:Generator_ColumnPropNameInRow="VCARD_NO" msprop:Generator_ColumnPropNameInTable="VCARD_NOColumn" msprop:Generator_UserColumnName="VCARD_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="VCARD_ACTIVATE_NO" msprop:Generator_ColumnVarNameInTable="columnVCARD_ACTIVATE_NO" msprop:Generator_ColumnPropNameInRow="VCARD_ACTIVATE_NO" msprop:Generator_ColumnPropNameInTable="VCARD_ACTIVATE_NOColumn" msprop:Generator_UserColumnName="VCARD_ACTIVATE_NO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

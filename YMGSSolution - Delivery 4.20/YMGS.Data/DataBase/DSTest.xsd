@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSTest" targetNamespace="http://tempuri.org/DSTest.xsd" xmlns:mstns="http://tempuri.org/DSTest.xsd" xmlns="http://tempuri.org/DSTest.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSTest" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSTest" msprop:Generator_UserDSName="DSTest">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="YMGS_TEST" msprop:Generator_TableClassName="YMGS_TESTDataTable" msprop:Generator_TableVarName="tableYMGS_TEST" msprop:Generator_TablePropName="YMGS_TEST" msprop:Generator_RowDeletingName="YMGS_TESTRowDeleting" msprop:Generator_UserTableName="YMGS_TEST" msprop:Generator_RowChangingName="YMGS_TESTRowChanging" msprop:Generator_RowEvHandlerName="YMGS_TESTRowChangeEventHandler" msprop:Generator_RowDeletedName="YMGS_TESTRowDeleted" msprop:Generator_RowEvArgName="YMGS_TESTRowChangeEvent" msprop:Generator_RowChangedName="YMGS_TESTRowChanged" msprop:Generator_RowClassName="YMGS_TESTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" minOccurs="0" />
+              <xs:element name="NAMES" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="NAMES" msprop:Generator_ColumnVarNameInTable="columnNAMES" msprop:Generator_ColumnPropNameInTable="NAMESColumn" msprop:Generator_UserColumnName="NAMES" type="xs:string" minOccurs="0" />
+              <xs:element name="DESCRIPTION" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnDESCRIPTION" msprop:Generator_ColumnPropNameInTable="DESCRIPTIONColumn" msprop:Generator_UserColumnName="DESCRIPTION" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

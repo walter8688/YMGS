@@ -1,0 +1,6 @@
+D:\Projects\YMGS\YMGSSolution - Delivery 4.20\YMGS.DataBase\sql\debug\YMGS.DataBase_Database.sqlsettings
+D:\Projects\YMGS\YMGSSolution - Delivery 4.20\YMGS.DataBase\sql\debug\YMGS.DataBase_Database.sqldeployment
+D:\Projects\YMGS\YMGSSolution - Delivery 4.20\YMGS.DataBase\sql\debug\YMGS.DataBase_Database.sqlcmdvars
+D:\Projects\YMGS\YMGSSolution - Delivery 4.20\YMGS.DataBase\sql\debug\YMGS.DataBase.deploymanifest
+D:\Projects\YMGS\YMGSSolution - Delivery 4.20\YMGS.DataBase\sql\debug\YMGS.DataBase.dbschema
+D:\Projects\YMGS\YMGSSolution - Delivery 4.20\YMGS.DataBase\obj\Debug\YMGS.DataBase.dbschema

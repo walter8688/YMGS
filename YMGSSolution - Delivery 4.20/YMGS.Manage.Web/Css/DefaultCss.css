@@ -1,0 +1,228 @@
+﻿label, input, textarea, select, button
+{
+    vertical-align: middle;
+}
+
+/*文本输入框*/
+.TextBox
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #7F9DB9;
+    padding: 2px 1px 1px 1px;
+    vertical-align: middle;
+}
+
+.TextBox:focus
+{
+    outline: 1px solid #43AEE9;
+}
+
+.Button
+{
+	background-color: #A4001D;
+    color: White;
+    font-family: 宋体,Arial,Helvetica,sans-serif;
+    font-size: 8pt;
+    font-weight: bold;
+	height: 22px;
+    text-align: center;
+}
+
+/*标签*/
+.Label
+{
+	padding:0px;
+	margin:0px;
+	vertical-align: middle;
+}
+
+/*下拉列表*/
+.DropdownList
+{
+    font: 12px Verdana,Arial,Helvetica,sans-serif;
+}
+.DropdownList:focus
+{
+    outline: 1px solid #43AEE9;
+}
+
+/*LinkButton*/
+.LinkButton
+{
+	white-space:nowrap;
+}
+
+.CheckBox
+{
+}
+
+.CheckBoxList
+{
+    color:Black;
+    line-height:16px;
+    margin:0;
+    padding:0;
+}
+
+/*模态Panel样式 begin*/
+.ModalPopupBackground
+{
+	background-color: Gray;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+.ModalPoup
+{
+	background-color:White;
+	border-width: 3px;
+	border-style: solid;
+	border-color: Gray;
+	padding: 3px;
+	min-width: 350px;
+}
+.ModalPoupHeader
+{
+	padding: 10px 20px;
+	font-weight: bold;
+	background-color: #003366;
+	color: white;
+}
+/*模态Panel样式 end*/
+
+/*GridView begin*/
+.GridView {
+	background-color:#e3e3e3;
+	border-collapse: collapse;
+	border: solid 1px #C0C0C0;
+}
+
+.GridView tr {
+	background-color:#fff;
+}
+.GridView th {
+	background:url(../Images/fv1.jpg) #fff repeat-x 0px bottom;
+	line-height:16px;
+	color:#042448;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-weight:bold;
+	border: solid 1px #D0D0D0;
+	text-align:center;
+}
+.GridView td {
+	line-height:16px;
+	color:#666;
+	padding:5px;
+	border: solid 1px #D0D0D0;
+}
+
+/*超链接*/
+a.HyperLink,a.HyperLink:visited
+{color:#055aa8; text-decoration:none;}
+a.HyperLink:hover
+{color:#055aa8; text-decoration:underline;}
+
+
+/* 没有边框的Table */
+table.NoBorderTable {
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+table.NoBorderTable td 
+{
+    padding-left:2px;
+    padding-right:2px;    
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+/*Grid分页控件*/
+.GridViePageNavigator {
+    background-color: #D0D0D0;
+    text-align: left;
+    vertical-align: middle;
+}
+/*TreeView*/
+.treeView{
+    color:#666;
+}
+/*选中的TreeView*/
+.treeViewSelectd
+{
+    color:#055aa8;
+}
+
+
+form
+{
+	height:100%;
+}
+
+/*MaskEdit Begin*/
+.MaskedEditFocus
+{
+    background-color: #ffffcc;
+    color: #000000;
+}
+
+.MaskedEditError
+{
+    background-color: #ffcccc;
+}
+/*MaskEdit End*/
+
+/*比赛市场列表Div，需要带有滚动条*/
+.MarketListDiv
+{
+    border-width:1px;
+    border-style:solid;
+    border-color:#7F9DB9;
+    overflow:auto;
+    white-space:nowrap;
+    word-wrap: break-word; 
+    word-break:word;
+}
+
+.calendarContainer table
+{
+   	padding: 0px; 	
+}
+
+.calendarContainer table td
+{
+    background-color: #ffffff;
+    border: 0px;
+	padding-left: 0px;
+	padding-right: 0px;    
+}
+
+.UnSelTab
+{
+	background-color: #EBF0F2;
+    color:Gray;
+    font-family: 宋体,Arial,Helvetica,sans-serif;
+    font-size: 8pt;
+    font-weight: bold;
+	height: 22px;
+    text-align: center;
+}
+.SelTab
+{
+	background-color: #4D4C4C;
+    color:White;
+    font-family: 宋体,Arial,Helvetica,sans-serif;
+    font-size: 8pt;
+    font-weight: bold;
+	height: 22px;
+    text-align: center;
+}
+.inline
+{
+    display: -moz-inline-stack;  
+    display: inline-block;       
+    zoom: 1;                    
+    *display: inline;            
+}

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSExchangeDealList" targetNamespace="http://tempuri.org/DSExchangeDealList.xsd" xmlns:mstns="http://tempuri.org/DSExchangeDealList.xsd" xmlns="http://tempuri.org/DSExchangeDealList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSExchangeDealList" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSExchangeDealList" msprop:Generator_UserDSName="DSExchangeDealList">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EXCHANGE_DEAL_LIST" msprop:Generator_TableClassName="EXCHANGE_DEAL_LISTDataTable" msprop:Generator_TableVarName="tableEXCHANGE_DEAL_LIST" msprop:Generator_TablePropName="EXCHANGE_DEAL_LIST" msprop:Generator_RowDeletingName="EXCHANGE_DEAL_LISTRowDeleting" msprop:Generator_UserTableName="EXCHANGE_DEAL_LIST" msprop:Generator_RowChangingName="EXCHANGE_DEAL_LISTRowChanging" msprop:Generator_RowEvHandlerName="EXCHANGE_DEAL_LISTRowChangeEventHandler" msprop:Generator_RowDeletedName="EXCHANGE_DEAL_LISTRowDeleted" msprop:Generator_RowEvArgName="EXCHANGE_DEAL_LISTRowChangeEvent" msprop:Generator_RowChangedName="EXCHANGE_DEAL_LISTRowChanged" msprop:Generator_RowClassName="EXCHANGE_DEAL_LISTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EXCHANGE_DEAL_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnEXCHANGE_DEAL_ID" msprop:Generator_ColumnPropNameInRow="EXCHANGE_DEAL_ID" msprop:Generator_ColumnPropNameInTable="EXCHANGE_DEAL_IDColumn" msprop:Generator_UserColumnName="EXCHANGE_DEAL_ID" type="xs:int" />
+              <xs:element name="MATCH_ID" msprop:Generator_ColumnVarNameInTable="columnMATCH_ID" msprop:Generator_ColumnPropNameInRow="MATCH_ID" msprop:Generator_ColumnPropNameInTable="MATCH_IDColumn" msprop:Generator_UserColumnName="MATCH_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MARKET_ID" msprop:Generator_ColumnVarNameInTable="columnMARKET_ID" msprop:Generator_ColumnPropNameInRow="MARKET_ID" msprop:Generator_ColumnPropNameInTable="MARKET_IDColumn" msprop:Generator_UserColumnName="MARKET_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="EXCHANGE_BACK_ID" msprop:Generator_ColumnVarNameInTable="columnEXCHANGE_BACK_ID" msprop:Generator_ColumnPropNameInRow="EXCHANGE_BACK_ID" msprop:Generator_ColumnPropNameInTable="EXCHANGE_BACK_IDColumn" msprop:Generator_UserColumnName="EXCHANGE_BACK_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="EXCHANGE_LAY_ID" msprop:Generator_ColumnVarNameInTable="columnEXCHANGE_LAY_ID" msprop:Generator_ColumnPropNameInRow="EXCHANGE_LAY_ID" msprop:Generator_ColumnPropNameInTable="EXCHANGE_LAY_IDColumn" msprop:Generator_UserColumnName="EXCHANGE_LAY_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="DEAL_AMOUNT" msprop:Generator_ColumnVarNameInTable="columnDEAL_AMOUNT" msprop:Generator_ColumnPropNameInRow="DEAL_AMOUNT" msprop:Generator_ColumnPropNameInTable="DEAL_AMOUNTColumn" msprop:Generator_UserColumnName="DEAL_AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DEAL_TIME" msprop:Generator_ColumnVarNameInTable="columnDEAL_TIME" msprop:Generator_ColumnPropNameInRow="DEAL_TIME" msprop:Generator_ColumnPropNameInTable="DEAL_TIMEColumn" msprop:Generator_UserColumnName="DEAL_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_UserColumnName="STATUS" type="xs:int" minOccurs="0" />
+              <xs:element name="MATCH_TYPE" msprop:Generator_ColumnVarNameInTable="columnMATCH_TYPE" msprop:Generator_ColumnPropNameInRow="MATCH_TYPE" msprop:Generator_ColumnPropNameInTable="MATCH_TYPEColumn" msprop:Generator_UserColumnName="MATCH_TYPE" type="xs:int" minOccurs="0" />
+              <xs:element name="ODDS" msprop:Generator_ColumnVarNameInTable="columnODDS" msprop:Generator_ColumnPropNameInRow="ODDS" msprop:Generator_ColumnPropNameInTable="ODDSColumn" msprop:Generator_UserColumnName="ODDS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MARKET_NAME" msprop:Generator_ColumnVarNameInTable="columnMARKET_NAME" msprop:Generator_ColumnPropNameInRow="MARKET_NAME" msprop:Generator_ColumnPropNameInTable="MARKET_NAMEColumn" msprop:Generator_UserColumnName="MARKET_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="MARKET_FLAG" msprop:Generator_ColumnVarNameInTable="columnMARKET_FLAG" msprop:Generator_ColumnPropNameInRow="MARKET_FLAG" msprop:Generator_ColumnPropNameInTable="MARKET_FLAGColumn" msprop:Generator_UserColumnName="MARKET_FLAG" type="xs:int" minOccurs="0" />
+              <xs:element name="MARKET_SCOREA" msprop:Generator_ColumnVarNameInTable="columnMARKET_SCOREA" msprop:Generator_ColumnPropNameInRow="MARKET_SCOREA" msprop:Generator_ColumnPropNameInTable="MARKET_SCOREAColumn" msprop:Generator_UserColumnName="MARKET_SCOREA" type="xs:double" minOccurs="0" />
+              <xs:element name="MARKET_SCOREB" msprop:Generator_ColumnVarNameInTable="columnMARKET_SCOREB" msprop:Generator_ColumnPropNameInRow="MARKET_SCOREB" msprop:Generator_ColumnPropNameInTable="MARKET_SCOREBColumn" msprop:Generator_UserColumnName="MARKET_SCOREB" type="xs:double" minOccurs="0" />
+              <xs:element name="MARKET_TMP_TYPE" msprop:Generator_ColumnVarNameInTable="columnMARKET_TMP_TYPE" msprop:Generator_ColumnPropNameInRow="MARKET_TMP_TYPE" msprop:Generator_ColumnPropNameInTable="MARKET_TMP_TYPEColumn" msprop:Generator_UserColumnName="MARKET_TMP_TYPE" type="xs:int" minOccurs="0" />
+              <xs:element name="MARKET_TMP_NAME" msprop:Generator_ColumnVarNameInTable="columnMARKET_TMP_NAME" msprop:Generator_ColumnPropNameInRow="MARKET_TMP_NAME" msprop:Generator_ColumnPropNameInTable="MARKET_TMP_NAMEColumn" msprop:Generator_UserColumnName="MARKET_TMP_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="BET_TYPE_ID" msprop:Generator_ColumnVarNameInTable="columnBET_TYPE_ID" msprop:Generator_ColumnPropNameInRow="BET_TYPE_ID" msprop:Generator_ColumnPropNameInTable="BET_TYPE_IDColumn" msprop:Generator_UserColumnName="BET_TYPE_ID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EXCHANGE_DEAL_LIST" />
+      <xs:field xpath="mstns:EXCHANGE_DEAL_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

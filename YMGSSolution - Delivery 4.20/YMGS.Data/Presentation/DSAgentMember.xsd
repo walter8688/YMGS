@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSAgentMember" targetNamespace="http://tempuri.org/DSAgentMember.xsd" xmlns:mstns="http://tempuri.org/DSAgentMember.xsd" xmlns="http://tempuri.org/DSAgentMember.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSAgentMember" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSAgentMember" msprop:Generator_UserDSName="DSAgentMember">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_SYSTEM_ACCOUNT" msprop:Generator_TableClassName="TB_SYSTEM_ACCOUNTDataTable" msprop:Generator_TableVarName="tableTB_SYSTEM_ACCOUNT" msprop:Generator_TablePropName="TB_SYSTEM_ACCOUNT" msprop:Generator_RowDeletingName="TB_SYSTEM_ACCOUNTRowDeleting" msprop:Generator_UserTableName="TB_SYSTEM_ACCOUNT" msprop:Generator_RowChangingName="TB_SYSTEM_ACCOUNTRowChanging" msprop:Generator_RowEvHandlerName="TB_SYSTEM_ACCOUNTRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_SYSTEM_ACCOUNTRowDeleted" msprop:Generator_RowEvArgName="TB_SYSTEM_ACCOUNTRowChangeEvent" msprop:Generator_RowChangedName="TB_SYSTEM_ACCOUNTRowChanged" msprop:Generator_RowClassName="TB_SYSTEM_ACCOUNTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="USER_NAME" msprop:Generator_ColumnVarNameInTable="columnUSER_NAME" msprop:Generator_ColumnPropNameInRow="USER_NAME" msprop:Generator_ColumnPropNameInTable="USER_NAMEColumn" msprop:Generator_UserColumnName="USER_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMAIL_ADDRESS" msprop:Generator_ColumnVarNameInTable="columnEMAIL_ADDRESS" msprop:Generator_ColumnPropNameInRow="EMAIL_ADDRESS" msprop:Generator_ColumnPropNameInTable="EMAIL_ADDRESSColumn" msprop:Generator_UserColumnName="EMAIL_ADDRESS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RoleName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnRoleName" msprop:Generator_ColumnPropNameInRow="RoleName" msprop:Generator_ColumnPropNameInTable="RoleNameColumn" msprop:Generator_UserColumnName="RoleName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACCOUNT_STATUS" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnACCOUNT_STATUS" msprop:Generator_ColumnPropNameInRow="ACCOUNT_STATUS" msprop:Generator_ColumnPropNameInTable="ACCOUNT_STATUSColumn" msprop:Generator_UserColumnName="ACCOUNT_STATUS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USER_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnUSER_ID" msprop:Generator_ColumnPropNameInRow="USER_ID" msprop:Generator_ColumnPropNameInTable="USER_IDColumn" msprop:Generator_UserColumnName="USER_ID" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_SYSTEM_ACCOUNT" />
+      <xs:field xpath="mstns:USER_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSChampWinMemList" targetNamespace="http://tempuri.org/DSChampWinMemList.xsd" xmlns:mstns="http://tempuri.org/DSChampWinMemList.xsd" xmlns="http://tempuri.org/DSChampWinMemList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSChampWinMemList" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSChampWinMemList" msprop:Generator_UserDSName="DSChampWinMemList">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DSChampWinMemList" msprop:Generator_TableClassName="DSChampWinMemListDataTable" msprop:Generator_TableVarName="tableDSChampWinMemList" msprop:Generator_TablePropName="_DSChampWinMemList" msprop:Generator_RowDeletingName="DSChampWinMemListRowDeleting" msprop:Generator_UserTableName="DSChampWinMemList" msprop:Generator_RowChangingName="DSChampWinMemListRowChanging" msprop:Generator_RowEvHandlerName="DSChampWinMemListRowChangeEventHandler" msprop:Generator_RowDeletedName="DSChampWinMemListRowDeleted" msprop:Generator_RowEvArgName="DSChampWinMemListRowChangeEvent" msprop:Generator_RowChangedName="DSChampWinMemListRowChanged" msprop:Generator_RowClassName="DSChampWinMemListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Champ_Win_Member_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnChamp_Win_Member_ID" msprop:Generator_ColumnPropNameInRow="Champ_Win_Member_ID" msprop:Generator_ColumnPropNameInTable="Champ_Win_Member_IDColumn" msprop:Generator_UserColumnName="Champ_Win_Member_ID" type="xs:int" />
+              <xs:element name="Champ_Event_Member_ID" msprop:Generator_ColumnVarNameInTable="columnChamp_Event_Member_ID" msprop:Generator_ColumnPropNameInRow="Champ_Event_Member_ID" msprop:Generator_ColumnPropNameInTable="Champ_Event_Member_IDColumn" msprop:Generator_UserColumnName="Champ_Event_Member_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Champ_Event_ID" msprop:Generator_ColumnVarNameInTable="columnChamp_Event_ID" msprop:Generator_ColumnPropNameInRow="Champ_Event_ID" msprop:Generator_ColumnPropNameInTable="Champ_Event_IDColumn" msprop:Generator_UserColumnName="Champ_Event_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Champ_Event_Member_Name" msprop:Generator_ColumnVarNameInTable="columnChamp_Event_Member_Name" msprop:Generator_ColumnPropNameInRow="Champ_Event_Member_Name" msprop:Generator_ColumnPropNameInTable="Champ_Event_Member_NameColumn" msprop:Generator_UserColumnName="Champ_Event_Member_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Champ_Event_Member_Name_En" msprop:Generator_ColumnVarNameInTable="columnChamp_Event_Member_Name_En" msprop:Generator_ColumnPropNameInRow="Champ_Event_Member_Name_En" msprop:Generator_ColumnPropNameInTable="Champ_Event_Member_Name_EnColumn" msprop:Generator_UserColumnName="Champ_Event_Member_Name_En" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DSChampWinMemList" />
+      <xs:field xpath="mstns:Champ_Win_Member_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

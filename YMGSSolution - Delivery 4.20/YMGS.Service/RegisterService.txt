@@ -1,0 +1,7 @@
+installutil  D:\Visual2008\WindowsService\WindowsService1\WindowsService1\bin\Release\WindowsService1.exe
+installutil /u  D:\Visual2008\WindowsService\WindowsService1\WindowsService1\bin\Release\WindowsService1.exe
+
+
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Visual Studio 2010\Visual Studio Tools
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe "D:\Exigen Service\Matching Game\ymgs\YMGSSolution\YMGS.Service\bin\YMGS.Service.exe"
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe -u "D:\Exigen Service\Matching Game\ymgs\YMGSSolution\YMGS.Service\bin\YMGS.Service.exe"

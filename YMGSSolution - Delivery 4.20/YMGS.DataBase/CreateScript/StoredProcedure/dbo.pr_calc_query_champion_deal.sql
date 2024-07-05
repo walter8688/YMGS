@@ -1,0 +1,33 @@
+IF EXISTS ( SELECT  *
+            FROM    sysobjects
+            WHERE   id = OBJECT_ID(N'[dbo].[pr_calc_query_champion_deal]')
+                    AND OBJECTPROPERTY(id, N'Isprocedure') = 1 ) 
+    DROP PROCEDURE [dbo].[pr_calc_query_champion_deal]
+GO
+CREATE PROCEDURE [dbo].[pr_calc_query_champion_deal]
+    (
+	  @Champ_Event_Id int
+    )
+AS
+
+BEGIN
+	SELECT A.EXCHANGE_DEAL_ID,
+		A.MATCH_ID,
+		A.MARKET_ID,
+		A.EXCHANGE_BACK_ID,
+		A.EXCHANGE_LAY_ID,
+		A.DEAL_AMOUNT,
+		A.DEAL_TIME,
+		A.STATUS,
+		A.MATCH_TYPE,
+		A.ODDS,
+		C.CHAMP_MEMBER_ID,
+		D.CHAMP_EVENT_MEMBER_NAME
+	FROM TB_EXCHANGE_DEAL A INNER JOIN TB_CHAMP_EVENT B ON A.MATCH_ID=B.CHAMP_EVENT_ID
+	INNER JOIN TB_CHAMP_MARKET C ON A.MARKET_ID=C.CHAMP_MARKET_ID
+	LEFT JOIN TB_CHAMP_EVENT_MEMBER D ON C.CHAMP_MEMBER_ID=D.CHAMP_EVENT_MEMBER_ID
+	WHERE A.MATCH_ID=@Champ_Event_Id
+	AND A.STATUS=1 --正常的撮合交易记录	
+	AND A.MATCH_TYPE=2 --冠军交易
+END
+GO

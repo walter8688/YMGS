@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SimpleMaster.master.cs" Inherits="YMGS.Trade.Web.MasterPage.SimpleMaster" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<%@ Register TagPrefix="YMGS" TagName="MemberTopCtrl" Src="~/MasterPage/MemberTopCtrl.ascx" %>
+<%@ Register TagPrefix="YMGS" TagName="MemberLeftCtrl" Src="~/MasterPage/MemberLeftCtrl.ascx" %>
+<%@ Register TagPrefix="YMGS" TagName="MemberFooterCtrl" Src="~/MasterPage/MemberFooterCtrl.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title></title>
+    <link id="link1" runat="server" href="~/Css/MemberDefault.css" rel="Stylesheet" type="text/css" /> 
+    <link id="link2" runat="server" href="~/Css/DefaultCss.css" rel="Stylesheet" type="text/css" />
+    <script type="text/javascript" src="../Scripts/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../Scripts/CommonJS.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <ajaxToolkit:ToolkitScriptManager runat="Server" EnableScriptGlobalization="true" EnablePageMethods="true" EnablePartialRendering="true" 
+         AsyncPostBackErrorMessage="" AllowCustomErrorsRedirect="false" OnAsyncPostBackError="ScriptManager_AsyncPostBackError"   
+        EnableScriptLocalization="true" ID="ScriptManager1">
+        <Scripts>
+            <asp:ScriptReference Path="~/Scripts/jquery-1.8.3.min.js" />
+            <asp:ScriptReference Path="~/Scripts/CommonJS.js" />
+        </Scripts>
+    </ajaxToolkit:ToolkitScriptManager>        
+        <table class=NoBorderTable style="height:100%;width:100%;">
+            <tr style="height:60px">
+                <td>
+                    <YMGS:MemberTopCtrl ID="topMenu" runat="server" />
+                </td>
+            </tr>
+            <tr style="height:100%">
+                <td valign=top>
+                    <div class="hymain">
+                        <div class="sitenavigate">
+                            <asp:Label ID=lblNaviTitle runat="server"></asp:Label>
+                        </div>
+                        <div class="hyrightfull">
+                            <asp:ContentPlaceHolder ID=mainContent runat=server>
+                            </asp:ContentPlaceHolder>
+                        </div>            
+                    </div>
+                </td>
+            </tr>
+            <tr style="height:60px">
+                <td>
+                    <YMGS:MemberFooterCtrl id="footer" runat="server" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

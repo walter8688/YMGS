@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSNOTICE" targetNamespace="http://tempuri.org/DSNOTICE.xsd" xmlns:mstns="http://tempuri.org/DSNOTICE.xsd" xmlns="http://tempuri.org/DSNOTICE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSNOTICE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSNOTICE" msprop:Generator_UserDSName="DSNOTICE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_AD_NOTICE" msprop:Generator_TableClassName="TB_AD_NOTICEDataTable" msprop:Generator_TableVarName="tableTB_AD_NOTICE" msprop:Generator_TablePropName="TB_AD_NOTICE" msprop:Generator_RowDeletingName="TB_AD_NOTICERowDeleting" msprop:Generator_UserTableName="TB_AD_NOTICE" msprop:Generator_RowChangingName="TB_AD_NOTICERowChanging" msprop:Generator_RowEvHandlerName="TB_AD_NOTICERowChangeEventHandler" msprop:Generator_RowDeletedName="TB_AD_NOTICERowDeleted" msprop:Generator_RowEvArgName="TB_AD_NOTICERowChangeEvent" msprop:Generator_RowChangedName="TB_AD_NOTICERowChanged" msprop:Generator_RowClassName="TB_AD_NOTICERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnPID" msprop:Generator_ColumnPropNameInRow="PID" msprop:Generator_ColumnPropNameInTable="PIDColumn" msprop:Generator_UserColumnName="PID" type="xs:int" />
+              <xs:element name="TITLE" msprop:Generator_ColumnVarNameInTable="columnTITLE" msprop:Generator_ColumnPropNameInRow="TITLE" msprop:Generator_ColumnPropNameInTable="TITLEColumn" msprop:Generator_UserColumnName="TITLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONTENT" msprop:Generator_ColumnVarNameInTable="columnCONTENT" msprop:Generator_ColumnPropNameInRow="CONTENT" msprop:Generator_ColumnPropNameInTable="CONTENTColumn" msprop:Generator_UserColumnName="CONTENT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ENTITLE" msprop:Generator_ColumnVarNameInTable="columnENTITLE" msprop:Generator_ColumnPropNameInRow="ENTITLE" msprop:Generator_ColumnPropNameInTable="ENTITLEColumn" msprop:Generator_UserColumnName="ENTITLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ENCONTENT" msprop:Generator_ColumnVarNameInTable="columnENCONTENT" msprop:Generator_ColumnPropNameInRow="ENCONTENT" msprop:Generator_ColumnPropNameInTable="ENCONTENTColumn" msprop:Generator_UserColumnName="ENCONTENT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ISV" msprop:Generator_ColumnVarNameInTable="columnISV" msprop:Generator_ColumnPropNameInRow="ISV" msprop:Generator_ColumnPropNameInTable="ISVColumn" msprop:Generator_UserColumnName="ISV" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_AD_NOTICE" />
+      <xs:field xpath="mstns:PID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

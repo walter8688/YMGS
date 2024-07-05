@@ -1,0 +1,1341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B62A1D35-30D8-41FE-B156-8CFA6D548BEC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YMGS.Data</RootNamespace>
+    <AssemblyName>YMGS.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>YMGSKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\YMGS.AssemblyInfo.cs">
+      <Link>Properties\YMGS.AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Common\CommonEnum.cs" />
+    <Compile Include="Common\CommonFunction.cs" />
+    <Compile Include="Common\FunctionIdList.cs" />
+    <Compile Include="DataBase\DSAccount.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAccount.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSAgentDetail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAgentDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSApplyProxy.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSApplyProxy.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSBetType.cs">
+      <DependentUpon>DSBetType.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSBetType.Designer.cs">
+      <DependentUpon>DSBetType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSBrokerageIntegral.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSBrokerageIntegral.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DsCacheObject.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsCacheObject.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSChampEvent.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSChampEvent.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSChampEventMember.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSChampEventMember.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSChampMarket.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSChampMarket.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSChampWinMember.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSChampWinMember.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSCountry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCountry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSCurrency.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCurrency.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSDeal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSDeal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSEvent.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEvent.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSEventItem.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEventItem.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSEventTeam.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEventTeam.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSEventZone.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEventZone.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSExchangeDeal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSExchangeDeal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSExchangeLay.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSExchangeLay.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSExchangeSettle.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSExchangeSettle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSExchange_Back.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSExchange_Back.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSFundHistory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSFundHistory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSHelper.cs">
+      <DependentUpon>DSHelper.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataBase\DSHelper.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSHelper.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSIntegralHistory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSIntegralHistory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSLeftMenuItem.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSLeftMenuItem.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSMarketTemplate.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMarketTemplate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSMatch.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMatch.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSMatchMarket.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMatchMarket.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSMatchRpt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMatchRpt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSMyTrade.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMyTrade.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSODDSCOMPARE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSODDSCOMPARE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSParamParam.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSParamParam.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSParamType.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSParamType.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSParamZone.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSParamZone.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSRoleFuncMap.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRoleFuncMap.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSSystemAccess.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSystemAccess.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSSystemAccount.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSystemAccount.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSSystemAutoMessage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSystemAutoMessage.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSSystemFunc.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSystemFunc.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSSystemRole.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSystemRole.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSTest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSTest.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSTimeZone.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSTimeZone.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSUserFund.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSUserFund.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSUserPay.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSUserPay.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSUserPayVCard.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSUserPayVCard.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSUserWithDraw.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSUserWithDraw.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DSYourInPlay.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSYourInPlay.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\AgentType.cs" />
+    <Compile Include="Entity\BasePayObject.cs" />
+    <Compile Include="Entity\BasePayRequestObject.cs" />
+    <Compile Include="Entity\BetType.cs" />
+    <Compile Include="Entity\ChampEventType.cs" />
+    <Compile Include="Entity\ChinaPayObject.cs" />
+    <Compile Include="Entity\ChinaPayRequestObject.cs" />
+    <Compile Include="Entity\DetailUserInfo.cs" />
+    <Compile Include="Entity\EventStatus.cs" />
+    <Compile Include="Entity\EventTeamStatus.cs" />
+    <Compile Include="Entity\ExchangeType.cs" />
+    <Compile Include="Entity\FootballCalendar.cs" />
+    <Compile Include="Entity\FootBallMatchScore.cs" />
+    <Compile Include="Entity\FundHistoryTradeType.cs" />
+    <Compile Include="Entity\FundReportType.cs" />
+    <Compile Include="Entity\HelperObject.cs" />
+    <Compile Include="Entity\MarketObject.cs" />
+    <Compile Include="Entity\MatchObject.cs" />
+    <Compile Include="Entity\IntegralReportType.cs" />
+    <Compile Include="Entity\MarketTemplateType.cs" />
+    <Compile Include="Entity\MatchStatusInfo.cs" />
+    <Compile Include="Entity\RoleMenu.cs" />
+    <Compile Include="Entity\RulesObject.cs" />
+    <Compile Include="Entity\SearchObject.cs" />
+    <Compile Include="Entity\UserApplyProxyStatusInfo.cs" />
+    <Compile Include="Entity\UserDetail.cs" />
+    <Compile Include="Entity\UserFundInfo.cs" />
+    <Compile Include="Entity\UserWithDrawStatusInfo.cs" />
+    <Compile Include="Entity\VCardFaceValueInfo.cs" />
+    <Compile Include="Entity\VCardStatusInfo.cs" />
+    <Compile Include="Presentation\DSAccountWithDraw.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAccountWithDraw.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSADPic.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSADPic.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSADWords.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSADWords.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSAgentList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAgentList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSAgentMember.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSAgentMember.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSApplyAgent.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSApplyAgent.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSBetReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSBetReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSBrokerageReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSBrokerageReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSCachedExchangeBack.cs">
+      <DependentUpon>DSCachedExchangeBack.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Presentation\DSCachedExchangeBack.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCachedExchangeBack.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSCachedExchangeLay.cs">
+      <DependentUpon>DSCachedExchangeLay.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Presentation\DSCachedExchangeLay.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCachedExchangeLay.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSChampionEventAndMarket.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSChampionEventAndMarket.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSChampionExchangeDealList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSChampionExchangeDealList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSChampWinMemList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSChampWinMemList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSCommissionReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSCommissionReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSDealReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSDealReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSEventTeamList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSEventTeamList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSExchangeDealList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSExchangeDealList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSFundReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSFundReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSMarketTmp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMarketTmp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSMatchAndMarket.cs">
+      <DependentUpon>DSMatchAndMarket.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Presentation\DSMatchAndMarket.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMatchAndMarket.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DsMatchList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsMatchList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSNOTICE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSNOTICE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSParameter.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSParameter.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSSettlementRollbackUser.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSSettlementRollbackUser.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSTeamList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSTeamList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSTopRace.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSTopRace.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DSVCardDetail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSVCardDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\MyMatch.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyMatch.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\BusinessResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BusinessResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\BusinessResources.en-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BusinessResources.en-US.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\BusinessResources.en-US.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BusinessResources.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\BusinessResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>BusinessResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataBase\DSAccount.xsc">
+      <DependentUpon>DSAccount.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSAccount.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAccount.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSAccount.xss">
+      <DependentUpon>DSAccount.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSAgentDetail.xsc">
+      <DependentUpon>DSAgentDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSAgentDetail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAgentDetail.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSAgentDetail.xss">
+      <DependentUpon>DSAgentDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSApplyProxy.xsc">
+      <DependentUpon>DSApplyProxy.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSApplyProxy.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSApplyProxy.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSApplyProxy.xss">
+      <DependentUpon>DSApplyProxy.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSBetType.xsc">
+      <DependentUpon>DSBetType.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSBetType.xsd" />
+    <None Include="DataBase\DSBetType.xss">
+      <DependentUpon>DSBetType.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSBrokerageIntegral.xsc">
+      <DependentUpon>DSBrokerageIntegral.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSBrokerageIntegral.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSBrokerageIntegral.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSBrokerageIntegral.xss">
+      <DependentUpon>DSBrokerageIntegral.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DsCacheObject.xsc">
+      <DependentUpon>DsCacheObject.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DsCacheObject.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsCacheObject.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DsCacheObject.xss">
+      <DependentUpon>DsCacheObject.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSChampEvent.xsc">
+      <DependentUpon>DSChampEvent.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSChampEvent.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSChampEvent.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSChampEvent.xss">
+      <DependentUpon>DSChampEvent.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSChampEventMember.xsc">
+      <DependentUpon>DSChampEventMember.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSChampEventMember.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSChampEventMember.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSChampEventMember.xss">
+      <DependentUpon>DSChampEventMember.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSChampMarket.xsc">
+      <DependentUpon>DSChampMarket.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSChampMarket.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSChampMarket.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSChampMarket.xss">
+      <DependentUpon>DSChampMarket.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSChampWinMember.xsc">
+      <DependentUpon>DSChampWinMember.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSChampWinMember.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSChampWinMember.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSChampWinMember.xss">
+      <DependentUpon>DSChampWinMember.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSCountry.xsc">
+      <DependentUpon>DSCountry.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSCountry.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCountry.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSCountry.xss">
+      <DependentUpon>DSCountry.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSCurrency.xsc">
+      <DependentUpon>DSCurrency.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSCurrency.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCurrency.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSCurrency.xss">
+      <DependentUpon>DSCurrency.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSDeal.xsc">
+      <DependentUpon>DSDeal.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSDeal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSDeal.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSDeal.xss">
+      <DependentUpon>DSDeal.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSEvent.xsc">
+      <DependentUpon>DSEvent.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSEvent.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEvent.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSEvent.xss">
+      <DependentUpon>DSEvent.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSEventItem.xsc">
+      <DependentUpon>DSEventItem.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSEventItem.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEventItem.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSEventItem.xss">
+      <DependentUpon>DSEventItem.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSEventTeam.xsc">
+      <DependentUpon>DSEventTeam.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSEventTeam.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEventTeam.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSEventTeam.xss">
+      <DependentUpon>DSEventTeam.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSEventZone.xsc">
+      <DependentUpon>DSEventZone.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSEventZone.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEventZone.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSEventZone.xss">
+      <DependentUpon>DSEventZone.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSExchangeDeal.xsc">
+      <DependentUpon>DSExchangeDeal.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSExchangeDeal.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSExchangeDeal.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSExchangeDeal.xss">
+      <DependentUpon>DSExchangeDeal.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSExchangeLay.xsc">
+      <DependentUpon>DSExchangeLay.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSExchangeLay.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSExchangeLay.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSExchangeLay.xss">
+      <DependentUpon>DSExchangeLay.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSExchangeSettle.xsc">
+      <DependentUpon>DSExchangeSettle.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSExchangeSettle.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSExchangeSettle.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSExchangeSettle.xss">
+      <DependentUpon>DSExchangeSettle.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSExchange_Back.xsc">
+      <DependentUpon>DSExchange_Back.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSExchange_Back.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSExchange_Back.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSExchange_Back.xss">
+      <DependentUpon>DSExchange_Back.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSFundHistory.xsc">
+      <DependentUpon>DSFundHistory.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSFundHistory.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSFundHistory.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSFundHistory.xss">
+      <DependentUpon>DSFundHistory.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSHelper.xsc">
+      <DependentUpon>DSHelper.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSHelper.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSHelper.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSHelper.xss">
+      <DependentUpon>DSHelper.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSIntegralHistory.xsc">
+      <DependentUpon>DSIntegralHistory.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSIntegralHistory.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSIntegralHistory.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSIntegralHistory.xss">
+      <DependentUpon>DSIntegralHistory.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSLeftMenuItem.xsc">
+      <DependentUpon>DSLeftMenuItem.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSLeftMenuItem.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSLeftMenuItem.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSLeftMenuItem.xss">
+      <DependentUpon>DSLeftMenuItem.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSMarketTemplate.xsc">
+      <DependentUpon>DSMarketTemplate.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSMarketTemplate.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMarketTemplate.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSMarketTemplate.xss">
+      <DependentUpon>DSMarketTemplate.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSMatch.xsc">
+      <DependentUpon>DSMatch.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSMatch.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMatch.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSMatch.xss">
+      <DependentUpon>DSMatch.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSMatchMarket.xsc">
+      <DependentUpon>DSMatchMarket.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSMatchMarket.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMatchMarket.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSMatchMarket.xss">
+      <DependentUpon>DSMatchMarket.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSMatchRpt.xsc">
+      <DependentUpon>DSMatchRpt.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSMatchRpt.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMatchRpt.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSMatchRpt.xss">
+      <DependentUpon>DSMatchRpt.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSMyTrade.xsc">
+      <DependentUpon>DSMyTrade.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSMyTrade.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMyTrade.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSMyTrade.xss">
+      <DependentUpon>DSMyTrade.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSODDSCOMPARE.xsc">
+      <DependentUpon>DSODDSCOMPARE.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSODDSCOMPARE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSODDSCOMPARE.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSODDSCOMPARE.xss">
+      <DependentUpon>DSODDSCOMPARE.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSParamParam.xsc">
+      <DependentUpon>DSParamParam.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSParamParam.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSParamParam.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSParamParam.xss">
+      <DependentUpon>DSParamParam.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSParamType.xsc">
+      <DependentUpon>DSParamType.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSParamType.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSParamType.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSParamType.xss">
+      <DependentUpon>DSParamType.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSParamZone.xsc">
+      <DependentUpon>DSParamZone.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSParamZone.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSParamZone.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSParamZone.xss">
+      <DependentUpon>DSParamZone.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSRoleFuncMap.xsc">
+      <DependentUpon>DSRoleFuncMap.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSRoleFuncMap.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRoleFuncMap.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSRoleFuncMap.xss">
+      <DependentUpon>DSRoleFuncMap.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSSystemAccess.xsc">
+      <DependentUpon>DSSystemAccess.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSSystemAccess.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSSystemAccess.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSSystemAccess.xss">
+      <DependentUpon>DSSystemAccess.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSSystemAccount.xsc">
+      <DependentUpon>DSSystemAccount.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSSystemAccount.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSSystemAccount.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSSystemAccount.xss">
+      <DependentUpon>DSSystemAccount.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSSystemAutoMessage.xsc">
+      <DependentUpon>DSSystemAutoMessage.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSSystemAutoMessage.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSSystemAutoMessage.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSSystemAutoMessage.xss">
+      <DependentUpon>DSSystemAutoMessage.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSSystemFunc.xsc">
+      <DependentUpon>DSSystemFunc.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSSystemFunc.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSSystemFunc.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSSystemFunc.xss">
+      <DependentUpon>DSSystemFunc.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSSystemRole.xsc">
+      <DependentUpon>DSSystemRole.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSSystemRole.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSSystemRole.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSSystemRole.xss">
+      <DependentUpon>DSSystemRole.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSTest.xsc">
+      <DependentUpon>DSTest.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSTest.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSTest.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSTest.xss">
+      <DependentUpon>DSTest.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSTimeZone.xsc">
+      <DependentUpon>DSTimeZone.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSTimeZone.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSTimeZone.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSTimeZone.xss">
+      <DependentUpon>DSTimeZone.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSUserFund.xsc">
+      <DependentUpon>DSUserFund.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSUserFund.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSUserFund.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSUserFund.xss">
+      <DependentUpon>DSUserFund.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSUserPay.xsc">
+      <DependentUpon>DSUserPay.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSUserPay.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSUserPay.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSUserPay.xss">
+      <DependentUpon>DSUserPay.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSUserPayVCard.xsc">
+      <DependentUpon>DSUserPayVCard.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSUserPayVCard.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSUserPayVCard.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSUserPayVCard.xss">
+      <DependentUpon>DSUserPayVCard.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSUserWithDraw.xsc">
+      <DependentUpon>DSUserWithDraw.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSUserWithDraw.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSUserWithDraw.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSUserWithDraw.xss">
+      <DependentUpon>DSUserWithDraw.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSYourInPlay.xsc">
+      <DependentUpon>DSYourInPlay.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DSYourInPlay.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSYourInPlay.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DSYourInPlay.xss">
+      <DependentUpon>DSYourInPlay.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSAccountWithDraw.xsc">
+      <DependentUpon>DSAccountWithDraw.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSAccountWithDraw.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAccountWithDraw.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSAccountWithDraw.xss">
+      <DependentUpon>DSAccountWithDraw.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSADPic.xsc">
+      <DependentUpon>DSADPic.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSADPic.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSADPic.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSADPic.xss">
+      <DependentUpon>DSADPic.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSADWords.xsc">
+      <DependentUpon>DSADWords.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSADWords.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSADWords.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSADWords.xss">
+      <DependentUpon>DSADWords.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSAgentList.xsc">
+      <DependentUpon>DSAgentList.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSAgentList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAgentList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSAgentList.xss">
+      <DependentUpon>DSAgentList.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSAgentMember.xsc">
+      <DependentUpon>DSAgentMember.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSAgentMember.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSAgentMember.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSAgentMember.xss">
+      <DependentUpon>DSAgentMember.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSApplyAgent.xsc">
+      <DependentUpon>DSApplyAgent.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSApplyAgent.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSApplyAgent.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSApplyAgent.xss">
+      <DependentUpon>DSApplyAgent.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSBetReport.xsc">
+      <DependentUpon>DSBetReport.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSBetReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSBetReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSBetReport.xss">
+      <DependentUpon>DSBetReport.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSBrokerageReport.xsc">
+      <DependentUpon>DSBrokerageReport.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSBrokerageReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSBrokerageReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSBrokerageReport.xss">
+      <DependentUpon>DSBrokerageReport.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSCachedExchangeBack.xsc">
+      <DependentUpon>DSCachedExchangeBack.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSCachedExchangeBack.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCachedExchangeBack.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSCachedExchangeBack.xss">
+      <DependentUpon>DSCachedExchangeBack.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSCachedExchangeLay.xsc">
+      <DependentUpon>DSCachedExchangeLay.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSCachedExchangeLay.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCachedExchangeLay.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSCachedExchangeLay.xss">
+      <DependentUpon>DSCachedExchangeLay.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSChampionEventAndMarket.xsc">
+      <DependentUpon>DSChampionEventAndMarket.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSChampionEventAndMarket.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSChampionEventAndMarket.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSChampionEventAndMarket.xss">
+      <DependentUpon>DSChampionEventAndMarket.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSChampionExchangeDealList.xsc">
+      <DependentUpon>DSChampionExchangeDealList.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSChampionExchangeDealList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSChampionExchangeDealList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSChampionExchangeDealList.xss">
+      <DependentUpon>DSChampionExchangeDealList.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSChampWinMemList.xsc">
+      <DependentUpon>DSChampWinMemList.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSChampWinMemList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSChampWinMemList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSChampWinMemList.xss">
+      <DependentUpon>DSChampWinMemList.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSCommissionReport.xsc">
+      <DependentUpon>DSCommissionReport.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSCommissionReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSCommissionReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSCommissionReport.xss">
+      <DependentUpon>DSCommissionReport.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSDealReport.xsc">
+      <DependentUpon>DSDealReport.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSDealReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSDealReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSDealReport.xss">
+      <DependentUpon>DSDealReport.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSEventTeamList.xsc">
+      <DependentUpon>DSEventTeamList.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSEventTeamList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSEventTeamList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSEventTeamList.xss">
+      <DependentUpon>DSEventTeamList.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSExchangeDealList.xsc">
+      <DependentUpon>DSExchangeDealList.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSExchangeDealList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSExchangeDealList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSExchangeDealList.xss">
+      <DependentUpon>DSExchangeDealList.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSFundReport.xsc">
+      <DependentUpon>DSFundReport.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSFundReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSFundReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSFundReport.xss">
+      <DependentUpon>DSFundReport.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSMarketTmp.xsc">
+      <DependentUpon>DSMarketTmp.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSMarketTmp.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMarketTmp.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSMarketTmp.xss">
+      <DependentUpon>DSMarketTmp.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSMatchAndMarket.xsc">
+      <DependentUpon>DSMatchAndMarket.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSMatchAndMarket.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMatchAndMarket.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSMatchAndMarket.xss">
+      <DependentUpon>DSMatchAndMarket.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DsMatchList.xsc">
+      <DependentUpon>DsMatchList.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DsMatchList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsMatchList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DsMatchList.xss">
+      <DependentUpon>DsMatchList.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSNOTICE.xsc">
+      <DependentUpon>DSNOTICE.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSNOTICE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSNOTICE.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSNOTICE.xss">
+      <DependentUpon>DSNOTICE.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSParameter.xsc">
+      <DependentUpon>DSParameter.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSParameter.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSParameter.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSParameter.xss">
+      <DependentUpon>DSParameter.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSSettlementRollbackUser.xsc">
+      <DependentUpon>DSSettlementRollbackUser.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSSettlementRollbackUser.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSSettlementRollbackUser.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSSettlementRollbackUser.xss">
+      <DependentUpon>DSSettlementRollbackUser.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSTeamList.xsc">
+      <DependentUpon>DSTeamList.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSTeamList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSTeamList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSTeamList.xss">
+      <DependentUpon>DSTeamList.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSTopRace.xsc">
+      <DependentUpon>DSTopRace.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSTopRace.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSTopRace.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSTopRace.xss">
+      <DependentUpon>DSTopRace.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSVCardDetail.xsc">
+      <DependentUpon>DSVCardDetail.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\DSVCardDetail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSVCardDetail.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\DSVCardDetail.xss">
+      <DependentUpon>DSVCardDetail.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\MyMatch.xsc">
+      <DependentUpon>MyMatch.xsd</DependentUpon>
+    </None>
+    <None Include="Presentation\MyMatch.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MyMatch.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Presentation\MyMatch.xss">
+      <DependentUpon>MyMatch.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="YMGSKey.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

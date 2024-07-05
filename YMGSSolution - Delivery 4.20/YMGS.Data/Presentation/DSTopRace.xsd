@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSTopRace" targetNamespace="http://tempuri.org/DSTopRace.xsd" xmlns:mstns="http://tempuri.org/DSTopRace.xsd" xmlns="http://tempuri.org/DSTopRace.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSTopRace" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSTopRace" msprop:Generator_UserDSName="DSTopRace">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_AD_TOPRACE" msprop:Generator_TableClassName="TB_AD_TOPRACEDataTable" msprop:Generator_TableVarName="tableTB_AD_TOPRACE" msprop:Generator_TablePropName="TB_AD_TOPRACE" msprop:Generator_RowDeletingName="TB_AD_TOPRACERowDeleting" msprop:Generator_UserTableName="TB_AD_TOPRACE" msprop:Generator_RowChangingName="TB_AD_TOPRACERowChanging" msprop:Generator_RowEvHandlerName="TB_AD_TOPRACERowChangeEventHandler" msprop:Generator_RowDeletedName="TB_AD_TOPRACERowDeleted" msprop:Generator_RowEvArgName="TB_AD_TOPRACERowChangeEvent" msprop:Generator_RowChangedName="TB_AD_TOPRACERowChanged" msprop:Generator_RowClassName="TB_AD_TOPRACERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TOPRACEID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnTOPRACEID" msprop:Generator_ColumnPropNameInRow="TOPRACEID" msprop:Generator_ColumnPropNameInTable="TOPRACEIDColumn" msprop:Generator_UserColumnName="TOPRACEID" type="xs:int" />
+              <xs:element name="MARCHID" msprop:Generator_ColumnVarNameInTable="columnMARCHID" msprop:Generator_ColumnPropNameInRow="MARCHID" msprop:Generator_ColumnPropNameInTable="MARCHIDColumn" msprop:Generator_UserColumnName="MARCHID" type="xs:int" minOccurs="0" />
+              <xs:element name="CNPIC" msprop:Generator_ColumnVarNameInTable="columnCNPIC" msprop:Generator_ColumnPropNameInRow="CNPIC" msprop:Generator_ColumnPropNameInTable="CNPICColumn" msprop:Generator_UserColumnName="CNPIC" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="ENPIC" msprop:Generator_ColumnVarNameInTable="columnENPIC" msprop:Generator_ColumnPropNameInRow="ENPIC" msprop:Generator_ColumnPropNameInTable="ENPICColumn" msprop:Generator_UserColumnName="ENPIC" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="CNTITLE" msprop:Generator_ColumnVarNameInTable="columnCNTITLE" msprop:Generator_ColumnPropNameInRow="CNTITLE" msprop:Generator_ColumnPropNameInTable="CNTITLEColumn" msprop:Generator_UserColumnName="CNTITLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ENTITLE" msprop:Generator_ColumnVarNameInTable="columnENTITLE" msprop:Generator_ColumnPropNameInRow="ENTITLE" msprop:Generator_ColumnPropNameInTable="ENTITLEColumn" msprop:Generator_UserColumnName="ENTITLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CNCONTENT" msprop:Generator_ColumnVarNameInTable="columnCNCONTENT" msprop:Generator_ColumnPropNameInRow="CNCONTENT" msprop:Generator_ColumnPropNameInTable="CNCONTENTColumn" msprop:Generator_UserColumnName="CNCONTENT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ENCONTENT" msprop:Generator_ColumnVarNameInTable="columnENCONTENT" msprop:Generator_ColumnPropNameInRow="ENCONTENT" msprop:Generator_ColumnPropNameInTable="ENCONTENTColumn" msprop:Generator_UserColumnName="ENCONTENT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_AD_TOPRACE" />
+      <xs:field xpath="mstns:TOPRACEID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSUserPay" targetNamespace="http://tempuri.org/DSUserPay.xsd" xmlns:mstns="http://tempuri.org/DSUserPay.xsd" xmlns="http://tempuri.org/DSUserPay.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSUserPay" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSUserPay" msprop:Generator_UserDSName="DSUserPay">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_USER_PAY" msprop:Generator_TableClassName="TB_USER_PAYDataTable" msprop:Generator_TableVarName="tableTB_USER_PAY" msprop:Generator_TablePropName="TB_USER_PAY" msprop:Generator_RowDeletingName="TB_USER_PAYRowDeleting" msprop:Generator_UserTableName="TB_USER_PAY" msprop:Generator_RowChangingName="TB_USER_PAYRowChanging" msprop:Generator_RowEvHandlerName="TB_USER_PAYRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_USER_PAYRowDeleted" msprop:Generator_RowEvArgName="TB_USER_PAYRowChangeEvent" msprop:Generator_RowChangedName="TB_USER_PAYRowChanged" msprop:Generator_RowClassName="TB_USER_PAYRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="USER_PAY_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnUSER_PAY_ID" msprop:Generator_ColumnPropNameInRow="USER_PAY_ID" msprop:Generator_ColumnPropNameInTable="USER_PAY_IDColumn" msprop:Generator_UserColumnName="USER_PAY_ID" type="xs:int" />
+              <xs:element name="USER_ID" msprop:Generator_ColumnVarNameInTable="columnUSER_ID" msprop:Generator_ColumnPropNameInRow="USER_ID" msprop:Generator_ColumnPropNameInTable="USER_IDColumn" msprop:Generator_UserColumnName="USER_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="MER_ID" msprop:Generator_ColumnVarNameInTable="columnMER_ID" msprop:Generator_ColumnPropNameInRow="MER_ID" msprop:Generator_ColumnPropNameInTable="MER_IDColumn" msprop:Generator_UserColumnName="MER_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ORDER_ID" msprop:Generator_ColumnVarNameInTable="columnORDER_ID" msprop:Generator_ColumnPropNameInRow="ORDER_ID" msprop:Generator_ColumnPropNameInTable="ORDER_IDColumn" msprop:Generator_UserColumnName="ORDER_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRAN_AMOUNT" msprop:Generator_ColumnVarNameInTable="columnTRAN_AMOUNT" msprop:Generator_ColumnPropNameInRow="TRAN_AMOUNT" msprop:Generator_ColumnPropNameInTable="TRAN_AMOUNTColumn" msprop:Generator_UserColumnName="TRAN_AMOUNT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TRAN_DATE" msprop:Generator_ColumnVarNameInTable="columnTRAN_DATE" msprop:Generator_ColumnPropNameInRow="TRAN_DATE" msprop:Generator_ColumnPropNameInTable="TRAN_DATEColumn" msprop:Generator_UserColumnName="TRAN_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TRAN_STATUS" msprop:Generator_ColumnVarNameInTable="columnTRAN_STATUS" msprop:Generator_ColumnPropNameInRow="TRAN_STATUS" msprop:Generator_ColumnPropNameInTable="TRAN_STATUSColumn" msprop:Generator_UserColumnName="TRAN_STATUS" type="xs:int" minOccurs="0" />
+              <xs:element name="VCARD_ID" msprop:Generator_ColumnVarNameInTable="columnVCARD_ID" msprop:Generator_ColumnPropNameInRow="VCARD_ID" msprop:Generator_ColumnPropNameInTable="VCARD_IDColumn" msprop:Generator_UserColumnName="VCARD_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="TRAN_TYPE" msprop:Generator_ColumnVarNameInTable="columnTRAN_TYPE" msprop:Generator_ColumnPropNameInRow="TRAN_TYPE" msprop:Generator_ColumnPropNameInTable="TRAN_TYPEColumn" msprop:Generator_UserColumnName="TRAN_TYPE" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_USER_PAY" />
+      <xs:field xpath="mstns:USER_PAY_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

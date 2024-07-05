@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSHelper" targetNamespace="http://tempuri.org/DSHelper.xsd" xmlns:mstns="http://tempuri.org/DSHelper.xsd" xmlns="http://tempuri.org/DSHelper.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSHelper" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSHelper" msprop:Generator_UserDSName="DSHelper">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_HELPER" msprop:Generator_TableClassName="TB_HELPERDataTable" msprop:Generator_TableVarName="tableTB_HELPER" msprop:Generator_RowChangedName="TB_HELPERRowChanged" msprop:Generator_TablePropName="TB_HELPER" msprop:Generator_RowDeletingName="TB_HELPERRowDeleting" msprop:Generator_RowChangingName="TB_HELPERRowChanging" msprop:Generator_RowEvHandlerName="TB_HELPERRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_HELPERRowDeleted" msprop:Generator_RowClassName="TB_HELPERRow" msprop:Generator_UserTableName="TB_HELPER" msprop:Generator_RowEvArgName="TB_HELPERRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ITEMID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnITEMID" msprop:Generator_ColumnPropNameInRow="ITEMID" msprop:Generator_ColumnPropNameInTable="ITEMIDColumn" msprop:Generator_UserColumnName="ITEMID" type="xs:int" />
+              <xs:element name="PITEMID" msprop:Generator_ColumnVarNameInTable="columnPITEMID" msprop:Generator_ColumnPropNameInRow="PITEMID" msprop:Generator_ColumnPropNameInTable="PITEMIDColumn" msprop:Generator_UserColumnName="PITEMID" type="xs:int" minOccurs="0" />
+              <xs:element name="CNITEMNAME" msprop:Generator_ColumnVarNameInTable="columnCNITEMNAME" msprop:Generator_ColumnPropNameInRow="CNITEMNAME" msprop:Generator_ColumnPropNameInTable="CNITEMNAMEColumn" msprop:Generator_UserColumnName="CNITEMNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ENITEMNAME" msprop:Generator_ColumnVarNameInTable="columnENITEMNAME" msprop:Generator_ColumnPropNameInRow="ENITEMNAME" msprop:Generator_ColumnPropNameInTable="ENITEMNAMEColumn" msprop:Generator_UserColumnName="ENITEMNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WEBLINK" msprop:Generator_ColumnVarNameInTable="columnWEBLINK" msprop:Generator_ColumnPropNameInRow="WEBLINK" msprop:Generator_ColumnPropNameInTable="WEBLINKColumn" msprop:Generator_UserColumnName="WEBLINK" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ENWEBLINK" msprop:Generator_ColumnVarNameInTable="columnENWEBLINK" msprop:Generator_ColumnPropNameInRow="ENWEBLINK" msprop:Generator_ColumnPropNameInTable="ENWEBLINKColumn" msprop:Generator_UserColumnName="ENWEBLINK" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrderNO" msprop:Generator_ColumnVarNameInTable="columnOrderNO" msprop:Generator_ColumnPropNameInRow="OrderNO" msprop:Generator_ColumnPropNameInTable="OrderNOColumn" msprop:Generator_UserColumnName="OrderNO" type="xs:string" minOccurs="0" />
+              <xs:element name="RulesID" msprop:Generator_ColumnVarNameInTable="columnRulesID" msprop:Generator_ColumnPropNameInRow="RulesID" msprop:Generator_ColumnPropNameInTable="RulesIDColumn" msprop:Generator_UserColumnName="RulesID" type="xs:string" minOccurs="0" />
+              <xs:element name="LevelNO" msprop:Generator_ColumnVarNameInTable="columnLevelNO" msprop:Generator_ColumnPropNameInRow="LevelNO" msprop:Generator_ColumnPropNameInTable="LevelNOColumn" msprop:Generator_UserColumnName="LevelNO" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_HELPER" />
+      <xs:field xpath="mstns:ITEMID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

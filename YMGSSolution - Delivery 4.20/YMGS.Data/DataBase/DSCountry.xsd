@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSCountry" targetNamespace="http://tempuri.org/DSCountry.xsd" xmlns:mstns="http://tempuri.org/DSCountry.xsd" xmlns="http://tempuri.org/DSCountry.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString2" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSCountry" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSCountry" msprop:Generator_UserDSName="DSCountry">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_COUNTRY" msprop:Generator_TableClassName="TB_COUNTRYDataTable" msprop:Generator_TableVarName="tableTB_COUNTRY" msprop:Generator_TablePropName="TB_COUNTRY" msprop:Generator_RowDeletingName="TB_COUNTRYRowDeleting" msprop:Generator_UserTableName="TB_COUNTRY" msprop:Generator_RowChangingName="TB_COUNTRYRowChanging" msprop:Generator_RowEvHandlerName="TB_COUNTRYRowChangeEventHandler" msprop:Generator_RowDeletedName="TB_COUNTRYRowDeleted" msprop:Generator_RowEvArgName="TB_COUNTRYRowChangeEvent" msprop:Generator_RowChangedName="TB_COUNTRYRowChanged" msprop:Generator_RowClassName="TB_COUNTRYRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COUNTRY_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCOUNTRY_ID" msprop:Generator_ColumnPropNameInRow="COUNTRY_ID" msprop:Generator_ColumnPropNameInTable="COUNTRY_IDColumn" msprop:Generator_UserColumnName="COUNTRY_ID" type="xs:int" />
+              <xs:element name="COUNTRY_NAME_CN" msprop:Generator_ColumnVarNameInTable="columnCOUNTRY_NAME_CN" msprop:Generator_ColumnPropNameInRow="COUNTRY_NAME_CN" msprop:Generator_ColumnPropNameInTable="COUNTRY_NAME_CNColumn" msprop:Generator_UserColumnName="COUNTRY_NAME_CN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COUNTRY_NAME_EN" msprop:Generator_ColumnVarNameInTable="columnCOUNTRY_NAME_EN" msprop:Generator_ColumnPropNameInRow="COUNTRY_NAME_EN" msprop:Generator_ColumnPropNameInTable="COUNTRY_NAME_ENColumn" msprop:Generator_UserColumnName="COUNTRY_NAME_EN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_COUNTRY" />
+      <xs:field xpath="mstns:COUNTRY_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

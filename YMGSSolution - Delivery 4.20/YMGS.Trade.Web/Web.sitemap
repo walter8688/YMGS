@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="" title="YMGS"  description="">
+		<siteMapNode title="会员中心"  url="~/MemberShip/DefaultMemberFrm.aspx?key=dummy" description="9000|MemberShipCenter">
+			<siteMapNode title="会员信息管理" url="~/MemberShip/MemberShipHomeFrm.aspx" description="9001|MemberHomePage"/>
+			<siteMapNode title="资金账户管理" url="~/MemberShip/FinancialAccountFrm.aspx" description="9051|FinancialAccountOverview"/>
+			<siteMapNode title="代理会员管理" url="~/MemberShip/AgentAccountFrm.aspx" description="9101|AgentAccountManage"/>
+			<siteMapNode title="我的交易管理" url="~/MemberShip/MyTradeFrm.aspx" description="9151|HisTradeReport"/>
+			<siteMapNode title="我的积分查询" url="~/MemberShip/MyIntegralFrm.aspx" description="9201|MyMarkManage"/>
+			<siteMapNode title="申请总代理" url="~/MemberShip/MyProxyFrm.aspx" description="9301|MyApplyProxyManage"/>
+		</siteMapNode>
+		<siteMapNode title="帮助中心"  url="~/MemberShip/AboutFrm.aspx?key=dummy" description="100000|MemberShipCenter">
+			<siteMapNode title="关于我们" url="~/Public/AboutFrm.aspx" description="0|AboutUs"/>
+		</siteMapNode>
+	</siteMapNode>
+</siteMap>

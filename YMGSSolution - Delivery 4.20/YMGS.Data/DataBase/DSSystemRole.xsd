@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSSystemRole" targetNamespace="http://tempuri.org/DSSystemRole.xsd" xmlns:mstns="http://tempuri.org/DSSystemRole.xsd" xmlns="http://tempuri.org/DSSystemRole.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="YMGS_DEVConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="YMGS_DEVConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.YMGS.Data.Properties.Settings.GlobalReference.Default.YMGS_DEVConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSSystemRole" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSSystemRole" msprop:Generator_UserDSName="DSSystemRole">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_SYSTEM_ROLE" msprop:Generator_TableClassName="TB_SYSTEM_ROLEDataTable" msprop:Generator_TableVarName="tableTB_SYSTEM_ROLE" msprop:Generator_TablePropName="TB_SYSTEM_ROLE" msprop:Generator_RowDeletingName="TB_SYSTEM_ROLERowDeleting" msprop:Generator_UserTableName="TB_SYSTEM_ROLE" msprop:Generator_RowChangingName="TB_SYSTEM_ROLERowChanging" msprop:Generator_RowEvHandlerName="TB_SYSTEM_ROLERowChangeEventHandler" msprop:Generator_RowDeletedName="TB_SYSTEM_ROLERowDeleted" msprop:Generator_RowEvArgName="TB_SYSTEM_ROLERowChangeEvent" msprop:Generator_RowChangedName="TB_SYSTEM_ROLERowChanged" msprop:Generator_RowClassName="TB_SYSTEM_ROLERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ROLE_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnROLE_ID" msprop:Generator_ColumnPropNameInRow="ROLE_ID" msprop:Generator_ColumnPropNameInTable="ROLE_IDColumn" msprop:Generator_UserColumnName="ROLE_ID" type="xs:int" />
+              <xs:element name="ROLE_NAME" msprop:Generator_ColumnVarNameInTable="columnROLE_NAME" msprop:Generator_ColumnPropNameInRow="ROLE_NAME" msprop:Generator_ColumnPropNameInTable="ROLE_NAMEColumn" msprop:Generator_UserColumnName="ROLE_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ROLE_DESC" msprop:Generator_ColumnVarNameInTable="columnROLE_DESC" msprop:Generator_ColumnPropNameInRow="ROLE_DESC" msprop:Generator_ColumnPropNameInTable="ROLE_DESCColumn" msprop:Generator_UserColumnName="ROLE_DESC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CREATE_USER" msprop:Generator_ColumnVarNameInTable="columnCREATE_USER" msprop:Generator_ColumnPropNameInRow="CREATE_USER" msprop:Generator_ColumnPropNameInTable="CREATE_USERColumn" msprop:Generator_UserColumnName="CREATE_USER" type="xs:int" minOccurs="0" />
+              <xs:element name="CREATE_TIME" msprop:Generator_ColumnVarNameInTable="columnCREATE_TIME" msprop:Generator_ColumnPropNameInRow="CREATE_TIME" msprop:Generator_ColumnPropNameInTable="CREATE_TIMEColumn" msprop:Generator_UserColumnName="CREATE_TIME" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LAST_UPDATE_USER" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATE_USER" msprop:Generator_ColumnPropNameInRow="LAST_UPDATE_USER" msprop:Generator_ColumnPropNameInTable="LAST_UPDATE_USERColumn" msprop:Generator_UserColumnName="LAST_UPDATE_USER" type="xs:int" minOccurs="0" />
+              <xs:element name="LAST_UPDATE_TIME" msprop:Generator_ColumnVarNameInTable="columnLAST_UPDATE_TIME" msprop:Generator_ColumnPropNameInRow="LAST_UPDATE_TIME" msprop:Generator_ColumnPropNameInTable="LAST_UPDATE_TIMEColumn" msprop:Generator_UserColumnName="LAST_UPDATE_TIME" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TB_SYSTEM_ROLE" />
+      <xs:field xpath="mstns:ROLE_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
